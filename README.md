@@ -135,7 +135,7 @@ The reply then lists each change, for example
 | M1: the design is hard to follow for a beginner | One file per job, each opening with what it does and who calls it. Scoring rules are plain functions in `screening.py`; every Claude prompt is in `claude_tasks.py`; only `llm.py` calls the API |
 | M1: add a walkthrough from tool schema to final answer | [`docs/walkthrough.md`](docs/walkthrough.md) |
 | M2: metadata extraction is rule- and vocabulary-based | Requirements are read by Claude, and Round 2 reads each resume against them, so skills outside Milestone 2's 73-word vocabulary (Svelte, Elixir, Flink, Databricks) count. Milestone 2's rule checks are still shown beside Claude's judgement, and the corpus includes resumes where the two disagree ([`DATASET.md`](DATASET.md#deliberate-traps)) |
-| M2: evaluation needs independent human labels | The tooling is built; the labels need people. Labels written in this project would repeat the problem, so none are claimed. See [Evaluating against human labels](#evaluating-against-human-labels) |
+| M2: evaluation needs independent human labels | Partly. One human labeller graded 40 candidates on three real postings; most people the search surfaced were at least borderline, but the hire rule is much stricter than the person, and AI-written labels disagree with the person no better than chance. Two independent labellers are still needed. See [Results so far](#results-so-far-one-labeller-three-real-postings) |
 | M2: embeddings are HuggingFace-only | Round 1 can use Ollama (local, no key), Voyage AI or OpenAI as well as MiniLM: [`embedders.py`](embedders.py), built with `scripts/build_index.py`. Which one is better on this task is measured against the human labels, not assumed |
 
 ## Evaluating against human labels
@@ -180,7 +180,48 @@ with the index (MiniLM's measured band is 0.33-0.68), and `evaluate.py` refuses 
 without one. And Round 2's judgements are shared between providers, so a candidate both
 rank highly is judged once and judged the same way.
 
-Not done here: no labels exist yet, and nothing has been measured with them. The scenario
+### Results so far: one labeller, three real postings
+
+There was not time for two independent labellers. As a first human check, the project's
+author graded the pooled shortlists of three real postings (a senior SRE, a senior data
+engineer and a senior backend engineer: 40 candidates) with `scripts/grade.py`, which shows
+only the posting and the resumes. That is one person, who also shaped the design, so there
+is no agreement score and this is **not** the independent evaluation Milestone 2's review
+asked for; it is the first human judgement of the agent on real postings. The labeller
+graded none of the 40 "would interview", 29 borderline and 11 "would not".
+
+| Provider | R1 P@5 | R1 P@10 | R1 nDCG@10 | R2 P@5 | R2 nDCG@10 | R3 agreement |
+|---|---|---|---|---|---|---|
+| MiniLM (`huggingface`) | 0.80 | 0.67 | 0.75 | 0.60 | 0.69 | 0.33 |
+| `ollama` nomic-embed-text | 0.67 | 0.73 | 0.74 | 0.73 | 0.75 | 0.27 |
+
+Means over the three postings; each posting is in [`evaluation/results.md`](evaluation/results.md).
+
+- **Round 1 surfaces plausible people; how many it misses is unknown.** 29 of the 40
+  candidates the two indexes put in their top 10 were graded at least borderline. P@10 of
+  0.67-0.73 is about that base rate, so within the pool the order adds little, and without
+  grades for the other 60 resumes recall cannot be measured.
+- **The embedding providers tie.** They differ by one candidate or so per posting, in
+  both directions; three postings cannot separate them.
+- **Round 2 did not improve the ranking.** Re-ranking the top 10 by Claude's judgements
+  lowered P@5 for MiniLM (0.80 to 0.60) and raised it for Ollama (0.67 to 0.73). With no
+  candidate graded "would interview", there was little for it to put first.
+- **Round 3 is far stricter than the person.** The agent recommended *no hire* for every
+  candidate in every top 10 (its agreement score equals, in all six posting-provider cases,
+  exactly the share the labeller graded 0), while the labeller judged most of them
+  borderline. Real postings list many must-haves - AI coding tools, crypto, Snowflake - and
+  "any missing must-have means no hire" rejects people a recruiter would still consider. A
+  softer rule (one missing must-have makes a candidate borderline, say) is the obvious next
+  change, but it needs testing on labels it was not tuned on.
+- **AI labels would have told a different story.** A pilot labelled by Claude
+  ([`evaluation/ai_pilot_results.md`](evaluation/ai_pilot_results.md)) graded 18 of the
+  same 40 candidates "would interview" where the person graded none; the two agree no
+  better than chance (Cohen's kappa -0.11 to 0.13). On the backend posting the AI labels
+  rank Ollama far above MiniLM (P@5 1.00 against 0.40) and the human labels rank them the
+  other way (0.60 against 0.80). That is the Milestone 2 reviewer's point, measured.
+
+Still to do: two independent labellers (the packs in `evaluation/private/packs/` are
+ready) and full sheets for the frontend and ML postings, which recall needs. The scenario
 transcripts and the demo were recorded before calibration and before interview checks
 existed, with an index on Milestone 2's hand-set band.
 
