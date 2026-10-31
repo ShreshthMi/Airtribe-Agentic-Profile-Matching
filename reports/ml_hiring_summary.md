@@ -1,26 +1,30 @@
-# Senior ML Engineer: Top 3 Candidates
+# Senior ML Engineer: Top 3 Candidates (Screening Round 1)
 
-**Requirements (both must-have):** 5+ years of Python; production experience with LLMs or RAG.
-**Source:** Screening round 1 (full evidence for all 10 shortlisted candidates: `reports/senior-ml-engineer-2026-10-31-round-1.md`).
+**Must-haves:** 5+ years of Python · Production experience with LLMs or RAG · Senior-level ML engineering experience
 
-All three meet both must-haves (fit 100) and are recommended **Hire**. These recommendations are meant to inform the hiring decision, not replace it.
-
-| # | Candidate | Python (approx.) | LLM / RAG in production | Round 1 RAG score |
+| # | Candidate | Recommendation | Fit | Must-haves met |
 |---|---|---|---|---|
-| 1 | Priya Sharma | ~11 yrs | RAG assistant over 2M product documents (Flipkart) | 89 |
-| 2 | Ananya Rao | ~7 yrs | RAG assistant over 4M support articles; fine-tuned LLMs served on Kubernetes (EKS) | 87 |
-| 3 | Vikram Iyer | ~6.4 yrs* | RAG pipelines on AWS SageMaker; LLM fine-tuning (Amazon) | 83 |
+| 1 | Priya Sharma | Hire | 100 | 3/3 |
+| 2 | Ananya Rao | Hire | 100 | 3/3 |
+| 3 | Adaeze Nwosu | Borderline | 83 | 2/3 (Python only partly met) |
 
-## Priya Sharma
-- Python across three roles (Flipkart, Swiggy, Mu Sigma), about 11 years in total.
-- "Built a retrieval-augmented generation (RAG) assistant over 2M product documents using Python, LangChain and Pinecone."
+## 1. Priya Sharma: Hire
+- **Python:** About 11 years across Flipkart, Swiggy and Mu Sigma.
+- **LLMs/RAG:** "Built a retrieval-augmented generation (RAG) assistant over 2M product documents using Python, LangChain and Pinecone."
+- **Seniority:** Senior ML Engineer at Flipkart since Jan 2021. Leads a team of 5 engineers.
+- **Gaps:** None found.
 
-## Ananya Rao
-- Python in all three roles, about 7 years in total.
-- "Built a retrieval-augmented generation (RAG) assistant in Python over 4M support articles using Weaviate and PyTorch rerankers."
-- "Fine-tuned open LLMs with Hugging Face and served them with Docker on Kubernetes (EKS) on AWS."
+## 2. Ananya Rao: Hire
+- **Python:** About 7 years across three roles.
+- **LLMs/RAG:** Built a RAG assistant over 4M support articles (Weaviate, PyTorch rerankers). "Fine-tuned open LLMs with Hugging Face and served them with Docker on Kubernetes (EKS) on AWS."
+- **Seniority:** Senior NLP Engineer at Lattice Commerce since Feb 2023. Mentors engineers and has about 6 years of ML engineering.
+- **Gaps:** None found.
 
-## Vikram Iyer
-- About 6 years at Amazon using PyTorch and Hugging Face, plus an internship that names Python.
-- "Built retrieval augmented generation pipelines with FAISS and Hugging Face; deployed on AWS SageMaker."
-- *Python is implied by his libraries in the Amazon role, not stated directly. Worth confirming at interview.
+## 3. Adaeze Nwosu: Borderline
+- **LLMs/RAG:** "Productionised models with RAG and AWS, with offline and online evaluation."
+- **Seniority:** Senior Machine Learning Engineer at Kestrel Pay since Nov 2022. Mentors 5 engineers.
+- **Gap (Python):** Her resume names Python only in the Juniper role (about 2.4 years). The Kestrel Pay role (about 4 years) lists PyTorch but doesn't name Python. If she used Python there, she would have about 6 years and meet the requirement.
+- **Interview check:** Ask what language she used day to day at Kestrel Pay. Ask for a walkthrough of Python code or a short Python exercise.
+
+---
+*These recommendations come from an automated resume screen. They are meant to support the hiring decision, not replace it. Full evidence for all 10 shortlisted candidates: `reports/senior-ml-engineer-2026-10-31-round-1.md`.*

@@ -21,7 +21,7 @@ cp .env.example .env            # then add your ANTHROPIC_API_KEY
 | State machine diagram | [`docs/state_machine.md`](docs/state_machine.md), drawn from the compiled graph; also below |
 | Chat interface | [`chat.py`](chat.py), a terminal chat |
 | Test scenarios, 5+ conversation flows | [`tests/test_conversation_flows.py`](tests/test_conversation_flows.py) (17 flow tests, offline) and [`scenarios/`](scenarios/) (6 flows run against the real model, transcripts in [`scenarios/transcripts/`](scenarios/transcripts/)) |
-| Demo video, 5-6 minutes | [`demo/demo.mp4`](demo/demo.mp4), a recorded live session with captions, 5:32 |
+| Demo video, 5-6 minutes | [`demo/demo.mp4`](demo/demo.mp4), a recorded live session with captions, 5:55 |
 | Tools: Milestone 1 file tools, Milestone 2 RAG search, `extract_requirements`, `compare_candidates`, `generate_interview_questions` | [`agent_tools.py`](agent_tools.py), twelve tools in all |
 | 100 resumes | [`resumes/`](resumes/): Milestone 2's 43 plus 57 generated, described in [`DATASET.md`](DATASET.md) |
 
@@ -126,7 +126,7 @@ changes explainable:
    out at Round 1, before Round 2 ever saw her.
 
 The reply then lists each change, for example
-`Hana Sato: #2 -> #5 (fit 100 -> 90; changed requirements: TypeScript met, Next.js partial)`.
+`Hana Sato: #2 -> #4 (fit 100 -> 90; changed requirements: TypeScript met, Next.js partial)`.
 
 ## What the earlier milestones' reviews asked for
 
@@ -221,9 +221,7 @@ Means over the three postings; each posting is in [`evaluation/results.md`](eval
   other way (0.60 against 0.80). That is the Milestone 2 reviewer's point, measured.
 
 Still to do: two independent labellers (the packs in `evaluation/private/packs/` are
-ready) and full sheets for the frontend and ML postings, which recall needs. The scenario
-transcripts and the demo were recorded before calibration and before interview checks
-existed, with an index on Milestone 2's hand-set band.
+ready) and full sheets for the frontend and ML postings, which recall needs.
 
 ## The demo video
 
@@ -233,7 +231,7 @@ against the real model under a pseudo-terminal, and the output is replayed frame
 at the speed it arrived, with a caption for each step. It shows the progress of each round,
 every tool call, and the answers. The one change to the timing is a 14-second pause before
 each new question, so the answer above it can be read; the agent's own work plays at real
-speed. 5 minutes 32 seconds. `--replay` re-renders the saved session without calling the API.
+speed. 5 minutes 55 seconds. `--replay` re-renders the saved session without calling the API.
 
 ## Tests
 
@@ -268,14 +266,14 @@ at $4 / $20 per million input / output tokens:
 
 | Scenario | Claude calls | Input tokens (+ from cache) | Output tokens | Cost |
 |---|---|---|---|---|
-| 01 React search, compare, explain | 19 | 17,187 (+7,596) | 4,759 | $0.17 |
-| 02 refine twice, explain the moves | 33 | 36,948 (+13,983) | 29,046 | $0.73 |
-| 03 full job description, report, questions | 41 | 42,087 (+9,995) | 12,125 | $0.41 |
-| 04 two jobs | 22 | 20,932 (+14,318) | 14,381 | $0.37 |
-| 05 beyond the shortlist, save a summary | 23 | 19,409 (+19,411) | 9,272 | $0.27 |
-| 06 edge cases | 20 | 19,057 (+2,683) | 4,772 | $0.17 |
+| 01 React search, compare, explain | 20 | 18,412 (+7,859) | 4,885 | $0.17 |
+| 02 refine twice, explain the moves | 42 | 43,343 (+10,370) | 12,798 | $0.43 |
+| 03 full job description, report, questions | 23 | 23,060 (+15,633) | 17,345 | $0.44 |
+| 04 two jobs | 34 | 38,555 (+14,342) | 28,127 | $0.72 |
+| 05 beyond the shortlist, save a summary | 25 | 22,098 (+20,605) | 11,792 | $0.33 |
+| 06 edge cases | 17 | 16,944 (+2,823) | 4,449 | $0.16 |
 
-About $2.10 for all six; slightly more in practice, because the chat's counter leaves out
+About $2.25 for all six; slightly more in practice, because the chat's counter leaves out
 the small cost of writing to the prompt cache. Output tokens dominate the cost, and most of them are Round 2's
 judging, so a screening round with more requirements costs more.
 

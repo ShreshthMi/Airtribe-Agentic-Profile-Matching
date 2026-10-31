@@ -3,236 +3,231 @@ Screening round 1 · 2026-10-31 · 100 resumes searched
 
 ## Requirements
 - 5+ years of experience in DevOps, SRE or platform engineering (must-have)
-- Kubernetes in production (must-have)
-- Docker in production (must-have)
+- Kubernetes and Docker in production (must-have)
 - Infrastructure as code with Terraform (must-have)
-- Experience with AWS or GCP (must-have)
+- AWS or GCP (must-have)
 - CI/CD pipelines (GitHub Actions, Jenkins or similar) (must-have)
 - Linux (must-have)
 - Scripting in Python or Go (must-have)
 - Monitoring with Prometheus and Grafana (must-have)
-- Incident response and on-call leadership (nice-have)
+- Incident response and on-call leadership experience (nice-have)
 - Cloud cost optimisation (nice-have)
 
-_Assumptions made reading the request: Read the 5+ years as total experience across DevOps, SRE or platform engineering combined, not 5+ years in each. 'Kubernetes and Docker in production' was split into two separate checks, both requiring production use. 'Python or Go' and 'AWS or GCP' are each satisfied by either option._
+_Assumptions made reading the request: The 5+ years are read as combined experience across DevOps, SRE or platform engineering, not 5 years in each. 'Incident response and on-call leadership' is kept in nice_to_have, because a resume can show on-call or incident lead roles._
 
 ## Shortlist
 | # | Candidate | Fit | Must-haves met | Round 1 RAG | Recommendation |
 |---|---|---|---|---|---|
-| 1 | Omar Haddad (`omar_haddad`) | 95 | 9/9 | 98 | Hire |
-| 2 | Maria Garcia (`maria_garcia`) | 88 | 8/9 | 97 | Borderline |
-| 3 | Elena Rodriguez (`resume_elena_rodriguez`) | 80 | 5/9 | 99 | Borderline |
-| 4 | Zainab Yusuf (`zainab_yusuf`) | 70 | 4/9 | 89 | Borderline |
-| 5 | Rebecca Stone (`rebecca_stone`) | 70 | 6/9 | 88 | No hire |
-| 6 | Divya Reddy (`divya_reddy`) | 65 | 3/9 | 89 | Borderline |
-| 7 | Andile Khumalo (`andile_khumalo`) | 65 | 3/9 | 82 | Borderline |
-| 8 | Li Wei (`li_wei`) | 60 | 5/9 | 80 | No hire |
-| 9 | Samuel Osei (`samuel_osei`) | 55 | 2/9 | 82 | No hire |
-| 10 | Felix Wagner (`felix_wagner`) | 55 | 3/9 | 78 | No hire |
+| 1 | Omar Haddad (`omar_haddad`) | 94 | 8/8 | 98 | Hire |
+| 2 | Maria Garcia (`maria_garcia`) | 86 | 7/8 | 97 | Borderline |
+| 3 | Elena Rodriguez (`resume_elena_rodriguez`) | 78 | 4/8 | 98 | Borderline |
+| 4 | Zainab Yusuf (`zainab_yusuf`) | 72 | 4/8 | 89 | Borderline |
+| 5 | Divya Reddy (`divya_reddy`) | 67 | 3/8 | 89 | Borderline |
+| 6 | Rebecca Stone (`rebecca_stone`) | 67 | 5/8 | 88 | No hire |
+| 7 | Andile Khumalo (`andile_khumalo`) | 67 | 3/8 | 82 | Borderline |
+| 8 | Samuel Osei (`samuel_osei`) | 61 | 2/8 | 82 | Borderline |
+| 9 | Felix Wagner (`felix_wagner`) | 61 | 3/8 | 78 | No hire |
+| 10 | Li Wei (`li_wei`) | 61 | 5/8 | 76 | No hire |
 
 ## Candidates
-### 1. Omar Haddad (omar_haddad) - Hire, fit 95
+### 1. Omar Haddad (omar_haddad) - Hire, fit 94
 Meets every must-have, with evidence quoted from the resume. Resume: `resumes/omar_haddad.md`. Round 1 RAG score 98.
 **Strengths**
-- **5+ years of experience in DevOps, SRE or platform engineering** (must-have): The SRE role runs from Jan 2021 to Oct 2026, about 5 years 10 months, which meets 5+ years without counting the Sep 2018 - Dec 2020 systems role (2 years 4 months). - "Senior Site Reliability Engineer, Petra Cloud Jan 2021 - Present"
-- **Kubernetes in production** (must-have): He operates multiple production GKE clusters in his current role. - "Operates 25 GKE Kubernetes clusters on GCP with Terraform modules for every environment."
-- **Docker in production** (must-have): He led a Docker migration in a hosting job, which shows Docker used in production. - "Linux administration, Docker migration and Jenkins CI/CD pipelines on AWS."
-- **Infrastructure as code with Terraform** (must-have): Terraform modules are used for every environment in his current role. - "Operates 25 GKE Kubernetes clusters on GCP with Terraform modules for every environment."
-- **Experience with AWS or GCP** (must-have): He uses GCP in his current role and used AWS in his previous role. - "Operates 25 GKE Kubernetes clusters on GCP with Terraform modules for every environment."
-- **CI/CD pipelines (GitHub Actions, Jenkins or similar)** (must-have): He built Jenkins CI/CD pipelines in a job. - "Linux administration, Docker migration and Jenkins CI/CD pipelines on AWS."
-- **Linux** (must-have): Linux administration was part of a role. - "Linux administration, Docker migration and Jenkins CI/CD pipelines on AWS."
-- **Scripting in Python or Go** (must-have): He wrote both Go and Python tooling on the job. - "Wrote Go operators and Python tooling for automated failover; Prometheus and Grafana alerting."
-- **Monitoring with Prometheus and Grafana** (must-have): Prometheus and Grafana alerting are part of his current role. - "Wrote Go operators and Python tooling for automated failover; Prometheus and Grafana alerting."
-- **Incident response and on-call leadership** (nice-have): He leads incident reviews and an on-call rotation of 40 engineers. - "Leads incident reviews and the on-call rotation for 40 engineers."
+- **5+ years of experience in DevOps, SRE or platform engineering** (must-have): SRE role from Jan 2021 to Oct 2026 is about 5.8 years, plus Sep 2018 to Dec 2020 systems engineering (about 2.3 years), exceeding 5 years. - "Senior Site Reliability Engineer, Petra Cloud Jan 2021 - Present"
+- **Kubernetes and Docker in production** (must-have): Kubernetes is run in production at Petra Cloud, and Docker migration work was done at Levant Hosting. - "Operates 25 GKE Kubernetes clusters on GCP with Terraform modules for every environment."
+- **Infrastructure as code with Terraform** (must-have): The candidate uses Terraform modules for every environment in the current role. - "Operates 25 GKE Kubernetes clusters on GCP with Terraform modules for every environment."
+- **AWS or GCP** (must-have): The candidate works on GCP in the current role and worked on AWS previously. - "Operates 25 GKE Kubernetes clusters on GCP"
+- **CI/CD pipelines (GitHub Actions, Jenkins or similar)** (must-have): The candidate built Jenkins CI/CD pipelines in a job. - "Linux administration, Docker migration and Jenkins CI/CD pipelines on AWS."
+- **Linux** (must-have): Linux administration was part of a job. - "Linux administration, Docker migration and Jenkins CI/CD pipelines on AWS."
+- **Scripting in Python or Go** (must-have): The candidate wrote Go and Python in the current role. - "Wrote Go operators and Python tooling for automated failover"
+- **Monitoring with Prometheus and Grafana** (must-have): The candidate set up Prometheus and Grafana alerting in the current role. - "Prometheus and Grafana alerting."
+- **Incident response and on-call leadership experience** (nice-have): The candidate directly leads incident reviews and on-call. - "Leads incident reviews and the on-call rotation for 40 engineers."
 **Gaps**
 - **Cloud cost optimisation** (nice-have): The resume makes no mention of cloud cost optimisation.
 
-### 2. Maria Garcia (maria_garcia) - Borderline, fit 88
+### 2. Maria Garcia (maria_garcia) - Borderline, fit 86
 Only partly meets must-have: Monitoring with Prometheus and Grafana. Resume: `resumes/maria_garcia.txt`. Round 1 RAG score 97.
 **Strengths**
-- **5+ years of experience in DevOps, SRE or platform engineering** (must-have): Dell Mar 2021–Oct 2026 is about 5.6 years plus Indeed Jan 2019–Feb 2021 at about 2.1 years, totalling about 7.7 years, which is at least 5. - "Senior Platform Engineer, Dell Technologies Mar 2021 - Present"
-- **Kubernetes in production** (must-have): Running 40+ Kubernetes clusters in a current job shows production Kubernetes use. - "Run 40+ Kubernetes clusters with Terraform; built CI/CD with GitHub Actions."
-- **Docker in production** (must-have): Docker image work is listed as part of the DevOps role at Indeed. - "Jenkins pipelines, Docker images, Linux fleet management."
-- **Infrastructure as code with Terraform** (must-have): Terraform is used to manage clusters in the current role. - "Run 40+ Kubernetes clusters with Terraform; built CI/CD with GitHub Actions."
-- **Experience with AWS or GCP** (must-have): The current role involves work across both AWS and GCP. - "Python automation for cost reporting across AWS and GCP."
-- **CI/CD pipelines (GitHub Actions, Jenkins or similar)** (must-have): She built CI/CD with GitHub Actions and also ran Jenkins pipelines at Indeed. - "Run 40+ Kubernetes clusters with Terraform; built CI/CD with GitHub Actions."
-- **Linux** (must-have): Linux fleet management is part of a job. - "Jenkins pipelines, Docker images, Linux fleet management."
-- **Scripting in Python or Go** (must-have): Python automation is used in the current role. - "Python automation for cost reporting across AWS and GCP."
+- **5+ years of experience in DevOps, SRE or platform engineering** (must-have): Indeed Jan 2019–Feb 2021 (~2y2m) plus Dell Mar 2021–Oct 2026 (~5y8m) totals about 7y10m, which is at least 5 years. - "Senior Platform Engineer, Dell Technologies Mar 2021 - Present"
+- **Kubernetes and Docker in production** (must-have): She runs Kubernetes clusters at Dell and built Docker images at Indeed, both in jobs. - "Run 40+ Kubernetes clusters with Terraform; built CI/CD with GitHub Actions."
+- **Infrastructure as code with Terraform** (must-have): She uses Terraform to manage infrastructure in her current role. - "Run 40+ Kubernetes clusters with Terraform"
+- **AWS or GCP** (must-have): She works across both AWS and GCP in her current role. - "Python automation for cost reporting across AWS and GCP."
+- **CI/CD pipelines (GitHub Actions, Jenkins or similar)** (must-have): She built GitHub Actions CI/CD and Jenkins pipelines in her jobs. - "built CI/CD with GitHub Actions."
+- **Linux** (must-have): She managed a Linux fleet at Indeed. - "Jenkins pipelines, Docker images, Linux fleet management."
+- **Scripting in Python or Go** (must-have): She does Python automation in her current role. - "Python automation for cost reporting across AWS and GCP."
 **Gaps**
-- **Monitoring with Prometheus and Grafana** (must-have): Prometheus appears only in the skills list and Grafana is not mentioned anywhere. - "AWS, GCP, Kubernetes, Docker, Terraform, CI/CD (Jenkins, GitHub Actions), Linux, Bash, Python, Prometheus"
-- **Incident response and on-call leadership** (nice-have): The resume does not mention incident response or on-call work.
-- **Cloud cost optimisation** (nice-have): Cost reporting is related to cost optimisation, but the resume does not show actual cost reductions. - "Python automation for cost reporting across AWS and GCP."
+- **Monitoring with Prometheus and Grafana** (must-have): Prometheus appears only in the skills list and Grafana is not mentioned at all. - "AWS, GCP, Kubernetes, Docker, Terraform, CI/CD (Jenkins, GitHub Actions), Linux, Bash, Python, Prometheus"
+- **Incident response and on-call leadership experience** (nice-have): The resume does not mention incident response or on-call work.
+- **Cloud cost optimisation** (nice-have): Cost reporting is related to cost optimisation but does not show actual cost reduction. - "Python automation for cost reporting across AWS and GCP."
 **Improvement suggestions**
-- In the interview, ask how incidents and on-call were handled for the 40+ Kubernetes clusters at Dell, and whether she has led incident response, run postmortems or owned an on-call rotation. The resume never mentions this must-have, so it is the main gap to close.
-- Ask her to walk through how she used Prometheus on those clusters (alerting rules, exporters, dashboards) and whether she has worked with Grafana or a similar visualisation tool. Prometheus appears only in her skills list and Grafana does not appear at all.
-- Ask whether the Python cost reporting she built across AWS and GCP led to any concrete savings, such as rightsizing, reserved or committed-use purchases or idle resource cleanup, and request figures or examples. This would show whether her cost experience goes beyond reporting.
-- Confirm her total experience, since her summary says 6 years while the dates listed (Jan 2019 to present) suggest more. Either figure meets the 5+ year requirement, so this only matters for accuracy.
+- Ask directly about incident response and on-call. Have her describe a specific production incident on her 40+ Kubernetes clusters at Dell or the Indeed Linux fleet: her role, how it was detected, escalation, resolution and any postmortem. Also ask whether she has led an on-call rotation, since the resume shows no evidence of this must-have.
+- Probe Prometheus hands-on, since it appears only in her skills list. Ask how she has used it on her Kubernetes clusters (exporters, alerting rules, PromQL queries) and whether she has built Grafana dashboards or used an equivalent visualisation tool.
+- Ask what decisions came out of her Python cost reporting across AWS and GCP. Request a concrete example where she identified and implemented savings, such as rightsizing, scheduling or commitment purchases, with an approximate percentage or dollar reduction.
+- If interview answers on on-call and monitoring are thin, consider a short practical exercise. For example, have her design alerting and dashboards for a Kubernetes service, or walk through triaging a simulated outage, to see whether she can close these gaps quickly.
 
-### 3. Elena Rodriguez (resume_elena_rodriguez) - Borderline, fit 80
-Only partly meets must-have: Docker in production; Experience with AWS or GCP; Linux; Monitoring with Prometheus and Grafana. Resume: `resumes/resume_elena_rodriguez.docx`. Round 1 RAG score 99.
+### 3. Elena Rodriguez (resume_elena_rodriguez) - Borderline, fit 78
+Only partly meets must-have: Kubernetes and Docker in production; AWS or GCP; Linux; Monitoring with Prometheus and Grafana. Resume: `resumes/resume_elena_rodriguez.docx`. Round 1 RAG score 98.
 **Strengths**
-- **5+ years of experience in DevOps, SRE or platform engineering** (must-have): DevOps 2016-2021 (5 years) plus Staff SRE 2021-Present (about 5.8 years) totals about 10.8 years, which exceeds 5. - "DevOps Engineer - Saffron Grid Energy (2016 - 2021)"
-- **Kubernetes in production** (must-have): Two jobs show Kubernetes work: managing clusters at Tidewater and migrating VMs to Kubernetes at Saffron Grid. - "Cut monthly cloud spend by 27% by right-sizing Kubernetes clusters."
-- **Infrastructure as code with Terraform** (must-have): Terraform was used in a job to carry out a large migration. - "Migrated 120 virtual machines to Kubernetes with Terraform and Helm."
-- **CI/CD pipelines (GitHub Actions, Jenkins or similar)** (must-have): The candidate built CI/CD pipelines in a role, although the tool is not named. - "Built CI/CD pipelines that reduced deploy time from 45 to 8 minutes."
-- **Scripting in Python or Go** (must-have): The candidate wrote Python automation in a current role. - "Wrote PYTHON automation that rotates credentials across 300 services with zero downtime."
-- **Incident response and on-call leadership** (nice-have): The candidate leads incident response in the current role. - "Leads incident response and blameless postmortems."
-- **Cloud cost optimisation** (nice-have): The resume shows a concrete cloud cost reduction achieved in a job. - "Cut monthly cloud spend by 27% by right-sizing Kubernetes clusters."
+- **5+ years of experience in DevOps, SRE or platform engineering** (must-have): DevOps at Saffron Grid 2016–2021 (5 years) plus SRE at Tidewater 2021–Oct 2026 (about 5.8 years) totals about 10.8 years, which exceeds 5. - "Staff Site Reliability Engineer - Tidewater Robotics (2021 - Present)"
+- **Infrastructure as code with Terraform** (must-have): Terraform was used in a job to perform a large migration. - "Migrated 120 virtual machines to Kubernetes with Terraform and Helm."
+- **CI/CD pipelines (GitHub Actions, Jenkins or similar)** (must-have): The candidate built CI/CD pipelines in a DevOps role. - "Built CI/CD pipelines that reduced deploy time from 45 to 8 minutes."
+- **Scripting in Python or Go** (must-have): Python scripting was used in the current role. - "Wrote PYTHON automation that rotates credentials across 300 services with zero downtime."
+- **Incident response and on-call leadership experience** (nice-have): The candidate leads incident response in the current staff SRE role. - "Leads incident response and blameless postmortems."
+- **Cloud cost optimisation** (nice-have): The resume shows a quantified cloud cost reduction achieved in a job. - "Cut monthly cloud spend by 27% by right-sizing Kubernetes clusters."
 **Gaps**
-- **Docker in production** (must-have): Docker appears only in the skills list and in no described job. - "Containers | Docker, Kubernetes, Helm"
-- **Experience with AWS or GCP** (must-have): AWS and GCP appear only in the skills list, and no job names a specific cloud provider. - "Cloud | AWS, GCP"
-- **Linux** (must-have): Linux is never mentioned; Bash scripting is only related evidence. - "Languages | Go, PYTHON, Bash"
-- **Monitoring with Prometheus and Grafana** (must-have): Prometheus and Grafana appear only in the skills list and in no described job. - "Observability | Prometheus, Grafana, OpenTelemetry"
+- **Kubernetes and Docker in production** (must-have): Production Kubernetes work is clearly shown in jobs, but Docker appears only in the skills list. - "Migrated 120 virtual machines to Kubernetes with Terraform and Helm."
+- **AWS or GCP** (must-have): AWS and GCP appear only in the skills list, and no role names the cloud provider used. - "Cloud | AWS, GCP"
+- **Linux** (must-have): Linux is never named; Bash scripting is only related evidence. - "Languages | Go, PYTHON, Bash"
+- **Monitoring with Prometheus and Grafana** (must-have): Prometheus and Grafana appear only in the skills list and in no job. - "Observability | Prometheus, Grafana, OpenTelemetry"
 **Improvement suggestions**
-- Ask her which cloud provider (AWS or GCP) hosted the Kubernetes clusters she right-sized at Tidewater Robotics, and which services drove the 27% spend reduction. This would show whether her AWS/GCP experience was hands-on in production or only appears in her skills list.
-- In the interview, have her walk through how Prometheus and Grafana were used in her incident response at Tidewater, such as which alerts, dashboards or SLOs she built or relied on. This would confirm that the monitoring tools in her skills list were used in a real job.
-- Probe her Docker and Linux depth with questions tied to the Saffron Grid migration of 120 VMs to Kubernetes. Ask how she containerised the workloads, how images were built and kept small, and how she debugged Linux host or container issues during the move.
-- Ask which tool her Saffron Grid CI/CD pipelines were built on and whether they built and pushed Docker images. Her answer would settle both the unnamed CI/CD tool and the missing evidence of Docker in production.
+- Ask which cloud provider(s) hosted the Kubernetes clusters she right-sized at Tidewater Robotics and the VM migration at Saffron Grid Energy, and have her walk through the specific AWS or GCP services she managed. This would resolve the partial AWS/GCP judgement, since neither role names a provider.
+- Probe her hands-on Docker production use: how images were built, hardened and shipped in the CI/CD pipelines she built, and how container issues were debugged in the 120-VM migration to Kubernetes. Docker currently appears only in the skills list.
+- Ask her to describe a real incident she led at Tidewater, including how Prometheus alerts and Grafana dashboards were used (or which tools were used instead). This would confirm whether her listed observability skills were applied in production.
+- Run a short Linux troubleshooting exercise (e.g., diagnosing a degraded node or process) or ask how her Bash and Python scripts interacted with host systems. Linux is never named on the resume, so its depth needs direct verification.
 
-### 4. Zainab Yusuf (zainab_yusuf) - Borderline, fit 70
-Only partly meets must-have: Kubernetes in production; Docker in production; Infrastructure as code with Terraform; Linux; Monitoring with Prometheus and Grafana. Resume: `resumes/zainab_yusuf.txt`. Round 1 RAG score 89.
+### 4. Zainab Yusuf (zainab_yusuf) - Borderline, fit 72
+Only partly meets must-have: Kubernetes and Docker in production; Infrastructure as code with Terraform; Linux; Monitoring with Prometheus and Grafana. Resume: `resumes/zainab_yusuf.txt`. Round 1 RAG score 89.
 **Strengths**
-- **5+ years of experience in DevOps, SRE or platform engineering** (must-have): Jan 2021–Oct 2023 (~2.8 years) plus Nov 2023–Oct 2026 (~3 years) is about 5.8 years, which meets 5+. - "Senior Site Reliability Engineer, Bluefinch Nov 2023 - Present"
-- **Experience with AWS or GCP** (must-have): GCP was used in a job role. - "Codified environments with GCP, replacing hand-built servers."
-- **CI/CD pipelines (GitHub Actions, Jenkins or similar)** (must-have): The candidate built CI/CD pipelines with GitLab CI, a tool similar to the ones named. - "Built CI/CD pipelines with GitLab CI that cut deployment time by 40%."
+- **5+ years of experience in DevOps, SRE or platform engineering** (must-have): Silverpine Jan 2021–Oct 2023 (2y10m) plus Bluefinch Nov 2023–Oct 2026 (3y0m) gives about 5y10m, which is at least 5 years. - "Senior Site Reliability Engineer, Bluefinch Nov 2023 - Present"
+- **AWS or GCP** (must-have): GCP was used in a job role. - "Codified environments with GCP, replacing hand-built servers."
+- **CI/CD pipelines (GitHub Actions, Jenkins or similar)** (must-have): The candidate built CI/CD pipelines in both roles, and GitLab CI is similar to the tools named. - "Built CI/CD pipelines with GitLab CI that cut deployment time by 40%."
 - **Scripting in Python or Go** (must-have): Go was used in a current job role. - "Built CI/CD pipelines with Go that cut deployment time by 30%."
-- **Incident response and on-call leadership** (nice-have): The candidate explicitly led incident response in a current role. - "Led incident response and wrote postmortems; raised availability to 99.94.7%."
+- **Incident response and on-call leadership experience** (nice-have): The candidate led incident response in a current role, and reducing pages implies on-call involvement. - "Led incident response and wrote postmortems; raised availability to 99.94.7%."
 **Gaps**
-- **Kubernetes in production** (must-have): Kubernetes appears only in the summary and skills list, with no job bullet showing production use. - "DevOps engineer with 5 years of experience, most recently working with Kubernetes, GCP, Terraform."
-- **Docker in production** (must-have): Docker is listed only in the skills section and appears in no role. - "Linux, Docker, GCP, GitLab CI, Kubernetes, Terraform, Go"
-- **Infrastructure as code with Terraform** (must-have): Terraform appears only in the summary and skills list, and the infrastructure-codifying bullet names GCP, not Terraform. - "DevOps engineer with 5 years of experience, most recently working with Kubernetes, GCP, Terraform."
+- **Kubernetes and Docker in production** (must-have): Kubernetes and Docker appear only in the summary and skills list, with no job bullet showing production use. - "DevOps engineer with 5 years of experience, most recently working with Kubernetes, GCP, Terraform."
+- **Infrastructure as code with Terraform** (must-have): Terraform is named only in the summary and skills list; the codifying bullet in a job mentions GCP, not Terraform. - "DevOps engineer with 5 years of experience, most recently working with Kubernetes, GCP, Terraform."
 - **Linux** (must-have): Linux appears only in the skills list. - "Linux, Docker, GCP, GitLab CI, Kubernetes, Terraform, Go"
-- **Monitoring with Prometheus and Grafana** (must-have): The resume shows monitoring and alerting work but never names Prometheus or Grafana. - "Introduced SLOs and alerting that reduced pages per week by 30%."
-- **Cloud cost optimisation** (nice-have): Nothing in the resume mentions cloud cost optimisation.
+- **Monitoring with Prometheus and Grafana** (must-have): The resume shows alerting and SLO work, but Prometheus and Grafana are not named. - "Introduced SLOs and alerting that reduced pages per week by 30%."
+- **Cloud cost optimisation** (nice-have): The resume does not mention cloud cost optimisation.
 **Round 1 rule checks** (Milestone 2's vocabulary and date arithmetic, shown for comparison; Round 2's judgement above is the one that counts)
-- Experience with AWS or GCP (has AWS missing)
+- AWS or GCP (has AWS missing)
 - Scripting in Python or Go (has Python missing)
 **Improvement suggestions**
-- In the interview, have her walk through a production Kubernetes and Docker setup she ran at Bluefinch or Silverpine Energy: cluster size, how workloads were containerised and deployed, and a failure she debugged. Neither appears in any job bullet, only in the summary and skills list.
-- Ask which tool she used to codify GCP environments at Silverpine Energy, and request a Terraform sample or a description of her module, state and plan/apply workflow. The bullet names GCP but not Terraform.
-- Ask what stack backed the SLOs and alerting that cut pages by 30%, and whether she built Prometheus metrics or Grafana dashboards herself. Use the same discussion to check the Linux troubleshooting depth behind that work.
-- Ask whether she has done any cloud cost optimisation, which is missing from the resume, such as GCP rightsizing or committed-use discounts, and get specific savings figures. Also clarify the malformed '99.94.7%' availability figure.
+- In the interview, ask for a concrete production Kubernetes and Docker example, such as cluster size, how workloads were deployed, and an issue they debugged. These tools appear only in the summary and skills list, not in any job bullet.
+- Ask what tool they used to codify GCP environments at Silverpine and request a Terraform sample, such as a module structure or how they handled state and drift. The resume never ties Terraform to a specific role.
+- Probe the Bluefinch SLO and alerting work by asking which monitoring stack they used and whether they built Prometheus rules or Grafana dashboards. Also ask them to clarify the availability figure, which is written as "99.94.7%" on the resume.
+- Ask whether they have done any GCP cost work, such as rightsizing, committed-use discounts, or autoscaling tuning, and what savings resulted. If they have none, treat cost optimisation as a gap to close through onboarding or a short take-home exercise.
 
-### 5. Rebecca Stone (rebecca_stone) - No hire, fit 70
-Misses must-have: Monitoring with Prometheus and Grafana. Resume: `resumes/rebecca_stone.txt`. Round 1 RAG score 88.
+### 5. Divya Reddy (divya_reddy) - Borderline, fit 67
+Only partly meets must-have: Kubernetes and Docker in production; AWS or GCP; Linux; Scripting in Python or Go; Monitoring with Prometheus and Grafana. Resume: `resumes/divya_reddy.md`. Round 1 RAG score 89.
 **Strengths**
-- **5+ years of experience in DevOps, SRE or platform engineering** (must-have): Cloud Engineer Mar 2014–Jan 2020 is about 5 years 10 months of hands-on automation and pipeline work, which meets 5+ years; the later architect role adds more cloud infrastructure work. - "Migrated on-premise Linux workloads to AWS; Python automation and Jenkins pipelines."
-- **Infrastructure as code with Terraform** (must-have): Terraform is used directly for infrastructure in her current role. - "Designed multi-account AWS and Azure landing zones with Terraform for banks and insurers."
-- **Experience with AWS or GCP** (must-have): AWS is used across both of her cloud roles since 2014. - "Migrated on-premise Linux workloads to AWS; Python automation and Jenkins pipelines."
-- **CI/CD pipelines (GitHub Actions, Jenkins or similar)** (must-have): She built Jenkins pipelines in her Cloud Engineer role. - "Migrated on-premise Linux workloads to AWS; Python automation and Jenkins pipelines."
-- **Linux** (must-have): She did Linux administration and Linux workload migrations in two roles. - "Linux and VMware administration."
-- **Scripting in Python or Go** (must-have): Python automation is shown in a job. - "Migrated on-premise Linux workloads to AWS; Python automation and Jenkins pipelines."
+- **5+ years of experience in DevOps, SRE or platform engineering** (must-have): DevOps Engineer from Mar 2019 to Feb 2023 is about 4 years, and SRE from Mar 2023 to Oct 2026 is about 3.6 years, totalling about 7.6 years, which is at least 5. - "Senior Site Reliability Engineer, Northgate Travel Mar 2023 - Present"
+- **Infrastructure as code with Terraform** (must-have): The current SRE role explicitly uses Terraform for infrastructure as code. - "Codified environments with Terraform, replacing hand-built servers."
+- **CI/CD pipelines (GitHub Actions, Jenkins or similar)** (must-have): The Trellis Health role shows Jenkins CI/CD pipelines built on the job. - "Built CI/CD pipelines with Jenkins that cut deployment time by 18%."
+- **Incident response and on-call leadership experience** (nice-have): The candidate explicitly led incident response in the current role. - "Led incident response and wrote postmortems; raised availability to 99.94.8%."
 **Gaps**
-- **Kubernetes in production** (must-have): Kubernetes appears only as advisory work, with no hands-on production operation shown. - "Advised clients on Kubernetes adoption and CI/CD standards; pre-sales architecture reviews."
-- **Docker in production** (must-have): Docker is listed only in the skills section and appears in no job. - "AWS, Azure, Terraform, Kubernetes, Docker, CI/CD, Linux, Python, System Design"
-- **Monitoring with Prometheus and Grafana** (must-have): Neither Prometheus nor Grafana, nor any monitoring work, is mentioned.
-- **Incident response and on-call leadership** (nice-have): There is no mention of incident response or on-call duties.
-- **Cloud cost optimisation** (nice-have): There is no mention of cloud cost optimisation.
-
-### 6. Divya Reddy (divya_reddy) - Borderline, fit 65
-Only partly meets must-have: Kubernetes in production; Docker in production; Experience with AWS or GCP; Linux; Scripting in Python or Go; Monitoring with Prometheus and Grafana. Resume: `resumes/divya_reddy.md`. Round 1 RAG score 89.
-**Strengths**
-- **5+ years of experience in DevOps, SRE or platform engineering** (must-have): DevOps Engineer Mar 2019–Feb 2023 (~4 years) plus SRE Mar 2023–Oct 2026 (~3.6 years) gives ~7.6 years, which is at least 5. - "Senior Site Reliability Engineer, Northgate Travel Mar 2023 - Present"
-- **Infrastructure as code with Terraform** (must-have): The current SRE role shows infrastructure as code with Terraform. - "Codified environments with Terraform, replacing hand-built servers."
-- **CI/CD pipelines (GitHub Actions, Jenkins or similar)** (must-have): The candidate built Jenkins CI/CD pipelines in a job. - "Built CI/CD pipelines with Jenkins that cut deployment time by 18%."
-- **Incident response and on-call leadership** (nice-have): The candidate explicitly led incident response in the current role. - "Led incident response and wrote postmortems; raised availability to 99.94.8%."
-**Gaps**
-- **Kubernetes in production** (must-have): Kubernetes appears only in the summary and skills list, and no job bullet describes production use. - "DevOps engineer with 7 years of experience, most recently working with Kubernetes, AWS, Terraform."
-- **Docker in production** (must-have): Docker appears only in the skills list and in no role. - "Linux, Python, Docker, Jenkins, Kubernetes, AWS, Terraform, System Design"
-- **Experience with AWS or GCP** (must-have): AWS appears only in the summary and skills list, with no job bullet showing its use. - "DevOps engineer with 7 years of experience, most recently working with Kubernetes, AWS, Terraform."
-- **Linux** (must-have): Linux appears only in the skills list. - "Linux, Python, Docker, Jenkins, Kubernetes, AWS, Terraform, System Design"
-- **Scripting in Python or Go** (must-have): Python appears only in the skills list, with no scripting described in any role. - "Linux, Python, Docker, Jenkins, Kubernetes, AWS, Terraform, System Design"
-- **Monitoring with Prometheus and Grafana** (must-have): The resume shows alerting work, but Prometheus and Grafana are never named. - "Introduced SLOs and alerting that reduced pages per week by 18%."
+- **Kubernetes and Docker in production** (must-have): Kubernetes and Docker appear only in the skills list and summary, with no job showing production use. - "Linux, Python, Docker, Jenkins, Kubernetes, AWS, Terraform, System Design"
+- **AWS or GCP** (must-have): AWS is named only in the summary and skills list, not in any job description. - "most recently working with Kubernetes, AWS, Terraform."
+- **Linux** (must-have): Linux appears only in the skills list and in no job description. - "Linux, Python, Docker, Jenkins, Kubernetes, AWS, Terraform, System Design"
+- **Scripting in Python or Go** (must-have): Python appears only in the skills list, with no scripting shown in any job. - "Linux, Python, Docker, Jenkins, Kubernetes, AWS, Terraform, System Design"
+- **Monitoring with Prometheus and Grafana** (must-have): There is alerting work, but Prometheus and Grafana are never named. - "Introduced SLOs and alerting that reduced pages per week by 18%."
 - **Cloud cost optimisation** (nice-have): Nothing in the resume mentions cloud cost optimisation.
 **Improvement suggestions**
-- In the interview, have her walk through a specific production Kubernetes and Docker setup she ran at Northgate Travel or Trellis Health, covering cluster size, deployment strategy and a failure she debugged. Kubernetes and Docker appear only in her summary and skills list, not in any role.
-- Ask which AWS services her Terraform code provisioned in the current SRE role, and request a sanitised Terraform module or architecture diagram. This would confirm hands-on AWS use, which currently rests only on her summary and skills list.
-- Ask which tools sat behind the SLOs and alerting she introduced at Trellis Health, to confirm whether she used Prometheus and Grafana. Also ask for an example Python script she wrote for operations work, since Python is listed only as a skill.
-- Ask her to clarify two unclear claims: the '99.94.8%' availability figure and 'CI/CD pipelines with System Design'. Also probe whether she has done any cloud cost optimisation, which is a must-have missing from her resume.
+- In the interview, ask her to walk through a specific production Kubernetes and Docker setup she ran on AWS at Northgate Travel or Trellis Health: cluster size, how deployments worked, and an issue she debugged. The resume lists both only as skills, with no job showing production use.
+- Ask what tools sat behind the SLOs and alerting at Trellis Health and whether Prometheus and Grafana were involved. If not, find out how she would move her alerting experience onto that stack.
+- Request a sample or detailed description of Python scripts she has written for automation or tooling, and include a short practical Linux and Python troubleshooting exercise. Both appear only in her skills list.
+- Ask directly whether she has done any cloud cost optimisation work, such as rightsizing, reserved capacity or cost monitoring, since the resume mentions none. Also ask her to clarify the '99.94.8%' availability figure and what 'CI/CD pipelines with System Design' meant in practice.
 
-### 7. Andile Khumalo (andile_khumalo) - Borderline, fit 65
-Only partly meets must-have: 5+ years of experience in DevOps, SRE or platform engineering; Docker in production; Infrastructure as code with Terraform; Linux; Scripting in Python or Go; Monitoring with Prometheus and Grafana. Resume: `resumes/andile_khumalo.txt`. Round 1 RAG score 82.
+### 6. Rebecca Stone (rebecca_stone) - No hire, fit 67
+Misses must-have: Monitoring with Prometheus and Grafana. Resume: `resumes/rebecca_stone.txt`. Round 1 RAG score 88.
 **Strengths**
-- **Kubernetes in production** (must-have): The current role explicitly involves running production infrastructure on Kubernetes. - "Ran production infrastructure on Kubernetes and AWS for 4 product teams."
-- **Experience with AWS or GCP** (must-have): The current role shows production AWS experience. - "Ran production infrastructure on Kubernetes and AWS for 4 product teams."
-- **CI/CD pipelines (GitHub Actions, Jenkins or similar)** (must-have): The candidate built Jenkins CI/CD pipelines in a job. - "Built CI/CD pipelines with Jenkins that cut deployment time by 25%."
-- **Incident response and on-call leadership** (nice-have): The candidate explicitly led incident response and wrote postmortems. - "Led incident response and wrote postmortems; raised availability to 99.94.8%."
+- **Infrastructure as code with Terraform** (must-have): Terraform is used for infrastructure design in the current role. - "Designed multi-account AWS and Azure landing zones with Terraform for banks and insurers."
+- **AWS or GCP** (must-have): AWS work appears across two roles. - "Migrated on-premise Linux workloads to AWS; Python automation and Jenkins pipelines."
+- **CI/CD pipelines (GitHub Actions, Jenkins or similar)** (must-have): Jenkins pipelines were used in a job. - "Migrated on-premise Linux workloads to AWS; Python automation and Jenkins pipelines."
+- **Linux** (must-have): Linux administration and Linux workload migration appear in jobs. - "Linux and VMware administration."
+- **Scripting in Python or Go** (must-have): Python automation was done in the Cloud Engineer role. - "Migrated on-premise Linux workloads to AWS; Python automation and Jenkins pipelines."
 **Gaps**
-- **5+ years of experience in DevOps, SRE or platform engineering** (must-have): Oct 2021–Nov 2023 is about 2 years 1 month, and Dec 2023–Oct 2026 is about 2 years 10 months, for roughly 4 years 11 months total, just under 5 years. - "Junior DevOps Engineer, Stratawave Oct 2021 - Nov 2023"
-- **Docker in production** (must-have): Docker appears only in the skills list and is not mentioned in any job. - "Linux, Docker, Bash, Jenkins, Kubernetes, AWS, Helm, Prometheus"
-- **Infrastructure as code with Terraform** (must-have): The candidate codified environments with Helm, a neighbouring tool, but Terraform is never mentioned. - "Codified environments with Helm, replacing hand-built servers."
-- **Linux** (must-have): Linux appears only in the skills list, with no job-level evidence. - "Linux, Docker, Bash, Jenkins, Kubernetes, AWS, Helm, Prometheus"
-- **Scripting in Python or Go** (must-have): Only Bash, a neighbouring scripting language, is listed, and it appears only in skills; neither Python nor Go is mentioned. - "Linux, Docker, Bash, Jenkins, Kubernetes, AWS, Helm, Prometheus"
-- **Monitoring with Prometheus and Grafana** (must-have): Prometheus appears in skills and alerting work is described, but Grafana is never mentioned. - "Introduced SLOs and alerting that reduced pages per week by 25%."
+- **5+ years of experience in DevOps, SRE or platform engineering** (must-have): The Cloud Engineer role (Mar 2014 - Jan 2020, about 5.8 years) is DevOps-adjacent, and the later role is consulting architecture, so neither is explicitly DevOps, SRE or platform engineering. - "Migrated on-premise Linux workloads to AWS; Python automation and Jenkins pipelines."
+- **Kubernetes and Docker in production** (must-have): Kubernetes appears only in an advisory capacity and Docker only in the skills list, with no hands-on production operation shown. - "Advised clients on Kubernetes adoption and CI/CD standards; pre-sales architecture reviews."
+- **Monitoring with Prometheus and Grafana** (must-have): There is no mention of Prometheus, Grafana or monitoring.
+- **Incident response and on-call leadership experience** (nice-have): There is no mention of incident response or on-call work.
+- **Cloud cost optimisation** (nice-have): There is no mention of cloud cost optimisation.
+
+### 7. Andile Khumalo (andile_khumalo) - Borderline, fit 67
+Only partly meets must-have: Kubernetes and Docker in production; Infrastructure as code with Terraform; Linux; Scripting in Python or Go; Monitoring with Prometheus and Grafana. Resume: `resumes/andile_khumalo.txt`. Round 1 RAG score 82.
+**Strengths**
+- **5+ years of experience in DevOps, SRE or platform engineering** (must-have): Stratawave Oct 2021–Nov 2023 (~2y2m) plus Ironbark Dec 2023–Oct 2026 (~2y11m) gives about 5y1m, meeting 5+ years. - "DevOps Engineer, Ironbark Security Dec 2023 - Present"
+- **AWS or GCP** (must-have): AWS is used in production in the current role. - "Ran production infrastructure on Kubernetes and AWS for 4 product teams."
+- **CI/CD pipelines (GitHub Actions, Jenkins or similar)** (must-have): The candidate built CI/CD pipelines with Jenkins in a job. - "Built CI/CD pipelines with Jenkins that cut deployment time by 25%."
+- **Incident response and on-call leadership experience** (nice-have): The candidate explicitly led incident response in a role. - "Led incident response and wrote postmortems"
+**Gaps**
+- **Kubernetes and Docker in production** (must-have): Kubernetes in production is shown, but Docker appears only in the skills list. - "Ran production infrastructure on Kubernetes and AWS for 4 product teams."
+- **Infrastructure as code with Terraform** (must-have): Infrastructure codification is done with Helm, a neighbouring tool, not Terraform. - "Codified environments with Helm, replacing hand-built servers."
+- **Linux** (must-have): Linux appears only in the skills list, not in any role. - "Linux, Docker, Bash, Jenkins, Kubernetes, AWS, Helm, Prometheus"
+- **Scripting in Python or Go** (must-have): Only Bash is listed, a neighbouring scripting language, and only in the skills list; no Python or Go. - "Linux, Docker, Bash, Jenkins, Kubernetes, AWS, Helm, Prometheus"
+- **Monitoring with Prometheus and Grafana** (must-have): Alerting work is shown and Prometheus is in the skills list, but Grafana is absent and Prometheus is not tied to a role. - "Introduced SLOs and alerting that reduced pages per week by 25%."
 - **Cloud cost optimisation** (nice-have): Nothing in the resume mentions cloud cost optimisation.
 **Round 1 rule checks** (Milestone 2's vocabulary and date arithmetic, shown for comparison; Round 2's judgement above is the one that counts)
 - Infrastructure as code with Terraform (has Terraform missing)
 - Scripting in Python or Go (has Python missing)
 **Improvement suggestions**
-- Ask whether Andile has used Terraform or any other infrastructure-as-code tool beyond Helm, for example for provisioning the AWS resources behind the Kubernetes environments at Ironbark Security, and request a concrete example or code sample. If Terraform is truly absent, decide whether the Helm experience is close enough or whether ramp-up on Terraform would be a hiring condition.
-- Probe scripting depth in a technical interview: ask for examples of Bash automation they wrote, and whether they have written any Python or Go (such as tooling, Jenkins pipeline helpers or operators). A short take-home or live scripting exercise in Python would settle this gap.
-- Verify the monitoring stack behind the SLO and alerting work that cut pages by 25%: confirm how Prometheus was used, and whether dashboards were built in Grafana or another tool. In the same conversation, ask how they used Docker and Linux day to day, since those appear only in the skills list.
-- Clarify the experience gap and the cost gap together: the dated roles total about 4 years 11 months against the summary's claim of 5 years, so ask whether any earlier or part-time DevOps work exists. Also ask whether they have done any AWS cost optimisation (rightsizing, reserved instances, cluster autoscaling), as the resume shows none.
+- Ask whether Andile has provisioned AWS resources (networking, IAM, clusters) with Terraform, since the resume shows only Helm, which packages Kubernetes deployments rather than provisioning cloud infrastructure. If not, a short take-home Terraform exercise would show how quickly the gap could close.
+- Request a Python or Go code sample, or run a short live scripting exercise. The resume lists only Bash, and only in the skills list, so any Python or Go ability needs direct evidence.
+- Have them walk through the SLOs and alerting they introduced at Ironbark Security: which tools they used, whether Prometheus and Grafana were involved, and how they debugged Docker containers and Linux hosts during incidents. Also ask them to clarify the availability figure, which is written as "99.94.8%" on the resume.
+- Ask whether they did any cost tracking or optimisation while running AWS infrastructure for 4 product teams, since cloud cost optimisation is the one requirement with no evidence at all.
 
-### 8. Li Wei (li_wei) - No hire, fit 60
-Misses must-have: Linux; Monitoring with Prometheus and Grafana. Resume: `resumes/li_wei.txt`. Round 1 RAG score 80.
+### 8. Samuel Osei (samuel_osei) - Borderline, fit 61
+Only partly meets must-have: Kubernetes and Docker in production; Infrastructure as code with Terraform; AWS or GCP; Linux; Scripting in Python or Go; Monitoring with Prometheus and Grafana. Resume: `resumes/samuel_osei.md`. Round 1 RAG score 82.
 **Strengths**
-- **Kubernetes in production** (must-have): A Kubernetes platform serving 300+ models at Grab indicates production use. - "Built a Kubeflow and MLflow based model platform on Kubernetes serving 300+ ML models."
-- **Docker in production** (must-have): Docker was used for training jobs in the Shopee role. - "Containerised training jobs with Docker; CI/CD for model deployment on GCP."
-- **Experience with AWS or GCP** (must-have): GCP was used for model deployment in the Shopee role. - "Containerised training jobs with Docker; CI/CD for model deployment on GCP."
-- **CI/CD pipelines (GitHub Actions, Jenkins or similar)** (must-have): Built CI/CD for model deployment at Shopee, although the specific tool is not named. - "Containerised training jobs with Docker; CI/CD for model deployment on GCP."
-- **Scripting in Python or Go** (must-have): Built a Python SDK in the current role. - "Python SDK for feature store access; Airflow retraining pipelines."
+- **5+ years of experience in DevOps, SRE or platform engineering** (must-have): DevOps Engineer Jul 2019–Jun 2022 (3 yrs) plus SRE Jul 2022–Oct 2026 (~4.3 yrs) totals ~7.3 years, above 5. - "Senior Site Reliability Engineer, Ember Analytics Jul 2022 - Present"
+- **CI/CD pipelines (GitHub Actions, Jenkins or similar)** (must-have): The candidate built CI/CD pipelines in the current role, and Jenkins is also listed in skills. - "Built CI/CD pipelines with Prometheus that cut deployment time by 18%."
+- **Incident response and on-call leadership experience** (nice-have): The candidate led incident response and reduced pages, showing incident response and on-call leadership. - "Led incident response and wrote postmortems; raised availability to 99.94.7%."
 **Gaps**
-- **5+ years of experience in DevOps, SRE or platform engineering** (must-have): Apr 2022–Oct 2026 (~4.6 yrs) + Mar 2020–Mar 2022 (2 yrs) ≈ 6.6 yrs, but it is MLOps/ML platform work, a neighbouring discipline rather than general DevOps, SRE or platform engineering. - "MLOps engineer with 5 years of experience operating ML platforms at scale."
-- **Infrastructure as code with Terraform** (must-have): Terraform appears only in the skills list and in no job. - "Python, Kubernetes, Kubeflow, MLflow, Docker, Terraform, AWS, GCP"
+- **Kubernetes and Docker in production** (must-have): Kubernetes appears only in the summary and skills, not in any role, and Docker is not mentioned at all. - "most recently working with Kubernetes, AWS, Terraform."
+- **Infrastructure as code with Terraform** (must-have): Terraform is listed in the summary and skills, but no role describes using it; infrastructure was codified with Bash instead. - "most recently working with Kubernetes, AWS, Terraform."
+- **AWS or GCP** (must-have): AWS appears only in the summary and skills list, with no job bullet describing AWS work. - "most recently working with Kubernetes, AWS, Terraform."
+- **Linux** (must-have): Linux appears only in the skills list and in no role. - "Linux, AWS, Bash, Jenkins, Kubernetes, Terraform, Prometheus"
+- **Scripting in Python or Go** (must-have): Only Bash scripting is shown, which is a neighbouring language rather than Python or Go. - "Codified environments with Bash, replacing hand-built servers."
+- **Monitoring with Prometheus and Grafana** (must-have): Prometheus is used in a role, but Grafana is not mentioned anywhere. - "Built CI/CD pipelines with Prometheus that cut deployment time by 18%."
+- **Cloud cost optimisation** (nice-have): Nothing in the resume mentions cloud cost optimisation.
+**Round 1 rule checks** (Milestone 2's vocabulary and date arithmetic, shown for comparison; Round 2's judgement above is the one that counts)
+- Kubernetes and Docker in production (has Docker missing)
+- Scripting in Python or Go (has Python missing)
+**Improvement suggestions**
+- In the interview, have him walk through the Kubernetes and AWS setup behind his Senior SRE work at Ember Analytics, including how services were containerised, since Docker is never mentioned and neither technology appears in a job bullet.
+- Ask for a Terraform sample (a module or repo excerpt) or a detailed account of how he managed state and environments. Also ask whether the Bash-based environment codification at Solace Bank was ever moved to Terraform.
+- Probe the Python/Go gap directly by asking for any Python or Go code he has written, or by setting a short scripting exercise. If he has only Bash, decide whether he could reasonably ramp up on the job.
+- Clarify the unclear resume details: the '99.94.7%' availability figure, which tools the CI/CD pipelines were built on (the bullet cites Prometheus; Jenkins is in his skills), and whether he used Grafana for dashboards. Also ask whether he has done any cloud cost optimisation work, since none is listed.
+
+### 9. Felix Wagner (felix_wagner) - No hire, fit 61
+Misses must-have: Monitoring with Prometheus and Grafana. Resume: `resumes/felix_wagner.docx`. Round 1 RAG score 78.
+**Strengths**
+- **5+ years of experience in DevOps, SRE or platform engineering** (must-have): Stratawave Apr 2017–Mar 2022 (5 years) plus Arclight Apr 2022–Oct 2026 (4.5 years) totals about 9.5 years, which exceeds the 5 required. - "DevOps Engineer, Stratawave Apr 2017 - Mar 2022"
+- **Infrastructure as code with Terraform** (must-have): The current SRE role describes using Terraform for infrastructure as code. - "Codified environments with Terraform, replacing hand-built servers."
+- **CI/CD pipelines (GitHub Actions, Jenkins or similar)** (must-have): Both roles describe building CI/CD pipelines. - "Built CI/CD pipelines with Bash that cut deployment time by 40%."
+- **Incident response and on-call leadership experience** (nice-have): The current role explicitly states he led incident response and wrote postmortems. - "Led incident response and wrote postmortems; raised availability to 99.94.8%."
+**Gaps**
+- **Kubernetes and Docker in production** (must-have): Kubernetes appears only in the summary and skills list, with no job describing production use, and Docker is not mentioned. - "most recently working with Kubernetes, Azure, Terraform."
+- **AWS or GCP** (must-have): The candidate uses Azure, a neighbouring cloud, rather than AWS or GCP. - "most recently working with Kubernetes, Azure, Terraform."
+- **Linux** (must-have): Linux appears only in the skills list and in no job description. - "Linux, VMware, Ansible, Bash, Kubernetes, Azure, Terraform, CI/CD"
+- **Scripting in Python or Go** (must-have): The resume shows Bash scripting, a neighbouring language, but no Python or Go. - "Built CI/CD pipelines with Bash that cut deployment time by 40%."
+- **Monitoring with Prometheus and Grafana** (must-have): Prometheus and Grafana are not mentioned anywhere in the resume.
+- **Cloud cost optimisation** (nice-have): The resume contains nothing about cloud cost optimisation.
+**Round 1 rule checks** (Milestone 2's vocabulary and date arithmetic, shown for comparison; Round 2's judgement above is the one that counts)
+- Kubernetes and Docker in production (has Docker missing)
+- AWS or GCP (has AWS missing)
+- Scripting in Python or Go (has Python missing)
+
+### 10. Li Wei (li_wei) - No hire, fit 61
+Misses must-have: Linux; Monitoring with Prometheus and Grafana. Resume: `resumes/li_wei.txt`. Round 1 RAG score 76.
+**Strengths**
+- **5+ years of experience in DevOps, SRE or platform engineering** (must-have): ML platform engineering roles: Mar 2020–Mar 2022 (2 yrs) + Apr 2022–Oct 2026 (~4.6 yrs) ≈ 6.6 years, which is at least 5, though the focus is ML-specific platform work. - "Machine Learning Platform Engineer, Shopee"
+- **Kubernetes and Docker in production** (must-have): Kubernetes serves 300+ models in production at Grab, and Docker was used to containerise training jobs at Shopee. - "Built a Kubeflow and MLflow based model platform on Kubernetes serving 300+ ML models."
+- **AWS or GCP** (must-have): GCP was used for model deployment in the Shopee role. - "CI/CD for model deployment on GCP."
+- **CI/CD pipelines (GitHub Actions, Jenkins or similar)** (must-have): The candidate built CI/CD for model deployment at Shopee, although no specific tool is named. - "Containerised training jobs with Docker; CI/CD for model deployment on GCP."
+- **Scripting in Python or Go** (must-have): The candidate built a Python SDK in the current Grab role. - "Python SDK for feature store access; Airflow retraining pipelines."
+**Gaps**
+- **Infrastructure as code with Terraform** (must-have): Terraform appears only in the skills list and is not tied to any role. - "Python, Kubernetes, Kubeflow, MLflow, Docker, Terraform, AWS, GCP"
 - **Linux** (must-have): Linux is not mentioned anywhere in the resume.
 - **Monitoring with Prometheus and Grafana** (must-have): Neither Prometheus nor Grafana is mentioned.
-- **Incident response and on-call leadership** (nice-have): The resume does not mention incident response or on-call work.
-- **Cloud cost optimisation** (nice-have): The resume does not mention cloud cost optimisation.
+- **Incident response and on-call leadership experience** (nice-have): The resume does not mention incident response or on-call leadership.
+- **Cloud cost optimisation** (nice-have): Cloud cost optimisation is not mentioned.
 **Round 1 rule checks** (Milestone 2's vocabulary and date arithmetic, shown for comparison; Round 2's judgement above is the one that counts)
 - Linux (has Linux missing)
-
-### 9. Samuel Osei (samuel_osei) - No hire, fit 55
-Misses must-have: Docker in production. Resume: `resumes/samuel_osei.md`. Round 1 RAG score 82.
-**Strengths**
-- **5+ years of experience in DevOps, SRE or platform engineering** (must-have): DevOps Engineer Jul 2019–Jun 2022 (3 years) plus SRE Jul 2022–Oct 2026 (about 4.3 years) is about 7.3 years, which is at least 5. - "Senior Site Reliability Engineer, Ember Analytics Jul 2022 - Present"
-- **CI/CD pipelines (GitHub Actions, Jenkins or similar)** (must-have): The candidate built CI/CD pipelines in the current role, and Jenkins is also listed in skills. - "Built CI/CD pipelines with Prometheus that cut deployment time by 18%."
-- **Incident response and on-call leadership** (nice-have): The candidate explicitly led incident response in the current SRE role. - "Led incident response and wrote postmortems; raised availability to 99.94.7%."
-**Gaps**
-- **Kubernetes in production** (must-have): Kubernetes appears only in the summary and skills list, and no job bullet shows production use. - "DevOps engineer with 7 years of experience, most recently working with Kubernetes, AWS, Terraform."
-- **Docker in production** (must-have): Docker is not mentioned anywhere in the resume.
-- **Infrastructure as code with Terraform** (must-have): Terraform appears only in the summary and skills, and the infrastructure codification bullet names Bash rather than Terraform. - "DevOps engineer with 7 years of experience, most recently working with Kubernetes, AWS, Terraform."
-- **Experience with AWS or GCP** (must-have): AWS is claimed in the summary and skills but is not tied to any specific role. - "DevOps engineer with 7 years of experience, most recently working with Kubernetes, AWS, Terraform."
-- **Linux** (must-have): Linux appears only in the skills list. - "Linux, AWS, Bash, Jenkins, Kubernetes, Terraform, Prometheus"
-- **Scripting in Python or Go** (must-have): Scripting is shown in Bash, a neighbouring language, and there is no Python or Go. - "Codified environments with Bash, replacing hand-built servers."
-- **Monitoring with Prometheus and Grafana** (must-have): Prometheus is used in a role, but Grafana is never mentioned. - "Built CI/CD pipelines with Prometheus that cut deployment time by 18%."
-- **Cloud cost optimisation** (nice-have): There is no mention of cloud cost optimisation.
-**Round 1 rule checks** (Milestone 2's vocabulary and date arithmetic, shown for comparison; Round 2's judgement above is the one that counts)
-- Docker in production (has Docker missing)
-- Scripting in Python or Go (has Python missing)
-
-### 10. Felix Wagner (felix_wagner) - No hire, fit 55
-Misses must-have: Docker in production; Monitoring with Prometheus and Grafana. Resume: `resumes/felix_wagner.docx`. Round 1 RAG score 78.
-**Strengths**
-- **5+ years of experience in DevOps, SRE or platform engineering** (must-have): Stratawave Apr 2017–Mar 2022 (5 yrs) plus Arclight Apr 2022–Oct 2026 (~4.5 yrs) gives about 9.5 years, which is at least 5. - "DevOps Engineer, Stratawave Apr 2017 - Mar 2022"
-- **Infrastructure as code with Terraform** (must-have): He used Terraform for infrastructure as code in his current role. - "Codified environments with Terraform, replacing hand-built servers."
-- **CI/CD pipelines (GitHub Actions, Jenkins or similar)** (must-have): He built CI/CD pipelines in both roles. - "Built CI/CD pipelines with CI/CD that cut deployment time by 30%."
-- **Incident response and on-call leadership** (nice-have): He led incident response and postmortems in his current SRE role. - "Led incident response and wrote postmortems; raised availability to 99.94.8%."
-**Gaps**
-- **Kubernetes in production** (must-have): Kubernetes appears only in the skills list and summary, not in any described production role. - "Linux, VMware, Ansible, Bash, Kubernetes, Azure, Terraform, CI/CD"
-- **Docker in production** (must-have): Docker is not mentioned anywhere in the resume.
-- **Experience with AWS or GCP** (must-have): Only Azure is mentioned, which is a neighbouring cloud rather than AWS or GCP. - "most recently working with Kubernetes, Azure, Terraform."
-- **Linux** (must-have): Linux appears only in the skills list and not in any job description. - "Linux, VMware, Ansible, Bash, Kubernetes, Azure, Terraform, CI/CD"
-- **Scripting in Python or Go** (must-have): He shows Bash scripting, a neighbouring language, but not Python or Go. - "Built CI/CD pipelines with Bash that cut deployment time by 40%."
-- **Monitoring with Prometheus and Grafana** (must-have): Neither Prometheus nor Grafana is mentioned.
-- **Cloud cost optimisation** (nice-have): The resume does not mention any cloud cost optimisation.
-**Round 1 rule checks** (Milestone 2's vocabulary and date arithmetic, shown for comparison; Round 2's judgement above is the one that counts)
-- Docker in production (has Docker missing)
-- Experience with AWS or GCP (has AWS missing)
-- Scripting in Python or Go (has Python missing)
 
 ## How to read this report
 - **Round 1** ranked every resume with Milestone 2's hybrid search (embeddings, BM25, skill match) and kept the top 10; on a re-screen the previous shortlist is carried forward too, so nobody leaves the list because the search changed. Nobody is rejected at this stage.
 - **Round 2**: Claude judged each requirement as met, partial or missing, quoting the resume. Fit = weighted share met (must-have x2, nice-to-have x1; partial = half). A 'met' whose quote is not in the resume counts as partial.
 - **Round 3**: Hire = every must-have met; No hire = a must-have missing; Borderline = in between.
+- Requirements a resume cannot show (communication, attitude, working style) are interview checks: listed above, but they affect neither the fit score nor the recommendation.
 - These are screening recommendations for a human decision-maker, not hiring decisions.

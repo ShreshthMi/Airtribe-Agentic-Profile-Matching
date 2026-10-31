@@ -4,136 +4,159 @@ Screening round 1 · 2026-10-31 · 100 resumes searched
 ## Requirements
 - 5+ years of Python (must-have)
 - Production experience with LLMs or RAG (must-have)
+- Senior-level machine learning engineering experience (must-have)
 
-_Assumptions made reading the request: Read '5+ years' as applying to Python specifically, not to overall experience. Read 'production experience with LLMs or RAG' as one requirement that either technology satisfies, with no stated duration. 'Senior' is captured in the role title and not listed as a separate requirement._
+_Assumptions made reading the request: Read '5+ years' as applying to Python specifically, per the phrasing. Read 'production experience with LLMs or RAG' as one requirement that either LLMs or RAG satisfies; no specific years were given for it. Read 'Senior' as a seniority level in ML engineering that a resume can show, with no specific years attached._
 
 ## Shortlist
 | # | Candidate | Fit | Must-haves met | Round 1 RAG | Recommendation |
 |---|---|---|---|---|---|
-| 1 | Priya Sharma (`priya_sharma`) | 100 | 2/2 | 89 | Hire |
-| 2 | Ananya Rao (`ananya_rao`) | 100 | 2/2 | 87 | Hire |
-| 3 | Vikram Iyer (`vikram_iyer`) | 100 | 2/2 | 83 | Hire |
-| 4 | Adaeze Nwosu (`adaeze_nwosu`) | 75 | 1/2 | 100 | Borderline |
-| 5 | Meera Pillai (`meera_pillai`) | 75 | 1/2 | 100 | Borderline |
-| 6 | Karan Malhotra (`karan_malhotra`) | 75 | 1/2 | 88 | Borderline |
-| 7 | Tariq Mahmood (`tariq_mahmood`) | 75 | 1/2 | 78 | Borderline |
-| 8 | Li Wei (`li_wei`) | 25 | 0/2 | 66 | No hire |
-| 9 | Clara Jensen (`clara_jensen`) | 25 | 0/2 | 65 | No hire |
-| 10 | Ishaan Kapoor (`ishaan_kapoor`) | 25 | 0/2 | 63 | No hire |
+| 1 | Priya Sharma (`priya_sharma`) | 100 | 3/3 | 93 | Hire |
+| 2 | Ananya Rao (`ananya_rao`) | 100 | 3/3 | 69 | Hire |
+| 3 | Adaeze Nwosu (`adaeze_nwosu`) | 83 | 2/3 | 100 | Borderline |
+| 4 | Meera Pillai (`meera_pillai`) | 83 | 2/3 | 100 | Borderline |
+| 5 | Vikram Iyer (`vikram_iyer`) | 83 | 2/3 | 69 | Borderline |
+| 6 | Tariq Mahmood (`tariq_mahmood`) | 67 | 1/3 | 85 | Borderline |
+| 7 | Karan Malhotra (`karan_malhotra`) | 67 | 1/3 | 71 | Borderline |
+| 8 | Ishaan Kapoor (`ishaan_kapoor`) | 50 | 1/3 | 75 | No hire |
+| 9 | Aisha Khan (`aisha_khan`) | 50 | 0/3 | 74 | Borderline |
+| 10 | Li Wei (`li_wei`) | 33 | 0/3 | 72 | No hire |
 
 ## Candidates
 ### 1. Priya Sharma (priya_sharma) - Hire, fit 100
-Meets every must-have, with evidence quoted from the resume. Resume: `resumes/priya_sharma.md`. Round 1 RAG score 89.
+Meets every must-have, with evidence quoted from the resume. Resume: `resumes/priya_sharma.md`. Round 1 RAG score 93.
 **Strengths**
-- **5+ years of Python** (must-have): Python appears in three roles: Flipkart Jan 2021–Oct 2026 (~5.8 yrs), Swiggy Jul 2017–Dec 2020 (3.5 yrs) and Mu Sigma Jun 2015–Jun 2017 (2 yrs), which adds up to about 11.3 years, well above 5. - "Developed demand forecasting models in Python with scikit-learn and Spark on AWS."
-- **Production experience with LLMs or RAG** (must-have): The candidate built a RAG assistant at Flipkart in her current role, over 2M product documents, which shows hands-on RAG work at production scale. - "Built a retrieval-augmented generation (RAG) assistant over 2M product documents using Python, LangChain and Pinecone."
+- **5+ years of Python** (must-have): Python is used at Flipkart from Jan 2021 to Oct 2026 (~5.8 years), Swiggy from Jul 2017 to Dec 2020 (~3.5 years) and Mu Sigma from Jun 2015 to Jun 2017 (~2 years), totalling ~11.3 years, which is at least 5. - "Built a retrieval-augmented generation (RAG) assistant over 2M product documents using Python, LangChain and Pinecone."
+- **Production experience with LLMs or RAG** (must-have): She built a RAG assistant over 2M product documents in her current Flipkart role, which shows production RAG experience. - "Built a retrieval-augmented generation (RAG) assistant over 2M product documents using Python, LangChain and Pinecone."
+- **Senior-level machine learning engineering experience** (must-have): She has held the title Senior ML Engineer since Jan 2021 (~5.8 years) and led a team of 5 engineers. - "Senior ML Engineer, Flipkart Jan 2021 - Present"
 **Gaps**
 - none
 
 ### 2. Ananya Rao (ananya_rao) - Hire, fit 100
-Meets every must-have, with evidence quoted from the resume. Resume: `resumes/ananya_rao.md`. Round 1 RAG score 87.
+Meets every must-have, with evidence quoted from the resume. Resume: `resumes/ananya_rao.md`. Round 1 RAG score 69.
 **Strengths**
-- **5+ years of Python** (must-have): Python is used in all three roles: Feb 2023 to Oct 2026 (~3.7 yrs), Aug 2020 to Jan 2023 (~2.4 yrs) and Jul 2019 to Jul 2020 (~1.1 yrs), which totals about 7.2 years, at least 5. - "Built a retrieval-augmented generation (RAG) assistant in Python over 4M support articles using Weaviate and PyTorch rerankers."
-- **Production experience with LLMs or RAG** (must-have): At her current job she built a RAG assistant over 4M support articles and served fine-tuned LLMs on Kubernetes, which shows production LLM and RAG work. - "Fine-tuned open LLMs with Hugging Face and served them with Docker on Kubernetes (EKS) on AWS."
+- **5+ years of Python** (must-have): Python appears in all three roles: Feb 2023–Oct 2026 (~3.7 yrs) + Aug 2020–Jan 2023 (~2.4 yrs) + Jul 2019–Jul 2020 (~1 yr) ≈ 7.1 years, which is at least 5. - "Built a retrieval-augmented generation (RAG) assistant in Python over 4M support articles using Weaviate and PyTorch rerankers."
+- **Production experience with LLMs or RAG** (must-have): The current role covers building a RAG assistant over 4M articles and serving fine-tuned LLMs on production infrastructure. - "Fine-tuned open LLMs with Hugging Face and served them with Docker on Kubernetes (EKS) on AWS."
+- **Senior-level machine learning engineering experience** (must-have): The candidate holds a senior ML/NLP engineering title, mentors engineers, has built evaluation systems, and has about 6 years of ML engineering in total. - "Senior NLP Engineer, Lattice Commerce Feb 2023 - Present"
 **Gaps**
 - none
+**Round 1 rule checks** (Milestone 2's vocabulary and date arithmetic, shown for comparison; Round 2's judgement above is the one that counts)
+- Senior-level machine learning engineering experience (has Machine Learning missing)
 
-### 3. Vikram Iyer (vikram_iyer) - Hire, fit 100
-Meets every must-have, with evidence quoted from the resume. Resume: `resumes/vikram_iyer.md`. Round 1 RAG score 83.
-**Strengths**
-- **5+ years of Python** (must-have): The Amazon role (Sep 2020 to Present, about 6.1 years to Oct 2026) uses PyTorch and Hugging Face, both Python libraries, and the internship (May to Aug 2019, about 0.3 years) names Python explicitly, so 6.1 + 0.3 ≈ 6.4 years, which is at least 5, though Python is only implied in the Amazon role. - "Fine-tuned large language models in PyTorch for product question answering."
-- **Production experience with LLMs or RAG** (must-have): At Amazon the candidate built RAG pipelines, deployed them on SageMaker, and fine-tuned LLMs, which shows production LLM and RAG work. - "Built retrieval augmented generation pipelines with FAISS and Hugging Face; deployed on AWS SageMaker."
-**Gaps**
-- none
-
-### 4. Adaeze Nwosu (adaeze_nwosu) - Borderline, fit 75
+### 3. Adaeze Nwosu (adaeze_nwosu) - Borderline, fit 83
 Only partly meets must-have: 5+ years of Python. Resume: `resumes/adaeze_nwosu.md`. Round 1 RAG score 100.
 **Strengths**
-- **Production experience with LLMs or RAG** (must-have): The current Kestrel Pay role explicitly describes putting RAG-based models into production. - "Productionised models with RAG and AWS, with offline and online evaluation."
+- **Production experience with LLMs or RAG** (must-have): The current role explicitly describes productionising models with RAG. - "Productionised models with RAG and AWS, with offline and online evaluation."
+- **Senior-level machine learning engineering experience** (must-have): The candidate has held a Senior ML Engineer title since Nov 2022, deploying models at scale and mentoring 5 engineers. - "Senior Machine Learning Engineer, Kestrel Pay"
 **Gaps**
-- **5+ years of Python** (must-have): Python is named only in the Juniper role (May 2020 - Oct 2022, about 2.4 years), short of 5; the Kestrel role (Nov 2022 - Present, about 4 years) uses PyTorch, which implies Python but never names it. - "Improved ranking quality (nDCG@10) by 40% with a retrained Python model."
+- **5+ years of Python** (must-have): Python is named only in the Juniper role (May 2020 to Oct 2022, about 2.4 years), short of 5 years; the Kestrel role (Nov 2022 to Oct 2026, about 4 years) mentions only PyTorch, not Python by name. - "Improved ranking quality (nDCG@10) by 40% with a retrained Python model."
 **Improvement suggestions**
-- In the interview, ask her to walk through the Python code behind the Kestrel Pay PyTorch models serving 600k predictions a day (training loops, serving code, data pipelines) to confirm the roughly 4 years there were hands-on Python work, which would bring her total past 5 years.
-- Ask for evidence of Python depth in the current role, such as a code sample, a public repository, or a description of Python services she wrote to productionise the RAG models on AWS.
-- Probe how much of the Juniper Retail Cloud scikit-learn pipeline and the nDCG@10 ranking model she wrote herself in Python versus configured or inherited, to judge how much of that period counts toward the 5-year requirement.
-- Clarify whether her 6-year summary includes Python work before May 2020 (for example during her M.Sc. completed in 2020), and ask her to say which projects and languages that time covered.
+- In the interview, ask Adaeze which language she used day to day at Kestrel Pay for training and deploying the PyTorch models and building the RAG pipelines. If it was Python, her total Python experience would be about 6 years and the must-have would be met.
+- Ask for concrete evidence of Python work at Kestrel Pay, such as a walkthrough of code she wrote for the RAG productionisation or the offline and online evaluation, or a code sample or repository she can share.
+- Run a short technical exercise or code review in Python to check that her depth matches a 5+ year level. Her Python is named only in the Juniper Retail Cloud role, so this would test hands-on fluency directly rather than relying on the resume.
 
-### 5. Meera Pillai (meera_pillai) - Borderline, fit 75
+### 4. Meera Pillai (meera_pillai) - Borderline, fit 83
 Only partly meets must-have: 5+ years of Python. Resume: `resumes/meera_pillai.md`. Round 1 RAG score 100.
 **Strengths**
-- **Production experience with LLMs or RAG** (must-have): The current Quillstone role shows LLMs deployed in production serving live traffic and a RAG pipeline built. - "Trained and deployed LLMs models serving 75k predictions a day."
+- **Production experience with LLMs or RAG** (must-have): The current role shows LLMs deployed in production at scale, alongside a RAG pipeline. - "Trained and deployed LLMs models serving 75k predictions a day."
+- **Senior-level machine learning engineering experience** (must-have): The candidate has held a Senior ML Engineer title since Nov 2023 (about 3 years) and has mentored 8 engineers in a prior ML role. - "Senior Machine Learning Engineer, Quillstone Nov 2023 - Present"
 **Gaps**
-- **5+ years of Python** (must-have): Python appears only in the skills list and is named in no role, so the ML roles from May 2018 to Oct 2026 (about 8.5 years) cannot be counted as Python years. - "Python, Spark, MLOps, AWS, LLMs, RAG, PyTorch, Kubernetes"
+- **5+ years of Python** (must-have): Python appears only in the skills list and is not named in any role, so its years of use (May 2018 to Oct 2026, about 8.5 years of ML roles) cannot be credited to Python. - "Python, Spark, MLOps, AWS, LLMs, RAG, PyTorch, Kubernetes"
 **Round 1 rule checks** (Milestone 2's vocabulary and date arithmetic, shown for comparison; Round 2's judgement above is the one that counts)
 - 5+ years of Python (has 0 yrs Python)
 **Improvement suggestions**
-- In the interview, ask Meera which language she wrote the Quillstone LLM training, deployment and RAG pipeline code in, and have her walk through specific Python libraries and components she personally built. This would confirm whether her current role counts toward the 5+ years of Python.
-- Ask her to clarify the primary language used to productionise models with MLOps and AWS at Ember Analytics (May 2018 - Oct 2023). If that work was in Python, it alone would cover more than five years.
-- Request concrete evidence of hands-on Python work, such as a code sample, a public repository, or a short live coding exercise in Python on a RAG- or PyTorch-related task. This would verify depth beyond a skills-list entry.
-- Ask her to update her resume so that each role names the languages used. This would let the Python requirement be judged from the role descriptions rather than the skills list.
+- In the interview, ask Meera which language she wrote the Quillstone LLM training and deployment code and the RAG pipeline in, and how much of her Ember Analytics work (May 2018 to Oct 2023) was hands-on Python. This would confirm whether her ML years can count toward the 5+ years of Python requirement.
+- Ask for concrete Python evidence, such as a code sample, a public repository, or a walkthrough of a Python module she wrote. Her resume lists Python only in the skills section and does not name it in any role.
+- Include a short live Python coding or code-review exercise on ML tooling, such as a data loader, an evaluation script, or a RAG retrieval component. This would show directly whether her Python depth matches senior-level expectations.
+- When probing the PyTorch work, ask about the surrounding Python ecosystem she used for serving and evaluation, for example how the 75k-predictions-a-day service and the offline/online evaluation were implemented. This would tie her Python use to specific production work.
 
-### 6. Karan Malhotra (karan_malhotra) - Borderline, fit 75
-Only partly meets must-have: 5+ years of Python. Resume: `resumes/karan_malhotra.txt`. Round 1 RAG score 88.
+### 5. Vikram Iyer (vikram_iyer) - Borderline, fit 83
+Only partly meets must-have: Senior-level machine learning engineering experience. Resume: `resumes/vikram_iyer.md`. Round 1 RAG score 69.
 **Strengths**
-- **Production experience with LLMs or RAG** (must-have): The current role shows RAG chatbots built with GPT-4 and delivered to insurance customers, which is clear production LLM/RAG experience. - "Built RAG chatbots with LangChain, Pinecone and GPT-4 for insurance customers; Python FastAPI backend on AWS."
+- **5+ years of Python** (must-have): PyTorch work implies Python: Amazon Sep 2020 to Oct 2026 is about 6 years 1 month, plus 4 months at Microsoft Research (where Python is named explicitly), totalling about 6.4 years, which is at least 5. - "Fine-tuned large language models in PyTorch for product question answering."
+- **Production experience with LLMs or RAG** (must-have): The candidate built RAG pipelines and deployed them on AWS SageMaker in a current industry role, which shows production experience. - "Built retrieval augmented generation pipelines with FAISS and Hugging Face; deployed on AWS SageMaker."
 **Gaps**
-- **5+ years of Python** (must-have): Python roles span Jul 2023–Dec 2023 (0.5 years) plus Jan 2024–Oct 2026 (about 2.8 years), roughly 3.3 years in total, which is short of the 5 years asked. - "Built RAG chatbots with LangChain, Pinecone and GPT-4 for insurance customers; Python FastAPI backend on AWS."
+- **Senior-level machine learning engineering experience** (must-have): The resume shows about 6 years of applied ML work, but there is no senior title, leadership or ownership signal, so seniority is not clearly shown. - "Applied Scientist, Amazon Sep 2020 - Present"
 **Round 1 rule checks** (Milestone 2's vocabulary and date arithmetic, shown for comparison; Round 2's judgement above is the one that counts)
-- 5+ years of Python (has 3.3 yrs Python)
+- Senior-level machine learning engineering experience (has Machine Learning missing)
 **Improvement suggestions**
-- In a technical interview, test whether Karan's Python depth makes up for having about 3.3 years instead of 5. Ask him to walk through the design, testing and deployment of the FastAPI backend he built on AWS at Promptly AI.
-- Ask whether he has any Python work before July 2023 that the resume leaves out, such as internships, university projects at IIIT Delhi or open-source contributions. Request links or code samples so it can be counted toward the 5-year requirement.
-- Ask him to explain the claimed 30% reduction in hallucinations: how he built the custom test sets, which metrics he used and what he personally changed. This confirms that he owned the production RAG work rather than just contributing to it.
-- Confirm with the hiring manager whether 5 years of Python is a hard requirement. If it is, the gap cannot be closed quickly, so decide whether to consider Karan for a less senior level instead.
+- Ask Vikram which Applied Scientist level he holds at Amazon and whether he has been promoted since Sep 2020, since the resume gives one unlevelled title over the whole tenure.
+- In the interview, have him walk through the RAG pipeline deployed on AWS SageMaker, probing what he personally owned end to end (design decisions, deployment, monitoring) versus contributed to as part of a team.
+- Request concrete evidence of senior-level scope, such as projects he led, people he mentored or managed, or cross-team technical decisions he drove. None of these appear on the resume and they would settle the partial seniority judgement.
+- Confirm his total industry tenure, because his summary says 5 years while the Amazon dates (Sep 2020 to Present) were counted as about 6 years in the Python judgement.
 
-### 7. Tariq Mahmood (tariq_mahmood) - Borderline, fit 75
-Only partly meets must-have: 5+ years of Python. Resume: `resumes/tariq_mahmood.txt`. Round 1 RAG score 78.
+### 6. Tariq Mahmood (tariq_mahmood) - Borderline, fit 67
+Only partly meets must-have: 5+ years of Python; Senior-level machine learning engineering experience. Resume: `resumes/tariq_mahmood.txt`. Round 1 RAG score 85.
 **Strengths**
-- **Production experience with LLMs or RAG** (must-have): The candidate built an LLM pipeline in a current paid role, though RAG is not mentioned explicitly. - "Built a LLMs pipeline that cut model iteration time from weeks to days."
+- **Production experience with LLMs or RAG** (must-have): The candidate built an LLM pipeline in their current paid role, which counts as job-based LLM experience. - "Built a LLMs pipeline that cut model iteration time from weeks to days."
 **Gaps**
-- **5+ years of Python** (must-have): Python is named only at Kestrel Pay (Jan 2022–Dec 2023, 2 years); even counting the PyTorch work at Pinecrest (Jan 2024–Oct 2026, about 2.8 years), the total is about 4.8 years, short of 5. - "Improved ranking quality (nDCG@10) by 18% with a retrained Python model."
+- **5+ years of Python** (must-have): Python is explicit at Kestrel Pay (Jan 2022–Dec 2023 = 2 years), and even counting the PyTorch role (Jan 2024–Oct 2026 ≈ 2.8 years) the total is about 4.8 years, short of 5. - "Improved ranking quality (nDCG@10) by 18% with a retrained Python model."
+- **Senior-level machine learning engineering experience** (must-have): The candidate has 4 years of ML engineering with some mentoring, but their titles are Junior and mid-level, with no senior role shown. - "Mentored 3 engineers on experiment design and model evaluation."
 **Round 1 rule checks** (Milestone 2's vocabulary and date arithmetic, shown for comparison; Round 2's judgement above is the one that counts)
 - 5+ years of Python (has 4.8 yrs Python)
 **Improvement suggestions**
-- Ask Tariq to account for his Python experience before Jan 2022, such as work during his M.Sc. (completed 2022), since his roles total about 4.8 years and his own summary says 4 years. Decide in advance whether near-5 years of professional Python with strong depth meets the bar.
-- In the interview, have him walk through the Pinecrest LLM pipeline end to end: whether it used retrieval with the vector databases he lists, how documents were chunked and embedded, and how retrieval quality was evaluated. This would confirm whether his LLM experience includes RAG.
-- Ask for concrete evidence of Python depth at Pinecrest, such as how much of the PyTorch, pipeline and FastAPI work he wrote himself in Python. A short live coding exercise or a code sample would let you weigh depth against the slight shortfall in years.
-- Probe what 'production' meant for the LLM pipeline: who used it, how it was deployed and monitored, and how 'weeks to days' iteration time was measured. This confirms it ran in production rather than as an internal experiment.
+- Treat the LLM must-have as unconfirmed rather than met: the resume only says Tariq 'built a LLMs pipeline that cut model iteration time from weeks to days', which may be internal tooling. In the interview, ask whether the system served real users or traffic and how it used retrieval or the vector databases listed in his skills.
+- Confirm Python use at Pinecrest Media, since its bullets name PyTorch but not Python directly. Also ask whether he used Python before Jan 2022, for example during his M.Sc. (completed 2022), and decide upfront whether roughly 4.8 years against the 5-year bar is a hard cutoff.
+- Probe for senior-level scope beyond the job titles: ask him to walk through the 40% nDCG@10 improvement and the LLM pipeline, focusing on which design decisions he owned and what trade-offs he made. Also ask what he concretely did when mentoring the 3 engineers, and whether a referee can confirm his level of ownership.
 
-### 8. Li Wei (li_wei) - No hire, fit 25
-Misses must-have: Production experience with LLMs or RAG. Resume: `resumes/li_wei.txt`. Round 1 RAG score 66.
+### 7. Karan Malhotra (karan_malhotra) - Borderline, fit 67
+Only partly meets must-have: 5+ years of Python; Senior-level machine learning engineering experience. Resume: `resumes/karan_malhotra.txt`. Round 1 RAG score 71.
+**Strengths**
+- **Production experience with LLMs or RAG** (must-have): The candidate built and evaluated customer-facing RAG chatbots using GPT-4 in a current job, which shows production LLM/RAG experience. - "Built RAG chatbots with LangChain, Pinecone and GPT-4 for insurance customers; Python FastAPI backend on AWS."
+**Gaps**
+- **5+ years of Python** (must-have): Python appears in both roles: Jul 2023–Dec 2023 (0.5 yr) + Jan 2024–Oct 2026 (~2.8 yr) ≈ 3.3 years, short of 5. - "Python FastAPI backend on AWS."
+- **Senior-level machine learning engineering experience** (must-have): The resume shows about 3 years of applied LLM engineering with no senior title or senior-level scope, so it is related but weaker evidence. - "LLM application engineer with 3 years of experience building RAG chatbots and agents."
+**Round 1 rule checks** (Milestone 2's vocabulary and date arithmetic, shown for comparison; Round 2's judgement above is the one that counts)
+- 5+ years of Python (has 3.3 yrs Python)
+- Senior-level machine learning engineering experience (has Machine Learning missing)
+**Improvement suggestions**
+- In the interview, probe the depth of Python work at Promptly AI: ask Karan to walk through the FastAPI backend architecture, how it was tested and deployed on AWS, and any performance or concurrency issues he solved, to judge whether ~3.3 years of Python reflects skill comparable to the 5-year requirement.
+- Ask for concrete evidence of senior-level scope in the RAG chatbot work, such as whether he owned system design, led decisions on retrieval architecture or Pinecone indexing, mentored others, or was accountable for production reliability for the insurance customers.
+- Request details on the evaluation work behind the 30% hallucination reduction: how the custom test sets were built, what metrics were used, and what changes drove the improvement, to assess ML engineering rigor beyond applied LLM integration.
+- Decide with the hiring manager whether the 5-year Python and senior-level must-haves are firm; if so, consider Karan for a mid-level LLM engineer role instead, since his production RAG experience is the strongest match.
+
+### 8. Ishaan Kapoor (ishaan_kapoor) - No hire, fit 50
+Misses must-have: Production experience with LLMs or RAG. Resume: `resumes/ishaan_kapoor.txt`. Round 1 RAG score 75.
+**Strengths**
+- **Senior-level machine learning engineering experience** (must-have): The candidate has held a Senior Machine Learning Engineer title since Jul 2023 (about 3.3 years) and mentored 4 engineers. - "Senior Machine Learning Engineer, Kestrel Pay Jul 2023 - Present"
+**Gaps**
+- **5+ years of Python** (must-have): Python appears only in the skills list and is not named in any role, though Jul 2020 to Oct 2026 (about 6.3 years) of PyTorch and TensorFlow work suggests it. - "TensorFlow, Python, Computer Vision, Docker, PyTorch, MLOps, GCP"
+- **Production experience with LLMs or RAG** (must-have): The resume mentions no work with LLMs or RAG; its experience covers computer vision and ranking models.
+**Round 1 rule checks** (Milestone 2's vocabulary and date arithmetic, shown for comparison; Round 2's judgement above is the one that counts)
+- Production experience with LLMs or RAG (has LLMs missing)
+
+### 9. Aisha Khan (aisha_khan) - Borderline, fit 50
+Only partly meets must-have: 5+ years of Python; Production experience with LLMs or RAG; Senior-level machine learning engineering experience. Resume: `resumes/aisha_khan.md`. Round 1 RAG score 74.
 **Strengths**
 - none of the requirements is clearly met
 **Gaps**
-- **5+ years of Python** (must-have): Python is named only in the Grab role (Apr 2022 to Oct 2026 = about 4.5 years); the Shopee role does not mention it, so 4.5 < 5 years. - "Python SDK for feature store access; Airflow retraining pipelines."
-- **Production experience with LLMs or RAG** (must-have): The resume describes general ML platform work with no mention of LLMs or RAG.
+- **5+ years of Python** (must-have): Haptik Jul 2023 to Oct 2026 is about 3.3 years, plus the Fractal internship (Jan to Jun 2023, 0.5 years) using Pandas and scikit-learn, totals about 3.8 years, short of 5. - "Built intent classification models in Python and TensorFlow for chatbots (NLP)."
+- **Production experience with LLMs or RAG** (must-have): Production NLP chatbot models are a neighbouring area, but the resume never mentions LLMs or RAG. - "Built intent classification models in Python and TensorFlow for chatbots (NLP)."
+- **Senior-level machine learning engineering experience** (must-have): She has about 3.3 years as an ML Engineer but describes herself as junior and shows no senior-level title or responsibilities. - "Junior machine learning engineer with 2 years of experience"
+**Round 1 rule checks** (Milestone 2's vocabulary and date arithmetic, shown for comparison; Round 2's judgement above is the one that counts)
+- 5+ years of Python (has 3.8 yrs Python)
+- Production experience with LLMs or RAG (has LLMs missing)
+**Improvement suggestions**
+- Resolve the experience discrepancy: her summary says 2 years, but her dates suggest about 3.8 years of Python including the internship. Ask which is accurate, then decide whether roughly 4 years is close enough to the 5-year bar.
+- In the interview, ask directly whether her Haptik chatbot work involved LLMs, embeddings, or retrieval pipelines, and request a concrete example. If she has none, the RAG requirement is a real gap she would need to close, for example with a demonstrable RAG project.
+- Probe seniority through her Flask model-serving work: who owned deployment, scaling, monitoring and design decisions, and whether she has led projects or mentored others. Her self-description as junior suggests these may be missing, so seek specific evidence.
+- Ask for production impact evidence for her intent classification models, such as traffic served, accuracy improvements, or incidents she handled. This helps judge whether her experience operates at a senior level.
+
+### 10. Li Wei (li_wei) - No hire, fit 33
+Misses must-have: Production experience with LLMs or RAG. Resume: `resumes/li_wei.txt`. Round 1 RAG score 72.
+**Strengths**
+- none of the requirements is clearly met
+**Gaps**
+- **5+ years of Python** (must-have): Python is named only in the Grab role, Apr 2022 to Oct 2026, which is about 4.5 years; the Shopee role does not mention Python, so 4.5 < 5. - "Python SDK for feature store access; Airflow retraining pipelines."
+- **Production experience with LLMs or RAG** (must-have): The resume does not mention LLMs, RAG or any related work.
+- **Senior-level machine learning engineering experience** (must-have): The candidate holds a senior title in MLOps and platform engineering, a neighbouring field, but shows no model development or ML engineering work itself. - "Senior MLOps Engineer, Grab"
 **Round 1 rule checks** (Milestone 2's vocabulary and date arithmetic, shown for comparison; Round 2's judgement above is the one that counts)
 - 5+ years of Python (has 4.6 yrs Python)
-- Production experience with LLMs or RAG (has LLMs missing)
-
-### 9. Clara Jensen (clara_jensen) - No hire, fit 25
-Misses must-have: Production experience with LLMs or RAG. Resume: `resumes/clara_jensen.pdf`. Round 1 RAG score 65.
-**Strengths**
-- none of the requirements is clearly met
-**Gaps**
-- **5+ years of Python** (must-have): Only the Bluefinch role (Nov 2023 to Oct 2026, about 3 years) mentions Python; the Nimbusly role (Apr 2021 to Oct 2023) names no language, so roughly 3 years is short of the 5 asked. - "Built and operated Python services handling 75k requests per minute at peak."
-- **Production experience with LLMs or RAG** (must-have): The resume does not mention LLMs, RAG, or any related AI work.
-**Round 1 rule checks** (Milestone 2's vocabulary and date arithmetic, shown for comparison; Round 2's judgement above is the one that counts)
-- 5+ years of Python (has 3 yrs Python)
-- Production experience with LLMs or RAG (has LLMs missing)
-
-### 10. Ishaan Kapoor (ishaan_kapoor) - No hire, fit 25
-Misses must-have: Production experience with LLMs or RAG. Resume: `resumes/ishaan_kapoor.txt`. Round 1 RAG score 63.
-**Strengths**
-- none of the requirements is clearly met
-**Gaps**
-- **5+ years of Python** (must-have): Python appears only in the skills list; neither role names it, though the ML roles from Jul 2020 to Oct 2026 (about 6.3 years) used PyTorch and TensorFlow, which suggests it. - "TensorFlow, Python, Computer Vision, Docker, PyTorch, MLOps, GCP"
-- **Production experience with LLMs or RAG** (must-have): The resume mentions computer vision and ranking models but nothing involving LLMs or RAG.
-**Round 1 rule checks** (Milestone 2's vocabulary and date arithmetic, shown for comparison; Round 2's judgement above is the one that counts)
 - Production experience with LLMs or RAG (has LLMs missing)
 
 ## How to read this report
 - **Round 1** ranked every resume with Milestone 2's hybrid search (embeddings, BM25, skill match) and kept the top 10; on a re-screen the previous shortlist is carried forward too, so nobody leaves the list because the search changed. Nobody is rejected at this stage.
 - **Round 2**: Claude judged each requirement as met, partial or missing, quoting the resume. Fit = weighted share met (must-have x2, nice-to-have x1; partial = half). A 'met' whose quote is not in the resume counts as partial.
 - **Round 3**: Hire = every must-have met; No hire = a must-have missing; Borderline = in between.
+- Requirements a resume cannot show (communication, attitude, working style) are interview checks: listed above, but they affect neither the fit score nor the recommendation.
 - These are screening recommendations for a human decision-maker, not hiring decisions.

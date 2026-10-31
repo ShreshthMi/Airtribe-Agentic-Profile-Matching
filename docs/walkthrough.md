@@ -37,8 +37,8 @@ Role: React Developer (screening round 1)
 Requirements:
 - 3+ years of React (must-have)
 Shortlist (fit = weighted share of requirements met; rag = Round 1 search score):
-1. Grace Liu `grace_liu`: fit 100, rag 91, Hire, must-haves met 1/1
-2. Hana Sato `hana_sato`: fit 100, rag 90, Hire, must-haves met 1/1
+1. Grace Liu `grace_liu`: fit 100, rag 86, Hire, must-haves met 1/1
+2. Hana Sato `hana_sato`: fit 100, rag 85, Hire, must-haves met 1/1
 ...
 </screening_state>
 Compare the top 3 matches side by side
@@ -60,7 +60,7 @@ matters here:
 
 ```json
 {"type": "tool_use", "name": "compare_candidates",
- "input": {"candidate_ids": ["grace_liu", "hana_sato", "william_turner"]}}
+ "input": {"candidate_ids": ["grace_liu", "hana_sato", "noah_fischer"]}}
 ```
 
 **5. The tool runs.** `Toolbox.run()` looks up `tool_compare_candidates`, resolves each id
@@ -71,7 +71,7 @@ The result goes back as:
 
 ```json
 {"type": "tool_result", "tool_use_id": "toolu_...", "is_error": false,
- "content": "| | Grace Liu (#1) | Hana Sato (#2) | William Turner (#3) |\n|---|---|---|---|\n| Fit score | 100 | 100 | 100 |\n..."}
+ "content": "| | Grace Liu (#1) | Hana Sato (#2) | Noah Fischer (#3) |\n|---|---|---|---|\n| Fit score | 100 | 100 | 100 |\n..."}
 ```
 
 Had the tool failed (an unknown name, say), `is_error` would be `true` and the message
@@ -116,8 +116,8 @@ and `route_after_agent` sends the graph to `search_resumes` instead of back to t
    [`scenarios/transcripts/02_refine_requirements.txt`](../scenarios/transcripts/02_refine_requirements.txt):
 
 ```text
-- Hana Sato: #2 -> #5 (fit 100 -> 90; changed requirements: TypeScript met, Next.js partial)
-- Chloe Martin: #7 -> #10 (fit 50 -> 70; changed requirements: TypeScript met, Next.js partial)
+- Hana Sato: #2 -> #4 (fit 100 -> 90; changed requirements: TypeScript met, Next.js partial)
+- Chloe Martin: #6 -> #10 (fit 50 -> 70; changed requirements: TypeScript met, Next.js partial)
 ```
 
 Then `human_feedback` pauses for the next message, and the loop continues until the user

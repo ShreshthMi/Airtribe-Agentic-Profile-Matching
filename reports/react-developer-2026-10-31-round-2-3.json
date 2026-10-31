@@ -10,7 +10,8 @@
     "nice_to_have": [
       "Next.js"
     ],
-    "notes": "The request does not name a role title, so 'React Developer' is inferred from the required skill. I read '3+ years experience' as 3+ years with React specifically, rather than 3+ years of overall professional experience plus some React knowledge. This one item also covers knowing React. No preferred requirements were stated."
+    "interview_only": [],
+    "notes": "The request does not say whether '3+ years' means React specifically or professional experience overall. I read it as 3+ years of React, which is what a recruiter most likely means. The role title is inferred, since the request gives none."
   },
   "shortlist": [
     {
@@ -28,21 +29,21 @@
           "requirement": "3+ years of React experience",
           "verdict": "met",
           "evidence": "Built the merchant dashboard in React, TypeScript and Next.js; audited and fixed WCAG 2.2 issues across 40 screens.",
-          "reasoning": "React was used at Savanna Pay from Jun 2023 to Present (Oct 2026), about 3 years 5 months, plus Kilima Digital from Sep 2022 to May 2023, about 9 months, for roughly 4 years 2 months in total, which exceeds 3 years.",
+          "reasoning": "React was used at Savanna Pay from Jun 2023 to Present (about 3 years 5 months) and at Kilima Digital from Sep 2022 to May 2023 (about 9 months), totalling about 4 years 2 months, which exceeds 3.",
           "evidence_verified": true
         },
         {
           "requirement": "TypeScript",
           "verdict": "met",
-          "evidence": "Built the merchant dashboard in React, TypeScript and Next.js; audited and fixed WCAG 2.2 issues across 40 screens.",
-          "reasoning": "TypeScript was used in both jobs: Sep 2022 to May 2023 at Kilima Digital and Jun 2023 to the present at Savanna Pay, which is about 4 years and still current.",
+          "evidence": "React and TypeScript features for a loan application flow; HTML and CSS email templates.",
+          "reasoning": "TypeScript was used in both professional roles.",
           "evidence_verified": true
         },
         {
           "requirement": "Next.js",
           "verdict": "met",
           "evidence": "Built the merchant dashboard in React, TypeScript and Next.js",
-          "reasoning": "Next.js was used in the current Savanna Pay role, from Jun 2023 to the present, which is about 3.4 years.",
+          "reasoning": "Next.js was used in the current role at Savanna Pay.",
           "evidence_verified": true
         }
       ]
@@ -62,61 +63,27 @@
           "requirement": "3+ years of React experience",
           "verdict": "met",
           "evidence": "Built and maintained React components in TypeScript for a customer-facing web app with 120k monthly users.",
-          "reasoning": "React is used in the Coral Telecom role, which runs from Jun 2023 to today (Oct 2026), about 3 years 4 months, meeting the 3-year minimum.",
+          "reasoning": "React appears in the Coral Telecom role, which runs from Jun 2023 to Present (Oct 2026), about 3 years 4 months, which meets the 3-year requirement; the earlier Vantage Learning role does not mention React.",
           "evidence_verified": true
         },
         {
           "requirement": "TypeScript",
           "verdict": "met",
           "evidence": "Built and maintained React components in TypeScript for a customer-facing web app with 120k monthly users.",
-          "reasoning": "TypeScript is used in the current role at Coral Telecom, from Jun 2023 to Present, and no minimum years are asked.",
+          "reasoning": "TypeScript is used in the current Coral Telecom role (Jun 2023 - Present), and no years requirement is specified.",
           "evidence_verified": true
         },
         {
           "requirement": "Next.js",
           "verdict": "met",
           "evidence": "Introduced Next.js and Playwright into the team's workflow and wrote the conventions guide.",
-          "reasoning": "The candidate introduced Next.js in the current role at Coral Telecom, which shows hands-on job use.",
+          "reasoning": "Next.js is used in the current Coral Telecom role, and no years requirement is specified.",
           "evidence_verified": true
         }
       ]
     },
     {
       "rank": 3,
-      "candidate_id": "resume_john_smith",
-      "name": "John Smith",
-      "resume_path": "resumes/resume_john_smith.docx",
-      "rag_score": 95,
-      "fit_score": 100,
-      "recommendation": "hire",
-      "recommendation_reason": "Meets every must-have, with evidence quoted from the resume.",
-      "must_haves_met": "2/2",
-      "verdicts": [
-        {
-          "requirement": "3+ years of React experience",
-          "verdict": "met",
-          "evidence": "Rebuilt the subscriber dashboard in React and Next.js, improving Largest Contentful Paint from 4.1 s to 1.6 s.",
-          "reasoning": "React is used in the Quillfeather role, 2022 to Present (October 2026), which is about 4 years and exceeds the 3 years required.",
-          "evidence_verified": true
-        },
-        {
-          "requirement": "TypeScript",
-          "verdict": "met",
-          "evidence": "Built interactive course pages in JavaScript and TypeScript.",
-          "reasoning": "TypeScript was used in the Mosaic Learning job (2020-2022) and also appears in the skills and summary.",
-          "evidence_verified": true
-        },
-        {
-          "requirement": "Next.js",
-          "verdict": "met",
-          "evidence": "Rebuilt the subscriber dashboard in React and Next.js, improving Largest Contentful Paint from 4.1 s to 1.6 s.",
-          "reasoning": "Next.js is used in the current Quillfeather Media role.",
-          "evidence_verified": true
-        }
-      ]
-    },
-    {
-      "rank": 4,
       "candidate_id": "emily_chen",
       "name": "Emily Chen",
       "resume_path": "resumes/emily_chen.txt",
@@ -130,61 +97,27 @@
           "requirement": "3+ years of React experience",
           "verdict": "met",
           "evidence": "Rebuilt checkout in React and TypeScript, improving conversion by 3%.",
-          "reasoning": "Etsy Jan 2022–Oct 2026 (~4.8 years) plus Squarespace Aug 2019–Dec 2021 (~2.4 years) totals ~7.2 years of React, exceeding 3.",
+          "reasoning": "React was used at Etsy (Jan 2022 to Oct 2026, about 4.8 years) and at Squarespace (Aug 2019 to Dec 2021, about 2.4 years), which totals about 7.2 years, more than the 3 required.",
           "evidence_verified": true
         },
         {
           "requirement": "TypeScript",
           "verdict": "met",
           "evidence": "Rebuilt checkout in React and TypeScript, improving conversion by 3%.",
-          "reasoning": "TypeScript is used in the current Etsy role.",
+          "reasoning": "TypeScript was used in her current role at Etsy to rebuild checkout.",
           "evidence_verified": true
         },
         {
           "requirement": "Next.js",
           "verdict": "partial",
           "evidence": "JavaScript, TypeScript, React, Next.js, Node.js, HTML, CSS, Tailwind, GraphQL, Jest, Figma, Git",
-          "reasoning": "Next.js appears only in the skills list and in no job description.",
+          "reasoning": "Next.js appears only in the skills list and is not mentioned in any job.",
           "evidence_verified": true
         }
       ]
     },
     {
-      "rank": 5,
-      "candidate_id": "hana_sato",
-      "name": "Hana Sato",
-      "resume_path": "resumes/hana_sato.md",
-      "rag_score": 96,
-      "fit_score": 90,
-      "recommendation": "hire",
-      "recommendation_reason": "Meets every must-have, with evidence quoted from the resume.",
-      "must_haves_met": "2/2",
-      "verdicts": [
-        {
-          "requirement": "3+ years of React experience",
-          "verdict": "met",
-          "evidence": "Built and maintained React components in TypeScript for a customer-facing web app with 600k monthly users.",
-          "reasoning": "React is used at Arclight Mobility from Jul 2022 to Present (Oct 2026), about 4 years 3 months, which exceeds the 3 years required.",
-          "evidence_verified": true
-        },
-        {
-          "requirement": "TypeScript",
-          "verdict": "met",
-          "evidence": "Built and maintained React components in TypeScript for a customer-facing web app with 600k monthly users.",
-          "reasoning": "TypeScript is used in the current role at Arclight Mobility (Jul 2022 - Present), and no minimum years are specified.",
-          "evidence_verified": true
-        },
-        {
-          "requirement": "Next.js",
-          "verdict": "partial",
-          "evidence": "Built and maintained React components in TypeScript for a customer-facing web app with 600k monthly users.",
-          "reasoning": "Next.js is never mentioned; the candidate only has React experience, which is the neighbouring technology Next.js is built on.",
-          "evidence_verified": true
-        }
-      ]
-    },
-    {
-      "rank": 6,
+      "rank": 4,
       "candidate_id": "noah_fischer",
       "name": "Noah Fischer",
       "resume_path": "resumes/noah_fischer.docx",
@@ -198,7 +131,7 @@
           "requirement": "3+ years of React experience",
           "verdict": "met",
           "evidence": "Shipped end-to-end features with React and Node.js, from database schema to UI.",
-          "reasoning": "React is used in the Northgate Travel role, which runs from Oct 2023 to Present (Oct 2026), giving 3 years and meeting the 3+ year requirement; the Lumenfield role does not mention React.",
+          "reasoning": "React appears only in the Northgate Travel role, which runs from Oct 2023 to Present (Oct 2026), so 3 years, meeting the 3+ year requirement.",
           "evidence_verified": true
         },
         {
@@ -212,13 +145,47 @@
           "requirement": "Next.js",
           "verdict": "partial",
           "evidence": "Shipped end-to-end features with React and Node.js, from database schema to UI.",
-          "reasoning": "Next.js is not mentioned; React and Node.js are neighbouring technologies, so this is related but weaker evidence.",
+          "reasoning": "Next.js is never mentioned, but React and Node.js are closely neighbouring technologies.",
           "evidence_verified": true
         }
       ]
     },
     {
-      "rank": 7,
+      "rank": 5,
+      "candidate_id": "kwame_mensah",
+      "name": "Kwame Mensah",
+      "resume_path": "resumes/kwame_mensah.txt",
+      "rag_score": 94,
+      "fit_score": 90,
+      "recommendation": "hire",
+      "recommendation_reason": "Meets every must-have, with evidence quoted from the resume.",
+      "must_haves_met": "2/2",
+      "verdicts": [
+        {
+          "requirement": "3+ years of React experience",
+          "verdict": "met",
+          "evidence": "React dashboards for dispatch teams.",
+          "reasoning": "React used at Trotro Logistics Jan 2022–Oct 2026 (about 4.8 years) plus Kente Digital Jun 2020–Dec 2021 (about 1.6 years), roughly 6.4 years in total, which is at least 3.",
+          "evidence_verified": true
+        },
+        {
+          "requirement": "TypeScript",
+          "verdict": "met",
+          "evidence": "Built Node.js and GraphQL APIs in TypeScript backed by MongoDB",
+          "reasoning": "TypeScript is used in the current Senior Full-Stack Engineer role.",
+          "evidence_verified": true
+        },
+        {
+          "requirement": "Next.js",
+          "verdict": "partial",
+          "evidence": "React pages for the admin portal.",
+          "reasoning": "Next.js is never mentioned, but the candidate has extensive React experience, which is the neighbouring technology Next.js is built on.",
+          "evidence_verified": true
+        }
+      ]
+    },
+    {
+      "rank": 6,
       "candidate_id": "william_turner",
       "name": "William Turner",
       "resume_path": "resumes/william_turner.md",
@@ -232,27 +199,27 @@
           "requirement": "3+ years of React experience",
           "verdict": "met",
           "evidence": "Shipped end-to-end features with React and TypeScript, from database schema to UI.",
-          "reasoning": "React is used in the Orbitly role, which runs from Jul 2021 to Present (Oct 2026), about 5 years 3 months, so it exceeds the 3 years required.",
+          "reasoning": "React is used at Orbitly from Jul 2021 to Present (31 Oct 2026), which is about 5 years and 3 months, and that exceeds the 3 years required.",
           "evidence_verified": true
         },
         {
           "requirement": "TypeScript",
           "verdict": "met",
           "evidence": "Shipped end-to-end features with React and TypeScript, from database schema to UI.",
-          "reasoning": "TypeScript is used in the current Orbitly role, Jul 2021 to Present, about 5.3 years.",
+          "reasoning": "TypeScript is used in the current role at Orbitly (Jul 2021 - Present), so it is clearly shown in a job.",
           "evidence_verified": true
         },
         {
           "requirement": "Next.js",
           "verdict": "partial",
           "evidence": "Shipped end-to-end features with React and TypeScript, from database schema to UI.",
-          "reasoning": "Next.js is never mentioned, but React, the library it is built on, is used in the current role.",
+          "reasoning": "Next.js is never mentioned; React is a neighbouring technology that Next.js is built on, so this is only related evidence.",
           "evidence_verified": true
         }
       ]
     },
     {
-      "rank": 8,
+      "rank": 7,
       "candidate_id": "camila_reyes",
       "name": "Camila Reyes",
       "resume_path": "resumes/camila_reyes.md",
@@ -266,7 +233,7 @@
           "requirement": "3+ years of React experience",
           "verdict": "met",
           "evidence": "Reviewed React pull requests for a team of 3 engineers and ran a weekly frontend guild.",
-          "reasoning": "The Nimbusly role (Oct 2022 to Present, i.e. Oct 2026) involves React, giving 4 years, which is at least 3.",
+          "reasoning": "The Nimbusly role (Oct 2022 to Present, i.e. Oct 2026) uses React and gives 4 years, which is at least 3.",
           "evidence_verified": true
         },
         {
@@ -280,13 +247,13 @@
           "requirement": "Next.js",
           "verdict": "met",
           "evidence": "Introduced Next.js and GraphQL into the team's workflow and wrote the conventions guide.",
-          "reasoning": "The candidate introduced Next.js in their current role at Nimbusly.",
+          "reasoning": "The candidate introduced Next.js in the current Nimbusly role, which is direct job experience.",
           "evidence_verified": true
         }
       ]
     },
     {
-      "rank": 9,
+      "rank": 8,
       "candidate_id": "gabriel_costa",
       "name": "Gabriel Costa",
       "resume_path": "resumes/gabriel_costa.txt",
@@ -300,22 +267,56 @@
           "requirement": "3+ years of React experience",
           "verdict": "partial",
           "evidence": "Shipped end-to-end features with Next.js and React, from database schema to UI.",
-          "reasoning": "React appears only in the Bluefinch role, Nov 2024 to Oct 2026, which is about 2 years and short of the 3 required; the Lattice Robotics role does not mention React.",
+          "reasoning": "React appears only in the Bluefinch role, which runs from Nov 2024 to Oct 2026, about 2 years. The Lattice Robotics role does not mention React, and 2 years is short of the 3 required.",
           "evidence_verified": true
         },
         {
           "requirement": "TypeScript",
           "verdict": "met",
           "evidence": "Owned on-call for the TypeScript services and reduced paging alerts by 30%.",
-          "reasoning": "TypeScript is used in both jobs, at Lattice Robotics and at Bluefinch.",
+          "reasoning": "TypeScript is used in both jobs, at Bluefinch (Nov 2024–Present) and at Lattice Robotics (Jul 2021–Oct 2024), and no minimum years are specified.",
           "evidence_verified": true
         },
         {
           "requirement": "Next.js",
           "verdict": "met",
           "evidence": "Shipped end-to-end features with Next.js and React, from database schema to UI.",
-          "reasoning": "Next.js is used in the current Bluefinch role.",
+          "reasoning": "Next.js is used in the current Bluefinch role, which runs from Nov 2024 to Present, and no minimum years are specified.",
           "evidence_verified": true
+        }
+      ]
+    },
+    {
+      "rank": 9,
+      "candidate_id": "hana_sato",
+      "name": "Hana Sato",
+      "resume_path": "resumes/hana_sato.md",
+      "rag_score": 96,
+      "fit_score": 80,
+      "recommendation": "hire",
+      "recommendation_reason": "Meets every must-have, with evidence quoted from the resume.",
+      "must_haves_met": "2/2",
+      "verdicts": [
+        {
+          "requirement": "3+ years of React experience",
+          "verdict": "met",
+          "evidence": "Built and maintained React components in TypeScript for a customer-facing web app with 600k monthly users.",
+          "reasoning": "React is used at Arclight Mobility from Jul 2022 to Present (Oct 2026), which is about 4 years 3 months and meets the 3-year minimum.",
+          "evidence_verified": true
+        },
+        {
+          "requirement": "TypeScript",
+          "verdict": "met",
+          "evidence": "Built and maintained React components in TypeScript for a customer-facing web app with 600k monthly users.",
+          "reasoning": "TypeScript is used in the current role at Arclight Mobility (Jul 2022 - Present), and no number of years is required.",
+          "evidence_verified": true
+        },
+        {
+          "requirement": "Next.js",
+          "verdict": "missing",
+          "evidence": "",
+          "reasoning": "The resume never mentions Next.js; it lists only React, which is a related library but not the framework named.",
+          "evidence_verified": false
         }
       ]
     },
@@ -334,21 +335,21 @@
           "requirement": "3+ years of React experience",
           "verdict": "partial",
           "evidence": "Built and maintained React components in TypeScript for a customer-facing web app with 120k monthly users.",
-          "reasoning": "React appears only in the Silverpine role (Sep 2025 to Oct 2026, about 1.2 years), and the Cinder Games role (Mar 2021 to Aug 2025) used Angular, so the total of about 1.2 years is below the 3 required.",
+          "reasoning": "React appears only in the Silverpine role (Sep 2025 to Oct 2026 ≈ 1.2 years); the Cinder Games role (Mar 2021 to Aug 2025) used Angular, so 1.2 years is less than the 3 required.",
           "evidence_verified": true
         },
         {
           "requirement": "TypeScript",
           "verdict": "met",
           "evidence": "Built and maintained React components in TypeScript for a customer-facing web app with 120k monthly users.",
-          "reasoning": "TypeScript is used in the current Silverpine Energy role, and the Angular work at Cinder Games likely involved it too, so this is clear job-based evidence.",
+          "reasoning": "TypeScript is used in the current Silverpine Energy role, and Angular work at Cinder Games also implies it, so the skill is clearly shown in a job.",
           "evidence_verified": true
         },
         {
           "requirement": "Next.js",
           "verdict": "partial",
           "evidence": "Built and maintained React components in TypeScript for a customer-facing web app with 120k monthly users.",
-          "reasoning": "Next.js is never mentioned; the resume shows only React, which is a neighbouring technology that Next.js is built on.",
+          "reasoning": "Next.js is never mentioned, but the candidate has React experience, which is the neighbouring technology Next.js is built on.",
           "evidence_verified": true
         }
       ]

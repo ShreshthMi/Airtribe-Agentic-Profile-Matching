@@ -1,5 +1,5 @@
 # Transcript of scenarios/01_react_search.txt, run live on 2026-10-31
-# (chat.py --script; exit code 0, 41s)
+# (chat.py --script; exit code 0, 44s)
 
 ╭───────────────────────────────────────── Agentic Profile Matching ─────────────────────────────────────────╮
 │ Describe who you are looking for in one line, or give a job description file such as                       │
@@ -10,13 +10,13 @@ You: Find me candidates with React and 3+ years experience
   Reading the job description for must-haves and nice-to-haves
 ✓ Extract requirements
   Round 1: ranking all 100 resumes with the Milestone 2 hybrid RAG search
-  Round 1: top 10 - Grace Liu, Hana Sato, Chloe Martin, William Turner, Noah Fischer, Lucia Romano, Kenji 
-Watanabe, Rohan Desai, Amara Okonkwo, Ethan Walsh
+  Round 1: top 10 - Grace Liu, Hana Sato, Chloe Martin, Lucia Romano, William Turner, Noah Fischer, Rohan 
+Desai, Gabriel Costa, Kenji Watanabe, Ethan Walsh
 ✓ Search resumes - Round 1
   Round 2: Claude judges 10 resumes against 1 requirements (only judgements not already made)
-    judged Amara Okonkwo on 1 requirement(s)
     judged Chloe Martin on 1 requirement(s)
     judged Ethan Walsh on 1 requirement(s)
+    judged Gabriel Costa on 1 requirement(s)
     judged Grace Liu on 1 requirement(s)
     judged Hana Sato on 1 requirement(s)
     judged Kenji Watanabe on 1 requirement(s)
@@ -25,89 +25,94 @@ Watanabe, Rohan Desai, Amara Okonkwo, Ethan Walsh
     judged Rohan Desai on 1 requirement(s)
     judged William Turner on 1 requirement(s)
 ✓ Rank candidates - Round 2
-  Round 3: improvement suggestions for 4 borderline candidate(s)
+  Round 3: improvement suggestions for 5 borderline candidate(s)
 ✓ Generate report - Round 3
 ╭────────────────────────────────────────────────── Agent ───────────────────────────────────────────────────╮
 │ Screening round 1: React Developer                                                                         │
 │                                                                                                            │
-│ Round 1 ranked 100 resumes and kept 10. Round 2 judged them against 1 requirements. Round 3: 6 hire, 4     │
+│ Round 1 ranked 100 resumes and kept 10. Round 2 judged them against 1 requirements. Round 3: 5 hire, 5     │
 │ borderline, 0 no hire.                                                                                     │
 │                                                                                                            │
 │ Requirements                                                                                               │
 │                                                                                                            │
 │  • 3+ years of React experience (must-have)                                                                │
 │                                                                                                            │
-│ How I read the request: No role title was given, so 'React Developer' is inferred from the required skill. │
-│ '3+ years experience' is read as 3+ years of React specifically, not 3+ years of overall professional      │
-│ experience. This single item also covers knowing React. As a short search query, everything is treated as  │
-│ a must-have.                                                                                               │
+│ How I read the request: The request does not say whether '3+ years' applies to React or to experience      │
+│ overall. I read it as 3+ years of React experience, which is what a recruiter most likely means. The       │
+│ request gives no role title, so I inferred 'React Developer'.                                              │
 │                                                                                                            │
 │ Top candidates                                                                                             │
 │                                                                                                            │
 │  1 Grace Liu grace_liu - Hire, fit 100. Meets every must-have, with evidence quoted from the resume.       │
 │  2 Hana Sato hana_sato - Hire, fit 100. Meets every must-have, with evidence quoted from the resume.       │
-│  3 William Turner william_turner - Hire, fit 100. Meets every must-have, with evidence quoted from the     │
-│    resume.                                                                                                 │
-│  4 Amara Okonkwo amara_okonkwo - Hire, fit 100. Meets every must-have, with evidence quoted from the       │
+│  3 Noah Fischer noah_fischer - Hire, fit 100. Meets every must-have, with evidence quoted from the resume. │
+│  4 William Turner william_turner - Hire, fit 100. Meets every must-have, with evidence quoted from the     │
 │    resume.                                                                                                 │
 │  5 Ethan Walsh ethan_walsh - Hire, fit 100. Meets every must-have, with evidence quoted from the resume.   │
 │                                                                                                            │
 │ Full report with the evidence for all 10: reports/react-developer-2026-10-31-round-1.md                    │
 ╰────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
 You: Compare the top 3 matches side by side
-  tool: compare_candidates(candidate_ids=["grace_liu", "hana_sato", "william_turner"])
+  tool: compare_candidates(candidate_ids=["grace_liu", "hana_sato", "noah_fischer"])
 ✓ Agent answered
 ╭────────────────────────────────────────────────── Agent ───────────────────────────────────────────────────╮
 │ Here are the top 3 side by side:                                                                           │
 │                                                                                                            │
 │                                                                                                            │
-│                                       Grace Liu (#1)  Hana Sato (#2)  William Turner (#3)                  │
-│  ────────────────────────────────────────────────────────────────────────────────────────                  │
+│                                       Grace Liu (#1)  Hana Sato (#2)  Noah Fischer (#3)                    │
+│  ──────────────────────────────────────────────────────────────────────────────────────                    │
 │  Fit score                            100             100             100                                  │
 │  Recommendation                       Hire            Hire            Hire                                 │
-│  Round 1 RAG score                    91              90              88                                   │
+│  Round 1 RAG score                    86              85              82                                   │
 │  3+ years of React experience (must)  ✓ met           ✓ met           ✓ met                                │
 │                                                                                                            │
 │                                                                                                            │
-│ Grace Liu grace_liu, Hana Sato hana_sato and William Turner william_turner are tied. All three have 3+     │
-│ years of React and a fit score of 100. Their order comes only from the Round 1 search scores (91, 90, 88). │
-│ Those scores are very close, so they don't show that one candidate is better than another.                 │
+│ What this shows:                                                                                           │
 │                                                                                                            │
-│ To tell them apart, I can:                                                                                 │
+│  • Grace Liu grace_liu, Hana Sato hana_sato and Noah Fischer noah_fischer all meet the only requirement.   │
+│    This table doesn't tell them apart.                                                                     │
+│  • Their order comes only from the Round 1 search score (86, 85, 82). That score measures how closely each │
+│    resume matches the search. It doesn't say who is the stronger candidate, and the gap between them is    │
+│    small.                                                                                                  │
 │                                                                                                            │
-│  • Add requirements. For example: TypeScript, Next.js, state management (Redux or Zustand), testing (Jest  │
-│    or React Testing Library), or how senior they are. Tell me which ones are must-haves and which are      │
-│    nice-to-haves, and I'll re-run the screening.                                                           │
-│  • Pull a detailed report for one candidate, with strengths and gaps quoted from their resume.             │
+│ Ways to tell them apart:                                                                                   │
 │                                                                                                            │
-│ These recommendations are only a starting point. You make the final call on who moves forward.             │
+│  • Add more requirements. For example: TypeScript, Next.js, state management (Redux or Zustand), testing   │
+│    (Jest or React Testing Library), seniority level or industry. Tell me which ones matter and whether     │
+│    each is a must-have or a nice-to-have. I'll then re-run the screening.                                  │
+│  • See each person's details. I can pull a report for each one with quotes from their resume, such as how  │
+│    many years of React they have and what projects they've done.                                           │
 ╰────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
 You: Why did the #2 candidate rank higher than the #8 candidate?
-  tool: explain_ranking(higher_candidate_id="hana_sato", lower_candidate_id="kenji_watanabe")
+  tool: explain_ranking(higher_candidate_id="hana_sato", lower_candidate_id="gabriel_costa")
 ✓ Agent answered
 ╭────────────────────────────────────────────────── Agent ───────────────────────────────────────────────────╮
-│ Hana Sato hana_sato ranks above Kenji Watanabe kenji_watanabe because of how each was judged on the one    │
-│ requirement, 3+ years of React experience.                                                                 │
+│ Hana Sato hana_sato ranks above Gabriel Costa gabriel_costa because of the only requirement in this        │
+│ screening:                                                                                                 │
 │                                                                                                            │
 │                                                                                                            │
-│                                 Hana Sato (#2)  Kenji Watanabe (#8)                                        │
-│  ──────────────────────────────────────────────────────────────────                                        │
-│  3+ years of React (must-have)  ✓ met           ◐ partial                                                  │
-│  Fit score                      100             50                                                         │
-│  Recommendation                 Hire            Borderline                                                 │
+│  Requirement                               Hana Sato (#2)  Gabriel Costa (#8)                              │
+│  ────────────────────────────────────────────────────────────────────────────                              │
+│  3+ years of React experience (must-have)  ✓ met           ◐ partial                                       │
+│  Fit score                                 100             50                                              │
+│  Recommendation                            Hire            Borderline                                      │
 │                                                                                                            │
 │                                                                                                            │
-│  • Hana Sato: Her role at Arclight uses React and runs from Jul 2022 to now, so about 4 years 3 months.    │
-│    Her earlier role at Northgate doesn't mention React.                                                    │
-│  • Kenji Watanabe: He has about 5.4 years of React Native across two roles (May 2021 – Sep 2023 and Oct    │
-│    2023 – now). But his resume never shows React for web apps. React Native is a related skill but not the │
-│    same, so he only partly meets the requirement.                                                          │
+│ What the resumes show:                                                                                     │
 │                                                                                                            │
-│ His "partial" result comes down to how we define the requirement, not to how much experience he has. He    │
-│ actually has more years than Hana Sato. If React Native experience is good enough for this role, I can     │
-│ update the requirement to "3+ years of React or React Native" and re-run the screening. If the job is      │
-│ web-only, keeping the stricter version makes sense.                                                        │
+│  • Hana Sato: She has used React at Arclight Mobility since July 2022. That's about 4 years and 3 months,  │
+│    which is more than the 3 years required.                                                                │
+│  • Gabriel Costa: React only shows up in his Bluefinch role (Nov 2024 to Oct 2026), which is about 2       │
+│    years. It isn't mentioned for his earlier Lattice Robotics role. So he partly meets the requirement,    │
+│    but he's under the 3-year bar.                                                                          │
+│                                                                                                            │
+│ The fit score decides the ranking. The Round 1 search scores (85 vs 80) only break ties between candidates │
+│ with the same fit score, and these two aren't tied.                                                        │
+│                                                                                                            │
+│ Before you rule Gabriel out: the 2-year figure only counts what his resume says. He may have used React at │
+│ Lattice Robotics without listing it. If you'd like to check, I can write interview questions about his     │
+│ React experience. You can also change the requirement to "2+ years" and I'll re-run the screening.         │
 ╰────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
 You: quit
-Goodbye. Claude usage: 19 calls, 17,187 input tokens (+7,596 from cache), 4,759 output tokens on 
+Goodbye. Claude usage: 20 calls, 18,412 input tokens (+7,859 from cache), 4,885 output tokens on 
 claude-opus-5-5.

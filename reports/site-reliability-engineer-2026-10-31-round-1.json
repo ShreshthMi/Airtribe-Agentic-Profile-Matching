@@ -5,20 +5,20 @@
     "role_title": "Site Reliability Engineer",
     "must_have": [
       "5+ years of experience in DevOps, SRE or platform engineering",
-      "Kubernetes in production",
-      "Docker in production",
+      "Kubernetes and Docker in production",
       "Infrastructure as code with Terraform",
-      "Experience with AWS or GCP",
+      "AWS or GCP",
       "CI/CD pipelines (GitHub Actions, Jenkins or similar)",
       "Linux",
       "Scripting in Python or Go",
       "Monitoring with Prometheus and Grafana"
     ],
     "nice_to_have": [
-      "Incident response and on-call leadership",
+      "Incident response and on-call leadership experience",
       "Cloud cost optimisation"
     ],
-    "notes": "Read the 5+ years as total experience across DevOps, SRE or platform engineering combined, not 5+ years in each. 'Kubernetes and Docker in production' was split into two separate checks, both requiring production use. 'Python or Go' and 'AWS or GCP' are each satisfied by either option."
+    "interview_only": [],
+    "notes": "The 5+ years are read as combined experience across DevOps, SRE or platform engineering, not 5 years in each. 'Incident response and on-call leadership' is kept in nice_to_have, because a resume can show on-call or incident lead roles."
   },
   "shortlist": [
     {
@@ -27,79 +27,72 @@
       "name": "Omar Haddad",
       "resume_path": "resumes/omar_haddad.md",
       "rag_score": 98,
-      "fit_score": 95,
+      "fit_score": 94,
       "recommendation": "hire",
       "recommendation_reason": "Meets every must-have, with evidence quoted from the resume.",
-      "must_haves_met": "9/9",
+      "must_haves_met": "8/8",
       "verdicts": [
         {
           "requirement": "5+ years of experience in DevOps, SRE or platform engineering",
           "verdict": "met",
           "evidence": "Senior Site Reliability Engineer, Petra Cloud\nJan 2021 - Present",
-          "reasoning": "The SRE role runs from Jan 2021 to Oct 2026, about 5 years 10 months, which meets 5+ years without counting the Sep 2018 - Dec 2020 systems role (2 years 4 months).",
+          "reasoning": "SRE role from Jan 2021 to Oct 2026 is about 5.8 years, plus Sep 2018 to Dec 2020 systems engineering (about 2.3 years), exceeding 5 years.",
           "evidence_verified": true
         },
         {
-          "requirement": "Kubernetes in production",
+          "requirement": "Kubernetes and Docker in production",
           "verdict": "met",
           "evidence": "Operates 25 GKE Kubernetes clusters on GCP with Terraform modules for every environment.",
-          "reasoning": "He operates multiple production GKE clusters in his current role.",
-          "evidence_verified": true
-        },
-        {
-          "requirement": "Docker in production",
-          "verdict": "met",
-          "evidence": "Linux administration, Docker migration and Jenkins CI/CD pipelines on AWS.",
-          "reasoning": "He led a Docker migration in a hosting job, which shows Docker used in production.",
+          "reasoning": "Kubernetes is run in production at Petra Cloud, and Docker migration work was done at Levant Hosting.",
           "evidence_verified": true
         },
         {
           "requirement": "Infrastructure as code with Terraform",
           "verdict": "met",
           "evidence": "Operates 25 GKE Kubernetes clusters on GCP with Terraform modules for every environment.",
-          "reasoning": "Terraform modules are used for every environment in his current role.",
+          "reasoning": "The candidate uses Terraform modules for every environment in the current role.",
           "evidence_verified": true
         },
         {
-          "requirement": "Experience with AWS or GCP",
+          "requirement": "AWS or GCP",
           "verdict": "met",
-          "evidence": "Operates 25 GKE Kubernetes clusters on GCP with Terraform modules for every environment.",
-          "reasoning": "He uses GCP in his current role and used AWS in his previous role.",
+          "evidence": "Operates 25 GKE Kubernetes clusters on GCP",
+          "reasoning": "The candidate works on GCP in the current role and worked on AWS previously.",
           "evidence_verified": true
         },
         {
           "requirement": "CI/CD pipelines (GitHub Actions, Jenkins or similar)",
           "verdict": "met",
           "evidence": "Linux administration, Docker migration and Jenkins CI/CD pipelines on AWS.",
-          "reasoning": "He built Jenkins CI/CD pipelines in a job.",
+          "reasoning": "The candidate built Jenkins CI/CD pipelines in a job.",
           "evidence_verified": true
         },
         {
           "requirement": "Linux",
           "verdict": "met",
           "evidence": "Linux administration, Docker migration and Jenkins CI/CD pipelines on AWS.",
-          "reasoning": "Linux administration was part of a role.",
+          "reasoning": "Linux administration was part of a job.",
           "evidence_verified": true
         },
         {
           "requirement": "Scripting in Python or Go",
           "verdict": "met",
-          "evidence": "Wrote Go operators and Python tooling for automated failover; Prometheus and Grafana alerting.",
-          "reasoning": "He wrote both Go and Python tooling on the job.",
+          "evidence": "Wrote Go operators and Python tooling for automated failover",
+          "reasoning": "The candidate wrote Go and Python in the current role.",
           "evidence_verified": true
         },
         {
           "requirement": "Monitoring with Prometheus and Grafana",
           "verdict": "met",
-          "evidence": "Wrote Go operators and Python tooling for automated failover; Prometheus and Grafana alerting.",
-          "reasoning": "Prometheus and Grafana alerting are part of his current role.",
+          "evidence": "Prometheus and Grafana alerting.",
+          "reasoning": "The candidate set up Prometheus and Grafana alerting in the current role.",
           "evidence_verified": true
         },
         {
-          "requirement": "Incident response and on-call leadership",
+          "requirement": "Incident response and on-call leadership experience",
           "verdict": "met",
           "evidence": "Leads incident reviews and the on-call rotation for 40 engineers.",
-          "reasoning": "He leads incident reviews and an on-call rotation of 40 engineers.",
+          "reasoning": "The candidate directly leads incident reviews and on-call.",
           "evidence_verified": true
         },
         {
@@ -117,76 +110,69 @@
       "name": "Maria Garcia",
       "resume_path": "resumes/maria_garcia.txt",
       "rag_score": 97,
-      "fit_score": 88,
+      "fit_score": 86,
       "recommendation": "borderline",
       "recommendation_reason": "Only partly meets must-have: Monitoring with Prometheus and Grafana.",
-      "must_haves_met": "8/9",
+      "must_haves_met": "7/8",
       "verdicts": [
         {
           "requirement": "5+ years of experience in DevOps, SRE or platform engineering",
           "verdict": "met",
           "evidence": "Senior Platform Engineer, Dell Technologies\nMar 2021 - Present",
-          "reasoning": "Dell Mar 2021–Oct 2026 is about 5.6 years plus Indeed Jan 2019–Feb 2021 at about 2.1 years, totalling about 7.7 years, which is at least 5.",
+          "reasoning": "Indeed Jan 2019–Feb 2021 (~2y2m) plus Dell Mar 2021–Oct 2026 (~5y8m) totals about 7y10m, which is at least 5 years.",
           "evidence_verified": true
         },
         {
-          "requirement": "Kubernetes in production",
+          "requirement": "Kubernetes and Docker in production",
           "verdict": "met",
           "evidence": "Run 40+ Kubernetes clusters with Terraform; built CI/CD with GitHub Actions.",
-          "reasoning": "Running 40+ Kubernetes clusters in a current job shows production Kubernetes use.",
-          "evidence_verified": true
-        },
-        {
-          "requirement": "Docker in production",
-          "verdict": "met",
-          "evidence": "Jenkins pipelines, Docker images, Linux fleet management.",
-          "reasoning": "Docker image work is listed as part of the DevOps role at Indeed.",
+          "reasoning": "She runs Kubernetes clusters at Dell and built Docker images at Indeed, both in jobs.",
           "evidence_verified": true
         },
         {
           "requirement": "Infrastructure as code with Terraform",
           "verdict": "met",
-          "evidence": "Run 40+ Kubernetes clusters with Terraform; built CI/CD with GitHub Actions.",
-          "reasoning": "Terraform is used to manage clusters in the current role.",
+          "evidence": "Run 40+ Kubernetes clusters with Terraform",
+          "reasoning": "She uses Terraform to manage infrastructure in her current role.",
           "evidence_verified": true
         },
         {
-          "requirement": "Experience with AWS or GCP",
+          "requirement": "AWS or GCP",
           "verdict": "met",
           "evidence": "Python automation for cost reporting across AWS and GCP.",
-          "reasoning": "The current role involves work across both AWS and GCP.",
+          "reasoning": "She works across both AWS and GCP in her current role.",
           "evidence_verified": true
         },
         {
           "requirement": "CI/CD pipelines (GitHub Actions, Jenkins or similar)",
           "verdict": "met",
-          "evidence": "Run 40+ Kubernetes clusters with Terraform; built CI/CD with GitHub Actions.",
-          "reasoning": "She built CI/CD with GitHub Actions and also ran Jenkins pipelines at Indeed.",
+          "evidence": "built CI/CD with GitHub Actions.",
+          "reasoning": "She built GitHub Actions CI/CD and Jenkins pipelines in her jobs.",
           "evidence_verified": true
         },
         {
           "requirement": "Linux",
           "verdict": "met",
           "evidence": "Jenkins pipelines, Docker images, Linux fleet management.",
-          "reasoning": "Linux fleet management is part of a job.",
+          "reasoning": "She managed a Linux fleet at Indeed.",
           "evidence_verified": true
         },
         {
           "requirement": "Scripting in Python or Go",
           "verdict": "met",
           "evidence": "Python automation for cost reporting across AWS and GCP.",
-          "reasoning": "Python automation is used in the current role.",
+          "reasoning": "She does Python automation in her current role.",
           "evidence_verified": true
         },
         {
           "requirement": "Monitoring with Prometheus and Grafana",
           "verdict": "partial",
           "evidence": "AWS, GCP, Kubernetes, Docker, Terraform, CI/CD (Jenkins, GitHub Actions), Linux, Bash, Python, Prometheus",
-          "reasoning": "Prometheus appears only in the skills list and Grafana is not mentioned anywhere.",
+          "reasoning": "Prometheus appears only in the skills list and Grafana is not mentioned at all.",
           "evidence_verified": true
         },
         {
-          "requirement": "Incident response and on-call leadership",
+          "requirement": "Incident response and on-call leadership experience",
           "verdict": "missing",
           "evidence": "",
           "reasoning": "The resume does not mention incident response or on-call work.",
@@ -196,7 +182,7 @@
           "requirement": "Cloud cost optimisation",
           "verdict": "partial",
           "evidence": "Python automation for cost reporting across AWS and GCP.",
-          "reasoning": "Cost reporting is related to cost optimisation, but the resume does not show actual cost reductions.",
+          "reasoning": "Cost reporting is related to cost optimisation but does not show actual cost reduction.",
           "evidence_verified": true
         }
       ]
@@ -206,87 +192,80 @@
       "candidate_id": "resume_elena_rodriguez",
       "name": "Elena Rodriguez",
       "resume_path": "resumes/resume_elena_rodriguez.docx",
-      "rag_score": 99,
-      "fit_score": 80,
+      "rag_score": 98,
+      "fit_score": 78,
       "recommendation": "borderline",
-      "recommendation_reason": "Only partly meets must-have: Docker in production; Experience with AWS or GCP; Linux; Monitoring with Prometheus and Grafana.",
-      "must_haves_met": "5/9",
+      "recommendation_reason": "Only partly meets must-have: Kubernetes and Docker in production; AWS or GCP; Linux; Monitoring with Prometheus and Grafana.",
+      "must_haves_met": "4/8",
       "verdicts": [
         {
           "requirement": "5+ years of experience in DevOps, SRE or platform engineering",
           "verdict": "met",
-          "evidence": "DevOps Engineer - Saffron Grid Energy (2016 - 2021)",
-          "reasoning": "DevOps 2016-2021 (5 years) plus Staff SRE 2021-Present (about 5.8 years) totals about 10.8 years, which exceeds 5.",
+          "evidence": "Staff Site Reliability Engineer - Tidewater Robotics (2021 - Present)",
+          "reasoning": "DevOps at Saffron Grid 2016–2021 (5 years) plus SRE at Tidewater 2021–Oct 2026 (about 5.8 years) totals about 10.8 years, which exceeds 5.",
           "evidence_verified": true
         },
         {
-          "requirement": "Kubernetes in production",
-          "verdict": "met",
-          "evidence": "Cut monthly cloud spend by 27% by right-sizing Kubernetes clusters.",
-          "reasoning": "Two jobs show Kubernetes work: managing clusters at Tidewater and migrating VMs to Kubernetes at Saffron Grid.",
-          "evidence_verified": true
-        },
-        {
-          "requirement": "Docker in production",
+          "requirement": "Kubernetes and Docker in production",
           "verdict": "partial",
-          "evidence": "Containers | Docker, Kubernetes, Helm",
-          "reasoning": "Docker appears only in the skills list and in no described job.",
+          "evidence": "Migrated 120 virtual machines to Kubernetes with Terraform and Helm.",
+          "reasoning": "Production Kubernetes work is clearly shown in jobs, but Docker appears only in the skills list.",
           "evidence_verified": true
         },
         {
           "requirement": "Infrastructure as code with Terraform",
           "verdict": "met",
           "evidence": "Migrated 120 virtual machines to Kubernetes with Terraform and Helm.",
-          "reasoning": "Terraform was used in a job to carry out a large migration.",
+          "reasoning": "Terraform was used in a job to perform a large migration.",
           "evidence_verified": true
         },
         {
-          "requirement": "Experience with AWS or GCP",
+          "requirement": "AWS or GCP",
           "verdict": "partial",
           "evidence": "Cloud | AWS, GCP",
-          "reasoning": "AWS and GCP appear only in the skills list, and no job names a specific cloud provider.",
+          "reasoning": "AWS and GCP appear only in the skills list, and no role names the cloud provider used.",
           "evidence_verified": true
         },
         {
           "requirement": "CI/CD pipelines (GitHub Actions, Jenkins or similar)",
           "verdict": "met",
           "evidence": "Built CI/CD pipelines that reduced deploy time from 45 to 8 minutes.",
-          "reasoning": "The candidate built CI/CD pipelines in a role, although the tool is not named.",
+          "reasoning": "The candidate built CI/CD pipelines in a DevOps role.",
           "evidence_verified": true
         },
         {
           "requirement": "Linux",
           "verdict": "partial",
           "evidence": "Languages | Go, PYTHON, Bash",
-          "reasoning": "Linux is never mentioned; Bash scripting is only related evidence.",
+          "reasoning": "Linux is never named; Bash scripting is only related evidence.",
           "evidence_verified": true
         },
         {
           "requirement": "Scripting in Python or Go",
           "verdict": "met",
           "evidence": "Wrote PYTHON automation that rotates credentials across 300 services with zero downtime.",
-          "reasoning": "The candidate wrote Python automation in a current role.",
+          "reasoning": "Python scripting was used in the current role.",
           "evidence_verified": true
         },
         {
           "requirement": "Monitoring with Prometheus and Grafana",
           "verdict": "partial",
           "evidence": "Observability | Prometheus, Grafana, OpenTelemetry",
-          "reasoning": "Prometheus and Grafana appear only in the skills list and in no described job.",
+          "reasoning": "Prometheus and Grafana appear only in the skills list and in no job.",
           "evidence_verified": true
         },
         {
-          "requirement": "Incident response and on-call leadership",
+          "requirement": "Incident response and on-call leadership experience",
           "verdict": "met",
           "evidence": "Leads incident response and blameless postmortems.",
-          "reasoning": "The candidate leads incident response in the current role.",
+          "reasoning": "The candidate leads incident response in the current staff SRE role.",
           "evidence_verified": true
         },
         {
           "requirement": "Cloud cost optimisation",
           "verdict": "met",
           "evidence": "Cut monthly cloud spend by 27% by right-sizing Kubernetes clusters.",
-          "reasoning": "The resume shows a concrete cloud cost reduction achieved in a job.",
+          "reasoning": "The resume shows a quantified cloud cost reduction achieved in a job.",
           "evidence_verified": true
         }
       ]
@@ -297,41 +276,34 @@
       "name": "Zainab Yusuf",
       "resume_path": "resumes/zainab_yusuf.txt",
       "rag_score": 89,
-      "fit_score": 70,
+      "fit_score": 72,
       "recommendation": "borderline",
-      "recommendation_reason": "Only partly meets must-have: Kubernetes in production; Docker in production; Infrastructure as code with Terraform; Linux; Monitoring with Prometheus and Grafana.",
-      "must_haves_met": "4/9",
+      "recommendation_reason": "Only partly meets must-have: Kubernetes and Docker in production; Infrastructure as code with Terraform; Linux; Monitoring with Prometheus and Grafana.",
+      "must_haves_met": "4/8",
       "verdicts": [
         {
           "requirement": "5+ years of experience in DevOps, SRE or platform engineering",
           "verdict": "met",
           "evidence": "Senior Site Reliability Engineer, Bluefinch\nNov 2023 - Present",
-          "reasoning": "Jan 2021–Oct 2023 (~2.8 years) plus Nov 2023–Oct 2026 (~3 years) is about 5.8 years, which meets 5+.",
+          "reasoning": "Silverpine Jan 2021–Oct 2023 (2y10m) plus Bluefinch Nov 2023–Oct 2026 (3y0m) gives about 5y10m, which is at least 5 years.",
           "evidence_verified": true
         },
         {
-          "requirement": "Kubernetes in production",
+          "requirement": "Kubernetes and Docker in production",
           "verdict": "partial",
           "evidence": "DevOps engineer with 5 years of experience, most recently working with Kubernetes, GCP, Terraform.",
-          "reasoning": "Kubernetes appears only in the summary and skills list, with no job bullet showing production use.",
-          "evidence_verified": true
-        },
-        {
-          "requirement": "Docker in production",
-          "verdict": "partial",
-          "evidence": "Linux, Docker, GCP, GitLab CI, Kubernetes, Terraform, Go",
-          "reasoning": "Docker is listed only in the skills section and appears in no role.",
+          "reasoning": "Kubernetes and Docker appear only in the summary and skills list, with no job bullet showing production use.",
           "evidence_verified": true
         },
         {
           "requirement": "Infrastructure as code with Terraform",
           "verdict": "partial",
           "evidence": "DevOps engineer with 5 years of experience, most recently working with Kubernetes, GCP, Terraform.",
-          "reasoning": "Terraform appears only in the summary and skills list, and the infrastructure-codifying bullet names GCP, not Terraform.",
+          "reasoning": "Terraform is named only in the summary and skills list; the codifying bullet in a job mentions GCP, not Terraform.",
           "evidence_verified": true
         },
         {
-          "requirement": "Experience with AWS or GCP",
+          "requirement": "AWS or GCP",
           "verdict": "met",
           "evidence": "Codified environments with GCP, replacing hand-built servers.",
           "reasoning": "GCP was used in a job role.",
@@ -341,7 +313,7 @@
           "requirement": "CI/CD pipelines (GitHub Actions, Jenkins or similar)",
           "verdict": "met",
           "evidence": "Built CI/CD pipelines with GitLab CI that cut deployment time by 40%.",
-          "reasoning": "The candidate built CI/CD pipelines with GitLab CI, a tool similar to the ones named.",
+          "reasoning": "The candidate built CI/CD pipelines in both roles, and GitLab CI is similar to the tools named.",
           "evidence_verified": true
         },
         {
@@ -362,191 +334,94 @@
           "requirement": "Monitoring with Prometheus and Grafana",
           "verdict": "partial",
           "evidence": "Introduced SLOs and alerting that reduced pages per week by 30%.",
-          "reasoning": "The resume shows monitoring and alerting work but never names Prometheus or Grafana.",
+          "reasoning": "The resume shows alerting and SLO work, but Prometheus and Grafana are not named.",
           "evidence_verified": true
         },
         {
-          "requirement": "Incident response and on-call leadership",
+          "requirement": "Incident response and on-call leadership experience",
           "verdict": "met",
           "evidence": "Led incident response and wrote postmortems; raised availability to 99.94.7%.",
-          "reasoning": "The candidate explicitly led incident response in a current role.",
+          "reasoning": "The candidate led incident response in a current role, and reducing pages implies on-call involvement.",
           "evidence_verified": true
         },
         {
           "requirement": "Cloud cost optimisation",
           "verdict": "missing",
           "evidence": "",
-          "reasoning": "Nothing in the resume mentions cloud cost optimisation.",
+          "reasoning": "The resume does not mention cloud cost optimisation.",
           "evidence_verified": false
         }
       ]
     },
     {
       "rank": 5,
-      "candidate_id": "rebecca_stone",
-      "name": "Rebecca Stone",
-      "resume_path": "resumes/rebecca_stone.txt",
-      "rag_score": 88,
-      "fit_score": 70,
-      "recommendation": "no_hire",
-      "recommendation_reason": "Misses must-have: Monitoring with Prometheus and Grafana.",
-      "must_haves_met": "6/9",
-      "verdicts": [
-        {
-          "requirement": "5+ years of experience in DevOps, SRE or platform engineering",
-          "verdict": "met",
-          "evidence": "Migrated on-premise Linux workloads to AWS; Python automation and Jenkins pipelines.",
-          "reasoning": "Cloud Engineer Mar 2014–Jan 2020 is about 5 years 10 months of hands-on automation and pipeline work, which meets 5+ years; the later architect role adds more cloud infrastructure work.",
-          "evidence_verified": true
-        },
-        {
-          "requirement": "Kubernetes in production",
-          "verdict": "partial",
-          "evidence": "Advised clients on Kubernetes adoption and CI/CD standards; pre-sales architecture reviews.",
-          "reasoning": "Kubernetes appears only as advisory work, with no hands-on production operation shown.",
-          "evidence_verified": true
-        },
-        {
-          "requirement": "Docker in production",
-          "verdict": "partial",
-          "evidence": "AWS, Azure, Terraform, Kubernetes, Docker, CI/CD, Linux, Python, System Design",
-          "reasoning": "Docker is listed only in the skills section and appears in no job.",
-          "evidence_verified": true
-        },
-        {
-          "requirement": "Infrastructure as code with Terraform",
-          "verdict": "met",
-          "evidence": "Designed multi-account AWS and Azure landing zones with Terraform for banks and insurers.",
-          "reasoning": "Terraform is used directly for infrastructure in her current role.",
-          "evidence_verified": true
-        },
-        {
-          "requirement": "Experience with AWS or GCP",
-          "verdict": "met",
-          "evidence": "Migrated on-premise Linux workloads to AWS; Python automation and Jenkins pipelines.",
-          "reasoning": "AWS is used across both of her cloud roles since 2014.",
-          "evidence_verified": true
-        },
-        {
-          "requirement": "CI/CD pipelines (GitHub Actions, Jenkins or similar)",
-          "verdict": "met",
-          "evidence": "Migrated on-premise Linux workloads to AWS; Python automation and Jenkins pipelines.",
-          "reasoning": "She built Jenkins pipelines in her Cloud Engineer role.",
-          "evidence_verified": true
-        },
-        {
-          "requirement": "Linux",
-          "verdict": "met",
-          "evidence": "Linux and VMware administration.",
-          "reasoning": "She did Linux administration and Linux workload migrations in two roles.",
-          "evidence_verified": true
-        },
-        {
-          "requirement": "Scripting in Python or Go",
-          "verdict": "met",
-          "evidence": "Migrated on-premise Linux workloads to AWS; Python automation and Jenkins pipelines.",
-          "reasoning": "Python automation is shown in a job.",
-          "evidence_verified": true
-        },
-        {
-          "requirement": "Monitoring with Prometheus and Grafana",
-          "verdict": "missing",
-          "evidence": "",
-          "reasoning": "Neither Prometheus nor Grafana, nor any monitoring work, is mentioned.",
-          "evidence_verified": false
-        },
-        {
-          "requirement": "Incident response and on-call leadership",
-          "verdict": "missing",
-          "evidence": "",
-          "reasoning": "There is no mention of incident response or on-call duties.",
-          "evidence_verified": false
-        },
-        {
-          "requirement": "Cloud cost optimisation",
-          "verdict": "missing",
-          "evidence": "",
-          "reasoning": "There is no mention of cloud cost optimisation.",
-          "evidence_verified": false
-        }
-      ]
-    },
-    {
-      "rank": 6,
       "candidate_id": "divya_reddy",
       "name": "Divya Reddy",
       "resume_path": "resumes/divya_reddy.md",
       "rag_score": 89,
-      "fit_score": 65,
+      "fit_score": 67,
       "recommendation": "borderline",
-      "recommendation_reason": "Only partly meets must-have: Kubernetes in production; Docker in production; Experience with AWS or GCP; Linux; Scripting in Python or Go; Monitoring with Prometheus and Grafana.",
-      "must_haves_met": "3/9",
+      "recommendation_reason": "Only partly meets must-have: Kubernetes and Docker in production; AWS or GCP; Linux; Scripting in Python or Go; Monitoring with Prometheus and Grafana.",
+      "must_haves_met": "3/8",
       "verdicts": [
         {
           "requirement": "5+ years of experience in DevOps, SRE or platform engineering",
           "verdict": "met",
           "evidence": "Senior Site Reliability Engineer, Northgate Travel\nMar 2023 - Present",
-          "reasoning": "DevOps Engineer Mar 2019–Feb 2023 (~4 years) plus SRE Mar 2023–Oct 2026 (~3.6 years) gives ~7.6 years, which is at least 5.",
+          "reasoning": "DevOps Engineer from Mar 2019 to Feb 2023 is about 4 years, and SRE from Mar 2023 to Oct 2026 is about 3.6 years, totalling about 7.6 years, which is at least 5.",
           "evidence_verified": true
         },
         {
-          "requirement": "Kubernetes in production",
-          "verdict": "partial",
-          "evidence": "DevOps engineer with 7 years of experience, most recently working with Kubernetes, AWS, Terraform.",
-          "reasoning": "Kubernetes appears only in the summary and skills list, and no job bullet describes production use.",
-          "evidence_verified": true
-        },
-        {
-          "requirement": "Docker in production",
+          "requirement": "Kubernetes and Docker in production",
           "verdict": "partial",
           "evidence": "Linux, Python, Docker, Jenkins, Kubernetes, AWS, Terraform, System Design",
-          "reasoning": "Docker appears only in the skills list and in no role.",
+          "reasoning": "Kubernetes and Docker appear only in the skills list and summary, with no job showing production use.",
           "evidence_verified": true
         },
         {
           "requirement": "Infrastructure as code with Terraform",
           "verdict": "met",
           "evidence": "Codified environments with Terraform, replacing hand-built servers.",
-          "reasoning": "The current SRE role shows infrastructure as code with Terraform.",
+          "reasoning": "The current SRE role explicitly uses Terraform for infrastructure as code.",
           "evidence_verified": true
         },
         {
-          "requirement": "Experience with AWS or GCP",
+          "requirement": "AWS or GCP",
           "verdict": "partial",
-          "evidence": "DevOps engineer with 7 years of experience, most recently working with Kubernetes, AWS, Terraform.",
-          "reasoning": "AWS appears only in the summary and skills list, with no job bullet showing its use.",
+          "evidence": "most recently working with Kubernetes, AWS, Terraform.",
+          "reasoning": "AWS is named only in the summary and skills list, not in any job description.",
           "evidence_verified": true
         },
         {
           "requirement": "CI/CD pipelines (GitHub Actions, Jenkins or similar)",
           "verdict": "met",
           "evidence": "Built CI/CD pipelines with Jenkins that cut deployment time by 18%.",
-          "reasoning": "The candidate built Jenkins CI/CD pipelines in a job.",
+          "reasoning": "The Trellis Health role shows Jenkins CI/CD pipelines built on the job.",
           "evidence_verified": true
         },
         {
           "requirement": "Linux",
           "verdict": "partial",
           "evidence": "Linux, Python, Docker, Jenkins, Kubernetes, AWS, Terraform, System Design",
-          "reasoning": "Linux appears only in the skills list.",
+          "reasoning": "Linux appears only in the skills list and in no job description.",
           "evidence_verified": true
         },
         {
           "requirement": "Scripting in Python or Go",
           "verdict": "partial",
           "evidence": "Linux, Python, Docker, Jenkins, Kubernetes, AWS, Terraform, System Design",
-          "reasoning": "Python appears only in the skills list, with no scripting described in any role.",
+          "reasoning": "Python appears only in the skills list, with no scripting shown in any job.",
           "evidence_verified": true
         },
         {
           "requirement": "Monitoring with Prometheus and Grafana",
           "verdict": "partial",
           "evidence": "Introduced SLOs and alerting that reduced pages per week by 18%.",
-          "reasoning": "The resume shows alerting work, but Prometheus and Grafana are never named.",
+          "reasoning": "There is alerting work, but Prometheus and Grafana are never named.",
           "evidence_verified": true
         },
         {
-          "requirement": "Incident response and on-call leadership",
+          "requirement": "Incident response and on-call leadership experience",
           "verdict": "met",
           "evidence": "Led incident response and wrote postmortems; raised availability to 99.94.8%.",
           "reasoning": "The candidate explicitly led incident response in the current role.",
@@ -562,84 +437,160 @@
       ]
     },
     {
+      "rank": 6,
+      "candidate_id": "rebecca_stone",
+      "name": "Rebecca Stone",
+      "resume_path": "resumes/rebecca_stone.txt",
+      "rag_score": 88,
+      "fit_score": 67,
+      "recommendation": "no_hire",
+      "recommendation_reason": "Misses must-have: Monitoring with Prometheus and Grafana.",
+      "must_haves_met": "5/8",
+      "verdicts": [
+        {
+          "requirement": "5+ years of experience in DevOps, SRE or platform engineering",
+          "verdict": "partial",
+          "evidence": "Migrated on-premise Linux workloads to AWS; Python automation and Jenkins pipelines.",
+          "reasoning": "The Cloud Engineer role (Mar 2014 - Jan 2020, about 5.8 years) is DevOps-adjacent, and the later role is consulting architecture, so neither is explicitly DevOps, SRE or platform engineering.",
+          "evidence_verified": true
+        },
+        {
+          "requirement": "Kubernetes and Docker in production",
+          "verdict": "partial",
+          "evidence": "Advised clients on Kubernetes adoption and CI/CD standards; pre-sales architecture reviews.",
+          "reasoning": "Kubernetes appears only in an advisory capacity and Docker only in the skills list, with no hands-on production operation shown.",
+          "evidence_verified": true
+        },
+        {
+          "requirement": "Infrastructure as code with Terraform",
+          "verdict": "met",
+          "evidence": "Designed multi-account AWS and Azure landing zones with Terraform for banks and insurers.",
+          "reasoning": "Terraform is used for infrastructure design in the current role.",
+          "evidence_verified": true
+        },
+        {
+          "requirement": "AWS or GCP",
+          "verdict": "met",
+          "evidence": "Migrated on-premise Linux workloads to AWS; Python automation and Jenkins pipelines.",
+          "reasoning": "AWS work appears across two roles.",
+          "evidence_verified": true
+        },
+        {
+          "requirement": "CI/CD pipelines (GitHub Actions, Jenkins or similar)",
+          "verdict": "met",
+          "evidence": "Migrated on-premise Linux workloads to AWS; Python automation and Jenkins pipelines.",
+          "reasoning": "Jenkins pipelines were used in a job.",
+          "evidence_verified": true
+        },
+        {
+          "requirement": "Linux",
+          "verdict": "met",
+          "evidence": "Linux and VMware administration.",
+          "reasoning": "Linux administration and Linux workload migration appear in jobs.",
+          "evidence_verified": true
+        },
+        {
+          "requirement": "Scripting in Python or Go",
+          "verdict": "met",
+          "evidence": "Migrated on-premise Linux workloads to AWS; Python automation and Jenkins pipelines.",
+          "reasoning": "Python automation was done in the Cloud Engineer role.",
+          "evidence_verified": true
+        },
+        {
+          "requirement": "Monitoring with Prometheus and Grafana",
+          "verdict": "missing",
+          "evidence": "",
+          "reasoning": "There is no mention of Prometheus, Grafana or monitoring.",
+          "evidence_verified": false
+        },
+        {
+          "requirement": "Incident response and on-call leadership experience",
+          "verdict": "missing",
+          "evidence": "",
+          "reasoning": "There is no mention of incident response or on-call work.",
+          "evidence_verified": false
+        },
+        {
+          "requirement": "Cloud cost optimisation",
+          "verdict": "missing",
+          "evidence": "",
+          "reasoning": "There is no mention of cloud cost optimisation.",
+          "evidence_verified": false
+        }
+      ]
+    },
+    {
       "rank": 7,
       "candidate_id": "andile_khumalo",
       "name": "Andile Khumalo",
       "resume_path": "resumes/andile_khumalo.txt",
       "rag_score": 82,
-      "fit_score": 65,
+      "fit_score": 67,
       "recommendation": "borderline",
-      "recommendation_reason": "Only partly meets must-have: 5+ years of experience in DevOps, SRE or platform engineering; Docker in production; Infrastructure as code with Terraform; Linux; Scripting in Python or Go; Monitoring with Prometheus and Grafana.",
-      "must_haves_met": "3/9",
+      "recommendation_reason": "Only partly meets must-have: Kubernetes and Docker in production; Infrastructure as code with Terraform; Linux; Scripting in Python or Go; Monitoring with Prometheus and Grafana.",
+      "must_haves_met": "3/8",
       "verdicts": [
         {
           "requirement": "5+ years of experience in DevOps, SRE or platform engineering",
-          "verdict": "partial",
-          "evidence": "Junior DevOps Engineer, Stratawave\nOct 2021 - Nov 2023",
-          "reasoning": "Oct 2021–Nov 2023 is about 2 years 1 month, and Dec 2023–Oct 2026 is about 2 years 10 months, for roughly 4 years 11 months total, just under 5 years.",
-          "evidence_verified": true
-        },
-        {
-          "requirement": "Kubernetes in production",
           "verdict": "met",
-          "evidence": "Ran production infrastructure on Kubernetes and AWS for 4 product teams.",
-          "reasoning": "The current role explicitly involves running production infrastructure on Kubernetes.",
+          "evidence": "DevOps Engineer, Ironbark Security\nDec 2023 - Present",
+          "reasoning": "Stratawave Oct 2021–Nov 2023 (~2y2m) plus Ironbark Dec 2023–Oct 2026 (~2y11m) gives about 5y1m, meeting 5+ years.",
           "evidence_verified": true
         },
         {
-          "requirement": "Docker in production",
+          "requirement": "Kubernetes and Docker in production",
           "verdict": "partial",
-          "evidence": "Linux, Docker, Bash, Jenkins, Kubernetes, AWS, Helm, Prometheus",
-          "reasoning": "Docker appears only in the skills list and is not mentioned in any job.",
+          "evidence": "Ran production infrastructure on Kubernetes and AWS for 4 product teams.",
+          "reasoning": "Kubernetes in production is shown, but Docker appears only in the skills list.",
           "evidence_verified": true
         },
         {
           "requirement": "Infrastructure as code with Terraform",
           "verdict": "partial",
           "evidence": "Codified environments with Helm, replacing hand-built servers.",
-          "reasoning": "The candidate codified environments with Helm, a neighbouring tool, but Terraform is never mentioned.",
+          "reasoning": "Infrastructure codification is done with Helm, a neighbouring tool, not Terraform.",
           "evidence_verified": true
         },
         {
-          "requirement": "Experience with AWS or GCP",
+          "requirement": "AWS or GCP",
           "verdict": "met",
           "evidence": "Ran production infrastructure on Kubernetes and AWS for 4 product teams.",
-          "reasoning": "The current role shows production AWS experience.",
+          "reasoning": "AWS is used in production in the current role.",
           "evidence_verified": true
         },
         {
           "requirement": "CI/CD pipelines (GitHub Actions, Jenkins or similar)",
           "verdict": "met",
           "evidence": "Built CI/CD pipelines with Jenkins that cut deployment time by 25%.",
-          "reasoning": "The candidate built Jenkins CI/CD pipelines in a job.",
+          "reasoning": "The candidate built CI/CD pipelines with Jenkins in a job.",
           "evidence_verified": true
         },
         {
           "requirement": "Linux",
           "verdict": "partial",
           "evidence": "Linux, Docker, Bash, Jenkins, Kubernetes, AWS, Helm, Prometheus",
-          "reasoning": "Linux appears only in the skills list, with no job-level evidence.",
+          "reasoning": "Linux appears only in the skills list, not in any role.",
           "evidence_verified": true
         },
         {
           "requirement": "Scripting in Python or Go",
           "verdict": "partial",
           "evidence": "Linux, Docker, Bash, Jenkins, Kubernetes, AWS, Helm, Prometheus",
-          "reasoning": "Only Bash, a neighbouring scripting language, is listed, and it appears only in skills; neither Python nor Go is mentioned.",
+          "reasoning": "Only Bash is listed, a neighbouring scripting language, and only in the skills list; no Python or Go.",
           "evidence_verified": true
         },
         {
           "requirement": "Monitoring with Prometheus and Grafana",
           "verdict": "partial",
           "evidence": "Introduced SLOs and alerting that reduced pages per week by 25%.",
-          "reasoning": "Prometheus appears in skills and alerting work is described, but Grafana is never mentioned.",
+          "reasoning": "Alerting work is shown and Prometheus is in the skills list, but Grafana is absent and Prometheus is not tied to a role.",
           "evidence_verified": true
         },
         {
-          "requirement": "Incident response and on-call leadership",
+          "requirement": "Incident response and on-call leadership experience",
           "verdict": "met",
-          "evidence": "Led incident response and wrote postmortems; raised availability to 99.94.8%.",
-          "reasoning": "The candidate explicitly led incident response and wrote postmortems.",
+          "evidence": "Led incident response and wrote postmortems",
+          "reasoning": "The candidate explicitly led incident response in a role.",
           "evidence_verified": true
         },
         {
@@ -653,138 +604,41 @@
     },
     {
       "rank": 8,
-      "candidate_id": "li_wei",
-      "name": "Li Wei",
-      "resume_path": "resumes/li_wei.txt",
-      "rag_score": 80,
-      "fit_score": 60,
-      "recommendation": "no_hire",
-      "recommendation_reason": "Misses must-have: Linux; Monitoring with Prometheus and Grafana.",
-      "must_haves_met": "5/9",
-      "verdicts": [
-        {
-          "requirement": "5+ years of experience in DevOps, SRE or platform engineering",
-          "verdict": "partial",
-          "evidence": "MLOps engineer with 5 years of experience operating ML platforms at scale.",
-          "reasoning": "Apr 2022–Oct 2026 (~4.6 yrs) + Mar 2020–Mar 2022 (2 yrs) ≈ 6.6 yrs, but it is MLOps/ML platform work, a neighbouring discipline rather than general DevOps, SRE or platform engineering.",
-          "evidence_verified": true
-        },
-        {
-          "requirement": "Kubernetes in production",
-          "verdict": "met",
-          "evidence": "Built a Kubeflow and MLflow based model platform on Kubernetes serving 300+ ML models.",
-          "reasoning": "A Kubernetes platform serving 300+ models at Grab indicates production use.",
-          "evidence_verified": true
-        },
-        {
-          "requirement": "Docker in production",
-          "verdict": "met",
-          "evidence": "Containerised training jobs with Docker; CI/CD for model deployment on GCP.",
-          "reasoning": "Docker was used for training jobs in the Shopee role.",
-          "evidence_verified": true
-        },
-        {
-          "requirement": "Infrastructure as code with Terraform",
-          "verdict": "partial",
-          "evidence": "Python, Kubernetes, Kubeflow, MLflow, Docker, Terraform, AWS, GCP",
-          "reasoning": "Terraform appears only in the skills list and in no job.",
-          "evidence_verified": true
-        },
-        {
-          "requirement": "Experience with AWS or GCP",
-          "verdict": "met",
-          "evidence": "Containerised training jobs with Docker; CI/CD for model deployment on GCP.",
-          "reasoning": "GCP was used for model deployment in the Shopee role.",
-          "evidence_verified": true
-        },
-        {
-          "requirement": "CI/CD pipelines (GitHub Actions, Jenkins or similar)",
-          "verdict": "met",
-          "evidence": "Containerised training jobs with Docker; CI/CD for model deployment on GCP.",
-          "reasoning": "Built CI/CD for model deployment at Shopee, although the specific tool is not named.",
-          "evidence_verified": true
-        },
-        {
-          "requirement": "Linux",
-          "verdict": "missing",
-          "evidence": "",
-          "reasoning": "Linux is not mentioned anywhere in the resume.",
-          "evidence_verified": false
-        },
-        {
-          "requirement": "Scripting in Python or Go",
-          "verdict": "met",
-          "evidence": "Python SDK for feature store access; Airflow retraining pipelines.",
-          "reasoning": "Built a Python SDK in the current role.",
-          "evidence_verified": true
-        },
-        {
-          "requirement": "Monitoring with Prometheus and Grafana",
-          "verdict": "missing",
-          "evidence": "",
-          "reasoning": "Neither Prometheus nor Grafana is mentioned.",
-          "evidence_verified": false
-        },
-        {
-          "requirement": "Incident response and on-call leadership",
-          "verdict": "missing",
-          "evidence": "",
-          "reasoning": "The resume does not mention incident response or on-call work.",
-          "evidence_verified": false
-        },
-        {
-          "requirement": "Cloud cost optimisation",
-          "verdict": "missing",
-          "evidence": "",
-          "reasoning": "The resume does not mention cloud cost optimisation.",
-          "evidence_verified": false
-        }
-      ]
-    },
-    {
-      "rank": 9,
       "candidate_id": "samuel_osei",
       "name": "Samuel Osei",
       "resume_path": "resumes/samuel_osei.md",
       "rag_score": 82,
-      "fit_score": 55,
-      "recommendation": "no_hire",
-      "recommendation_reason": "Misses must-have: Docker in production.",
-      "must_haves_met": "2/9",
+      "fit_score": 61,
+      "recommendation": "borderline",
+      "recommendation_reason": "Only partly meets must-have: Kubernetes and Docker in production; Infrastructure as code with Terraform; AWS or GCP; Linux; Scripting in Python or Go; Monitoring with Prometheus and Grafana.",
+      "must_haves_met": "2/8",
       "verdicts": [
         {
           "requirement": "5+ years of experience in DevOps, SRE or platform engineering",
           "verdict": "met",
           "evidence": "Senior Site Reliability Engineer, Ember Analytics\nJul 2022 - Present",
-          "reasoning": "DevOps Engineer Jul 2019–Jun 2022 (3 years) plus SRE Jul 2022–Oct 2026 (about 4.3 years) is about 7.3 years, which is at least 5.",
+          "reasoning": "DevOps Engineer Jul 2019–Jun 2022 (3 yrs) plus SRE Jul 2022–Oct 2026 (~4.3 yrs) totals ~7.3 years, above 5.",
           "evidence_verified": true
         },
         {
-          "requirement": "Kubernetes in production",
+          "requirement": "Kubernetes and Docker in production",
           "verdict": "partial",
-          "evidence": "DevOps engineer with 7 years of experience, most recently working with Kubernetes, AWS, Terraform.",
-          "reasoning": "Kubernetes appears only in the summary and skills list, and no job bullet shows production use.",
+          "evidence": "most recently working with Kubernetes, AWS, Terraform.",
+          "reasoning": "Kubernetes appears only in the summary and skills, not in any role, and Docker is not mentioned at all.",
           "evidence_verified": true
-        },
-        {
-          "requirement": "Docker in production",
-          "verdict": "missing",
-          "evidence": "",
-          "reasoning": "Docker is not mentioned anywhere in the resume.",
-          "evidence_verified": false
         },
         {
           "requirement": "Infrastructure as code with Terraform",
           "verdict": "partial",
-          "evidence": "DevOps engineer with 7 years of experience, most recently working with Kubernetes, AWS, Terraform.",
-          "reasoning": "Terraform appears only in the summary and skills, and the infrastructure codification bullet names Bash rather than Terraform.",
+          "evidence": "most recently working with Kubernetes, AWS, Terraform.",
+          "reasoning": "Terraform is listed in the summary and skills, but no role describes using it; infrastructure was codified with Bash instead.",
           "evidence_verified": true
         },
         {
-          "requirement": "Experience with AWS or GCP",
+          "requirement": "AWS or GCP",
           "verdict": "partial",
-          "evidence": "DevOps engineer with 7 years of experience, most recently working with Kubernetes, AWS, Terraform.",
-          "reasoning": "AWS is claimed in the summary and skills but is not tied to any specific role.",
+          "evidence": "most recently working with Kubernetes, AWS, Terraform.",
+          "reasoning": "AWS appears only in the summary and skills list, with no job bullet describing AWS work.",
           "evidence_verified": true
         },
         {
@@ -798,104 +652,180 @@
           "requirement": "Linux",
           "verdict": "partial",
           "evidence": "Linux, AWS, Bash, Jenkins, Kubernetes, Terraform, Prometheus",
-          "reasoning": "Linux appears only in the skills list.",
+          "reasoning": "Linux appears only in the skills list and in no role.",
           "evidence_verified": true
         },
         {
           "requirement": "Scripting in Python or Go",
           "verdict": "partial",
           "evidence": "Codified environments with Bash, replacing hand-built servers.",
-          "reasoning": "Scripting is shown in Bash, a neighbouring language, and there is no Python or Go.",
+          "reasoning": "Only Bash scripting is shown, which is a neighbouring language rather than Python or Go.",
           "evidence_verified": true
         },
         {
           "requirement": "Monitoring with Prometheus and Grafana",
           "verdict": "partial",
           "evidence": "Built CI/CD pipelines with Prometheus that cut deployment time by 18%.",
-          "reasoning": "Prometheus is used in a role, but Grafana is never mentioned.",
+          "reasoning": "Prometheus is used in a role, but Grafana is not mentioned anywhere.",
           "evidence_verified": true
         },
         {
-          "requirement": "Incident response and on-call leadership",
+          "requirement": "Incident response and on-call leadership experience",
           "verdict": "met",
           "evidence": "Led incident response and wrote postmortems; raised availability to 99.94.7%.",
-          "reasoning": "The candidate explicitly led incident response in the current SRE role.",
+          "reasoning": "The candidate led incident response and reduced pages, showing incident response and on-call leadership.",
           "evidence_verified": true
         },
         {
           "requirement": "Cloud cost optimisation",
           "verdict": "missing",
           "evidence": "",
-          "reasoning": "There is no mention of cloud cost optimisation.",
+          "reasoning": "Nothing in the resume mentions cloud cost optimisation.",
           "evidence_verified": false
         }
       ]
     },
     {
-      "rank": 10,
+      "rank": 9,
       "candidate_id": "felix_wagner",
       "name": "Felix Wagner",
       "resume_path": "resumes/felix_wagner.docx",
       "rag_score": 78,
-      "fit_score": 55,
+      "fit_score": 61,
       "recommendation": "no_hire",
-      "recommendation_reason": "Misses must-have: Docker in production; Monitoring with Prometheus and Grafana.",
-      "must_haves_met": "3/9",
+      "recommendation_reason": "Misses must-have: Monitoring with Prometheus and Grafana.",
+      "must_haves_met": "3/8",
       "verdicts": [
         {
           "requirement": "5+ years of experience in DevOps, SRE or platform engineering",
           "verdict": "met",
           "evidence": "DevOps Engineer, Stratawave\nApr 2017 - Mar 2022",
-          "reasoning": "Stratawave Apr 2017–Mar 2022 (5 yrs) plus Arclight Apr 2022–Oct 2026 (~4.5 yrs) gives about 9.5 years, which is at least 5.",
+          "reasoning": "Stratawave Apr 2017–Mar 2022 (5 years) plus Arclight Apr 2022–Oct 2026 (4.5 years) totals about 9.5 years, which exceeds the 5 required.",
           "evidence_verified": true
         },
         {
-          "requirement": "Kubernetes in production",
+          "requirement": "Kubernetes and Docker in production",
           "verdict": "partial",
-          "evidence": "Linux, VMware, Ansible, Bash, Kubernetes, Azure, Terraform, CI/CD",
-          "reasoning": "Kubernetes appears only in the skills list and summary, not in any described production role.",
+          "evidence": "most recently working with Kubernetes, Azure, Terraform.",
+          "reasoning": "Kubernetes appears only in the summary and skills list, with no job describing production use, and Docker is not mentioned.",
           "evidence_verified": true
-        },
-        {
-          "requirement": "Docker in production",
-          "verdict": "missing",
-          "evidence": "",
-          "reasoning": "Docker is not mentioned anywhere in the resume.",
-          "evidence_verified": false
         },
         {
           "requirement": "Infrastructure as code with Terraform",
           "verdict": "met",
           "evidence": "Codified environments with Terraform, replacing hand-built servers.",
-          "reasoning": "He used Terraform for infrastructure as code in his current role.",
+          "reasoning": "The current SRE role describes using Terraform for infrastructure as code.",
           "evidence_verified": true
         },
         {
-          "requirement": "Experience with AWS or GCP",
+          "requirement": "AWS or GCP",
           "verdict": "partial",
           "evidence": "most recently working with Kubernetes, Azure, Terraform.",
-          "reasoning": "Only Azure is mentioned, which is a neighbouring cloud rather than AWS or GCP.",
+          "reasoning": "The candidate uses Azure, a neighbouring cloud, rather than AWS or GCP.",
           "evidence_verified": true
         },
         {
           "requirement": "CI/CD pipelines (GitHub Actions, Jenkins or similar)",
           "verdict": "met",
-          "evidence": "Built CI/CD pipelines with CI/CD that cut deployment time by 30%.",
-          "reasoning": "He built CI/CD pipelines in both roles.",
+          "evidence": "Built CI/CD pipelines with Bash that cut deployment time by 40%.",
+          "reasoning": "Both roles describe building CI/CD pipelines.",
           "evidence_verified": true
         },
         {
           "requirement": "Linux",
           "verdict": "partial",
           "evidence": "Linux, VMware, Ansible, Bash, Kubernetes, Azure, Terraform, CI/CD",
-          "reasoning": "Linux appears only in the skills list and not in any job description.",
+          "reasoning": "Linux appears only in the skills list and in no job description.",
           "evidence_verified": true
         },
         {
           "requirement": "Scripting in Python or Go",
           "verdict": "partial",
           "evidence": "Built CI/CD pipelines with Bash that cut deployment time by 40%.",
-          "reasoning": "He shows Bash scripting, a neighbouring language, but not Python or Go.",
+          "reasoning": "The resume shows Bash scripting, a neighbouring language, but no Python or Go.",
+          "evidence_verified": true
+        },
+        {
+          "requirement": "Monitoring with Prometheus and Grafana",
+          "verdict": "missing",
+          "evidence": "",
+          "reasoning": "Prometheus and Grafana are not mentioned anywhere in the resume.",
+          "evidence_verified": false
+        },
+        {
+          "requirement": "Incident response and on-call leadership experience",
+          "verdict": "met",
+          "evidence": "Led incident response and wrote postmortems; raised availability to 99.94.8%.",
+          "reasoning": "The current role explicitly states he led incident response and wrote postmortems.",
+          "evidence_verified": true
+        },
+        {
+          "requirement": "Cloud cost optimisation",
+          "verdict": "missing",
+          "evidence": "",
+          "reasoning": "The resume contains nothing about cloud cost optimisation.",
+          "evidence_verified": false
+        }
+      ]
+    },
+    {
+      "rank": 10,
+      "candidate_id": "li_wei",
+      "name": "Li Wei",
+      "resume_path": "resumes/li_wei.txt",
+      "rag_score": 76,
+      "fit_score": 61,
+      "recommendation": "no_hire",
+      "recommendation_reason": "Misses must-have: Linux; Monitoring with Prometheus and Grafana.",
+      "must_haves_met": "5/8",
+      "verdicts": [
+        {
+          "requirement": "5+ years of experience in DevOps, SRE or platform engineering",
+          "verdict": "met",
+          "evidence": "Machine Learning Platform Engineer, Shopee",
+          "reasoning": "ML platform engineering roles: Mar 2020–Mar 2022 (2 yrs) + Apr 2022–Oct 2026 (~4.6 yrs) ≈ 6.6 years, which is at least 5, though the focus is ML-specific platform work.",
+          "evidence_verified": true
+        },
+        {
+          "requirement": "Kubernetes and Docker in production",
+          "verdict": "met",
+          "evidence": "Built a Kubeflow and MLflow based model platform on Kubernetes serving 300+ ML models.",
+          "reasoning": "Kubernetes serves 300+ models in production at Grab, and Docker was used to containerise training jobs at Shopee.",
+          "evidence_verified": true
+        },
+        {
+          "requirement": "Infrastructure as code with Terraform",
+          "verdict": "partial",
+          "evidence": "Python, Kubernetes, Kubeflow, MLflow, Docker, Terraform, AWS, GCP",
+          "reasoning": "Terraform appears only in the skills list and is not tied to any role.",
+          "evidence_verified": true
+        },
+        {
+          "requirement": "AWS or GCP",
+          "verdict": "met",
+          "evidence": "CI/CD for model deployment on GCP.",
+          "reasoning": "GCP was used for model deployment in the Shopee role.",
+          "evidence_verified": true
+        },
+        {
+          "requirement": "CI/CD pipelines (GitHub Actions, Jenkins or similar)",
+          "verdict": "met",
+          "evidence": "Containerised training jobs with Docker; CI/CD for model deployment on GCP.",
+          "reasoning": "The candidate built CI/CD for model deployment at Shopee, although no specific tool is named.",
+          "evidence_verified": true
+        },
+        {
+          "requirement": "Linux",
+          "verdict": "missing",
+          "evidence": "",
+          "reasoning": "Linux is not mentioned anywhere in the resume.",
+          "evidence_verified": false
+        },
+        {
+          "requirement": "Scripting in Python or Go",
+          "verdict": "met",
+          "evidence": "Python SDK for feature store access; Airflow retraining pipelines.",
+          "reasoning": "The candidate built a Python SDK in the current Grab role.",
           "evidence_verified": true
         },
         {
@@ -906,17 +836,17 @@
           "evidence_verified": false
         },
         {
-          "requirement": "Incident response and on-call leadership",
-          "verdict": "met",
-          "evidence": "Led incident response and wrote postmortems; raised availability to 99.94.8%.",
-          "reasoning": "He led incident response and postmortems in his current SRE role.",
-          "evidence_verified": true
+          "requirement": "Incident response and on-call leadership experience",
+          "verdict": "missing",
+          "evidence": "",
+          "reasoning": "The resume does not mention incident response or on-call leadership.",
+          "evidence_verified": false
         },
         {
           "requirement": "Cloud cost optimisation",
           "verdict": "missing",
           "evidence": "",
-          "reasoning": "The resume does not mention any cloud cost optimisation.",
+          "reasoning": "Cloud cost optimisation is not mentioned.",
           "evidence_verified": false
         }
       ]
