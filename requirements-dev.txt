@@ -1,0 +1,8 @@
+# Tests, the resume generator and the demo recorder. Install with: pip install -r requirements-dev.txt
+-r requirements.txt
+pytest>=8.0
+pytest-cov>=5.0
+reportlab>=4.0
+# scripts/record_demo.py replays a recorded terminal session through pyte and draws frames with Pillow
+pyte>=0.8
+pillow>=10.0

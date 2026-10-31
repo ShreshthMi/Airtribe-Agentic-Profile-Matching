@@ -1,0 +1,11 @@
+.venv/
+__pycache__/
+.pytest_cache/
+.coverage
+htmlcov/
+.env
+.DS_Store
+# The vector index is rebuilt from resumes/ (see README); ~10 MB of binary churn otherwise.
+chroma_db/
+# Milestone 1's write log, kept beside the files it protects
+.fs_tools_written.json

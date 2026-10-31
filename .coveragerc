@@ -1,0 +1,5 @@
+[run]
+# Milestone 2 (and the Milestone 1 tools inside it) are vendored verbatim and tested in their own repositories.
+omit =
+    milestone2_rag/*
+    tests/*

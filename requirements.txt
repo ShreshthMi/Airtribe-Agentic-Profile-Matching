@@ -1,0 +1,14 @@
+# Agent
+anthropic>=1.0
+langgraph>=1.0
+pydantic>=2.7
+rich>=13.0
+python-dotenv>=1.0
+
+# Milestone 2 RAG (vendored in milestone2_rag/)
+chromadb>=0.5
+rank-bm25>=0.2.2
+pypdf>=4.0
+python-docx>=1.1
+# optional: uses PyTorch; without it the same MiniLM model runs via ChromaDB's ONNX build
+sentence-transformers>=2.7
