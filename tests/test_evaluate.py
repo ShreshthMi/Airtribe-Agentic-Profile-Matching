@@ -8,7 +8,7 @@ from pathlib import Path
 
 import pytest
 
-from tests.fakes import FakeCorpus, ScriptedClaude
+from tests.fakes import REACT_ROLE, FakeCorpus, ScriptedClaude
 
 ROOT = Path(__file__).resolve().parent.parent
 _spec = importlib.util.spec_from_file_location("evaluate", ROOT / "scripts" / "evaluate.py")
@@ -79,7 +79,7 @@ def test_a_posting_is_scored_for_each_provider_and_judgements_are_shared():
     gains = {"ana_ruiz": 2, "eve_moss": 2, "finn_oak": 1, "ben_ito": 1, "cara_lee": 0, "dev_shah": 0,
              "hal_reed": 0, "jo_kim": 0, "gia_park": 0, "ivy_chen": 1, "kai_lund": 0, "lia_ross": 0, "mo_sato": 0}
 
-    results, verdicts = evaluate.evaluate_posting("React developer, 3+ years", gains,
+    results, verdicts = evaluate.evaluate_posting("React developer, 3+ years", REACT_ROLE, gains,
                                                   {"minilm": FakeCorpus(), "other": ReversedCorpus()},
                                                   claude, TODAY, {})
 
@@ -88,13 +88,15 @@ def test_a_posting_is_scored_for_each_provider_and_judgements_are_shared():
     assert first["r1_p10"] > second["r1_p10"]                                # the reversed ranking is worse
     assert first["r2_ndcg10"] >= first["r1_ndcg10"]                           # Round 2 puts the met ones first
     assert first["hire_precision"] == 1.0                                    # its hires are all graded relevant
+    # hires (met) are graded 2 or 1, so of the 3 hires only Finn (graded 1) disagrees on grade
+    assert 0 < first["r3_agreement"] < 1
     judged = [name for name, _ in claude.judged]
     assert len(judged) == len(set(judged)) == 13                             # nobody is judged twice
     assert set(verdicts) == set(gains)
 
 
 def test_recall_is_not_reported_when_the_labels_cover_only_a_shortlist():
-    results, _ = evaluate.evaluate_posting("React developer", {"ana_ruiz": 2, "ben_ito": 1},
+    results, _ = evaluate.evaluate_posting("React developer", REACT_ROLE, {"ana_ruiz": 2, "ben_ito": 1},
                                            {"minilm": FakeCorpus()}, ScriptedClaude(), TODAY, {})
 
     assert results["minilm"]["r1_r10"] is None and results["minilm"]["unlabelled_in_top"] == 8
@@ -111,10 +113,22 @@ def test_the_report_has_a_row_per_provider_and_a_mean():
 
 
 # ---- refusing to run unfairly or without data ------------------------------------------- #
-def test_main_needs_label_sheets(tmp_path):
+def calibrated_index(tmp_path: Path, monkeypatch) -> None:
+    db = tmp_path / "db"
+    db.mkdir()
+    (db / "candidates.json").write_text('{"candidates": [{"candidate_name": "Ana", "resume_path": "resumes/a.md"}]}')
+    (db / "calibration.json").write_text('{"floor": 0.3, "ceil": 0.7}')
+    monkeypatch.setattr(evaluate, "index_dir", lambda provider: db)
+    monkeypatch.setattr(evaluate, "Claude", ScriptedClaude)
+
+
+def test_main_needs_label_sheets(tmp_path, monkeypatch, capsys):
+    calibrated_index(tmp_path, monkeypatch)
+
     with pytest.raises(SystemExit) as exit_info:
         evaluate.main(["--labels", str(tmp_path / "none")])
-    assert exit_info.value.code == 1
+
+    assert exit_info.value.code == 1 and "No label sheets" in capsys.readouterr().err
 
 
 def test_main_refuses_an_index_without_a_measured_band(tmp_path, monkeypatch, capsys):
@@ -126,3 +140,49 @@ def test_main_refuses_an_index_without_a_measured_band(tmp_path, monkeypatch, ca
         evaluate.main(["--labels", str(tmp_path), "--providers", "ollama"])
 
     assert "python scripts/build_index.py --provider ollama" in capsys.readouterr().err
+
+
+# ---- frozen requirements and pooled sheets ---------------------------------------------- #
+def test_requirements_are_extracted_once_and_then_read_back(tmp_path):
+    claude = ScriptedClaude()  # holds exactly one extraction
+
+    first = evaluate.frozen_requirements("real_frontend", "React developer", claude, tmp_path)
+    second = evaluate.frozen_requirements("real_frontend", "React developer", claude, tmp_path)
+
+    assert first == second and first["must_have"] == ["3+ years of React"]
+    assert (tmp_path / "real_frontend.json").is_file()
+
+
+def test_the_pooled_shortlist_covers_every_providers_top_10():
+    pool = evaluate.pooled_shortlist("React developer", REACT_ROLE, {"a": FakeCorpus(), "b": ReversedCorpus()})
+
+    ids = {c["candidate_id"] for c in pool}
+    assert len(ids) == 13 and len(pool) == 13   # 10 + 10 overlapping in 7, so all 13 resumes
+
+
+def test_sheets_with_grades_are_never_overwritten(tmp_path):
+    write_sheet(tmp_path / "real_sre_A.csv", {"ana_ruiz": 2})
+    candidates = [{"candidate_id": "ben_ito", "name": "Ben Ito", "resume_path": "resumes/ben_ito.txt"}]
+
+    with pytest.raises(ValueError, match="already has grades"):
+        evaluate.write_sheets("real_sre", candidates, ["A", "B"], tmp_path)
+    assert not (tmp_path / "real_sre_B.csv").exists()
+
+    paths = evaluate.write_sheets("real_data", candidates, ["A", "B"], tmp_path)
+    assert [p.name for p in paths] == ["real_data_A.csv", "real_data_B.csv"]
+
+
+def test_make_sheets_writes_pooled_blank_sheets(tmp_path, monkeypatch, capsys):
+    jobs, labels = tmp_path / "jobs", tmp_path / "labels"
+    jobs.mkdir()
+    (jobs / "real_frontend.txt").write_text("React developer, 3+ years")
+    monkeypatch.setattr(evaluate, "open_corpora", lambda providers: {"a": FakeCorpus(), "b": ReversedCorpus()})
+    monkeypatch.setattr(evaluate, "Claude", ScriptedClaude)
+    monkeypatch.setattr(evaluate, "REQUIREMENTS_DIR", tmp_path / "frozen")
+
+    evaluate.main(["--jobs", str(jobs), "--labels", str(labels), "--make-sheets", "A", "B",
+                   "--postings", "real_frontend"])
+
+    rows = list(csv.DictReader((labels / "real_frontend_B.csv").open()))
+    assert len(rows) == 13 and all(r["human_grade"] == "" for r in rows)
+    assert (tmp_path / "frozen" / "real_frontend.json").is_file()
