@@ -183,7 +183,7 @@ def test_make_sheets_writes_pooled_blank_sheets(tmp_path, monkeypatch, capsys):
     evaluate.main(["--jobs", str(jobs), "--labels", str(labels), "--make-sheets", "A", "B",
                    "--postings", "real_frontend"])
 
-    rows = list(csv.DictReader((labels / "real_frontend_B.csv").open()))
+    rows = evaluate.human_eval.read_sheet(labels / "real_frontend_B.csv")
     assert len(rows) == 13 and all(r["human_grade"] == "" for r in rows)
     assert (tmp_path / "frozen" / "real_frontend.json").is_file()
 
