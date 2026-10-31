@@ -70,7 +70,10 @@ Candidates, Generate Report, then a human feedback loop.
 (met / partial / missing, with a quote). [`screening.py`](screening.py) turns those into a
 fit score (must-haves count double, partial counts half), a ranking, and a recommendation
 decided by the must-haves alone: every must-have met is *Hire*, any missing is *No hire*,
-anything in between is *Borderline*. Because it is a formula, "why did A rank above B?" has
+anything in between is *Borderline*. Requirements a resume cannot show ("excellent
+communication", "collaborates with remote teams") are set aside as interview checks when
+the posting is read: listed in the report and covered by the interview questions, but never
+scored, since their absence from a resume says nothing about the person. Because it is a formula, "why did A rank above B?" has
 an exact answer: the requirements where their judgements differ.
 
 **Quotes are checked.** Every quote Claude gives as evidence is looked up in the resume,
@@ -143,12 +146,13 @@ here; the labels have to come from outside.
 
 1. **Postings.** Put 3-5 real job postings, written by people who never saw these resumes,
    in `job_descriptions/` as `<posting>.txt` (for example `real_frontend.txt`).
-2. **Sheets.** Screen each posting (`python chat.py --jd job_descriptions/real_frontend.txt`),
-   then make a blind sheet from the round's JSON report, listing candidates alphabetically
-   with no rank or verdict:
-   `python scripts/human_eval.py template reports/<round>.json > evaluation/labels/real_frontend_alice.csv`.
-   For one or two postings use `template --all`, which lists every resume; recall cannot be
-   measured without it.
+2. **Sheets.** Build the indexes to compare (step 5), then write blind sheets that list
+   everyone any of them ranks in its top 10, alphabetically, with no rank or verdict:
+   `python scripts/evaluate.py --providers huggingface ollama --make-sheets A B --postings real_sre real_data`.
+   This also freezes each posting's requirements in `evaluation/private/requirements/`, so the
+   evaluation later scores exactly what the sheets were made from. For one or two postings
+   use `python scripts/human_eval.py template --all` instead, which lists every resume;
+   recall cannot be measured without it.
 3. **Labels.** Two people grade every row on their own copy: 2 would interview, 1
    borderline, 0 would not. Then check they read the rubric the same way:
    `python scripts/human_eval.py agreement evaluation/labels/real_frontend_alice.csv evaluation/labels/real_frontend_bob.csv`
@@ -165,7 +169,8 @@ here; the labels have to come from outside.
 
    For every posting and provider, `evaluate.py` reports Round 1's P@5, P@10, nDCG@10 and
    (with a full sheet) R@10, and Round 2's P@5, nDCG@10 and how many of its *Hire*
-   recommendations the labellers agree with. The table goes to `evaluation/results.md`.
+   recommendations the labellers agree with, and how often the agent's hire / borderline / no
+   hire matches their grade. The table goes to `evaluation/results.md`.
 
 Two details keep the comparison fair. Milestone 2 scales similarity through a band
 hand-set for MiniLM (0.15-0.65); another model scores on another scale, so
@@ -174,9 +179,9 @@ with the index (MiniLM's measured band is 0.33-0.68), and `evaluate.py` refuses 
 without one. And Round 2's judgements are shared between providers, so a candidate both
 rank highly is judged once and judged the same way.
 
-Not done here: no labels exist yet, and nothing has been measured with them. The
-`chroma_db` index the chat, the scenarios and the demo used was built before calibration
-and uses Milestone 2's hand-set band.
+Not done here: no labels exist yet, and nothing has been measured with them. The scenario
+transcripts and the demo were recorded before calibration and before interview checks
+existed, with an index on Milestone 2's hand-set band.
 
 ## The demo video
 
