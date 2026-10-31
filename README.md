@@ -154,7 +154,8 @@ here; the labels have to come from outside.
    use `python scripts/human_eval.py template --all` instead, which lists every resume;
    recall cannot be measured without it.
 3. **Labels.** Two people grade every row on their own copy: 2 would interview, 1
-   borderline, 0 would not. Then check they read the rubric the same way:
+   borderline, 0 would not. `python scripts/grade.py <posting> <labeller>` grades a sheet in the terminal, showing
+   each resume (PDF and Word included) as text and never the agent's view. Then check they read the rubric the same way:
    `python scripts/human_eval.py agreement evaluation/labels/real_frontend_alice.csv evaluation/labels/real_frontend_bob.csv`
    reports Cohen's kappa, plain and weighted, and lists any 2-versus-0 disagreements.
 4. **The agent's recommendations** against each labeller and their consensus:
