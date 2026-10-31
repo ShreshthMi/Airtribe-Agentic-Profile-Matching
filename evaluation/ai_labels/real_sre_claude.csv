@@ -1,0 +1,12 @@
+candidate_id,name,resume_path,human_grade,notes
+ahmed_karim,Ahmed Karim,resumes/ahmed_karim.md,1,strong Go backend with K8s/Kafka/Redis/Postgres; no on-call/IaC/SRE record shown
+andile_khumalo,Andile Khumalo,resumes/andile_khumalo.txt,1,5 yrs DevOps with K8s/Helm/SLOs/incidents; no Terraform; no programming beyond Bash
+arjun_mehta,Arjun Mehta,resumes/arjun_mehta.md,1,Java/Go backend; migrated to EKS with Terraform; Kafka/Redis; no on-call/SRE record
+divya_reddy,Divya Reddy,resumes/divya_reddy.md,2,7 yrs SRE/DevOps; K8s/Terraform/Linux/Python; incident response and SLOs
+felix_wagner,Felix Wagner,resumes/felix_wagner.docx,2,9 yrs SRE/DevOps; K8s/Terraform/Ansible/Linux; incidents; programming limited to Bash
+maria_garcia,Maria Garcia,resumes/maria_garcia.txt,2,~8 yrs platform/DevOps; 40+ K8s clusters with Terraform; Linux; Python
+oluwaseun_adeyemi,Oluwaseun Adeyemi,resumes/oluwaseun_adeyemi.md,1,Java backend on EKS/Terraform with Kafka/Redis/Postgres; no on-call/SRE record
+omar_haddad,Omar Haddad,resumes/omar_haddad.md,2,8 yrs SRE; K8s/Terraform; Go operators; Prometheus; leads on-call and incident reviews
+resume_elena_rodriguez,Elena Rodriguez,resumes/resume_elena_rodriguez.docx,2,~10 yrs SRE; Terraform/Ansible/K8s/Helm; Go/Python/Bash; incident response
+samuel_osei,Samuel Osei,resumes/samuel_osei.md,2,7 yrs SRE/DevOps; K8s/Terraform/Linux/Prometheus; incidents and SLOs; Bash only
+zainab_yusuf,Zainab Yusuf,resumes/zainab_yusuf.txt,2,~6 yrs SRE/DevOps; K8s/Terraform/GCP; Go; SLOs and incident response

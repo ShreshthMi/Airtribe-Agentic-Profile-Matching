@@ -1,0 +1,101 @@
+candidate_id,name,resume_path,human_grade,notes
+aaliyah_johnson,Aaliyah Johnson,resumes/aaliyah_johnson.txt,0,frontend engineer; no ML/backend
+adaeze_nwosu,Adaeze Nwosu,resumes/adaeze_nwosu.md,2,6 yrs MLE; productionised RAG/LLM models with offline+online evaluation; serving 600k/day
+ahmed_karim,Ahmed Karim,resumes/ahmed_karim.md,0,Go/Kafka backend but no ML/LLM or eval work
+aisha_khan,Aisha Khan,resumes/aisha_khan.md,1,~3 yrs MLE; chatbot NLP models + Flask serving; no LLM/eval/observability shown
+amara_okonkwo,Amara Okonkwo,resumes/amara_okonkwo.md,0,frontend engineer; no ML
+amina_diallo,Amina Diallo,resumes/amina_diallo.txt,0,data engineer; no ML
+ananya_rao,Ananya Rao,resumes/ananya_rao.md,2,7 yrs NLP; RAG over 4M docs with vector DB + rerankers; answer-quality evals; FastAPI services
+andile_khumalo,Andile Khumalo,resumes/andile_khumalo.txt,0,DevOps; no ML
+anika_bose,Anika Bose,resumes/anika_bose.md,0,data scientist (analytics/A-B tests); no backend or LLM
+arash_karimi,Arash Karimi,resumes/arash_karimi.md,0,application security; no ML
+arjun_mehta,Arjun Mehta,resumes/arjun_mehta.md,0,Java/Go/Kafka backend but no ML/LLM or eval work
+ayesha_siddiqui,Ayesha Siddiqui,resumes/ayesha_siddiqui.txt,0,QA automation; no ML
+benjamin_carter,Benjamin Carter,resumes/benjamin_carter.md,0,frontend EM; no ML
+camila_reyes,Camila Reyes,resumes/camila_reyes.md,0,frontend; no ML
+chloe_martin,Chloe Martin,resumes/chloe_martin.md,0,frontend; no ML
+clara_jensen,Clara Jensen,resumes/clara_jensen.pdf,0,Python backend; no ML/LLM or eval work
+daniel_cohen,Daniel Cohen,resumes/daniel_cohen.md,0,iOS; no ML
+david_okafor,David Okafor,resumes/david_okafor.txt,0,Python full-stack; no ML
+diego_fernandez,Diego Fernández,resumes/diego_fernandez.txt,0,data engineer (Kafka/Spark); no ML/LLM
+divya_reddy,Divya Reddy,resumes/divya_reddy.md,0,DevOps/SRE; no ML
+elif_yildiz,Elif Yildiz,resumes/elif_yildiz.txt,0,frontend; no ML
+emily_chen,Emily Chen,resumes/emily_chen.txt,0,frontend; no ML
+esther_mwangi,Esther Mwangi,resumes/esther_mwangi.pdf,0,data scientist; analytics models; no backend or LLM
+ethan_walsh,Ethan Walsh,resumes/ethan_walsh.txt,0,frontend; no ML
+farhan_chowdhury,Farhan Chowdhury,resumes/farhan_chowdhury.txt,0,backend; no ML
+fatima_zahra,Fatima Zahra,resumes/fatima_zahra.txt,0,data scientist (experimentation/NLP classification); no backend services or LLM
+felix_wagner,Felix Wagner,resumes/felix_wagner.docx,0,DevOps/SRE; no ML
+gabriel_costa,Gabriel Costa,resumes/gabriel_costa.txt,0,full-stack web; no ML
+george_mathews,George Mathews,resumes/george_mathews.txt,0,Java engineering manager; no ML
+grace_liu,Grace Liu,resumes/grace_liu.md,0,frontend; no ML
+hana_sato,Hana Sato,resumes/hana_sato.md,0,frontend; no ML
+hannah_brooks,Hannah Brooks,resumes/hannah_brooks.md,0,analytics engineer; no ML
+haruto_kimura,Haruto Kimura,resumes/haruto_kimura.txt,0,iOS; no ML
+hyunwoo_choi,Hyun-woo Choi,resumes/hyunwoo_choi.pdf,1,6 yrs production CV/ranking MLE with offline+online eval; no LLM/NLP or backend services
+ingrid_halvorsen,Ingrid Halvorsen,resumes/ingrid_halvorsen.md,0,C# backend; no ML
+ishaan_kapoor,Ishaan Kapoor,resumes/ishaan_kapoor.txt,1,6 yrs production CV/ranking MLE; MLOps; no LLM/NLP or backend services
+ivan_petrov,Ivan Petrov,resumes/ivan_petrov.md,0,embedded; no ML
+jakub_novotny,Jakub Novotny,resumes/jakub_novotny.md,0,data engineer (Kafka/Flink); no ML/LLM
+jessica_park,Jessica Park,resumes/jessica_park.txt,0,junior data scientist; no backend
+john_doe,John Doe,resumes/john_doe.txt,1,6 yrs CV MLE; Python data pipelines on GCP; no LLM/retrieval or eval systems
+jonas_weber,Jonas Weber,resumes/jonas_weber.md,0,frontend; no ML
+karan_malhotra,Karan Malhotra,resumes/karan_malhotra.txt,2,~3 yrs LLM engineer; RAG with Pinecone; FastAPI backend; retrieval eval sets
+kenji_watanabe,Kenji Watanabe,resumes/kenji_watanabe.md,0,mobile; no ML
+kofi_asante,Kofi Asante,resumes/kofi_asante.md,0,data engineer; no ML
+kwame_mensah,Kwame Mensah,resumes/kwame_mensah.txt,0,full-stack JS; no ML
+lars_johansson,Lars Johansson,resumes/lars_johansson.md,0,data engineer (Kafka/Spark); no ML/LLM
+laura_bianchi,Laura Bianchi,resumes/laura_bianchi.docx,0,mobile; no ML
+leila_ahmadi,Leila Ahmadi,resumes/leila_ahmadi.md,2,4 yrs MLE + NLP PhD; HF/LangChain models in production with offline+online eval
+li_wei,Li Wei,resumes/li_wei.txt,1,MLOps platform on K8s serving 300+ models; Python; no LLM or eval-system work
+lucas_moreau,Lucas Moreau,resumes/lucas_moreau.docx,0,frontend; no ML
+lucia_romano,Lucia Romano,resumes/lucia_romano.md,0,frontend; no ML
+lukas_becker,Lukas Becker,resumes/lukas_becker.txt,0,mobile; no ML
+maria_garcia,Maria Garcia,resumes/maria_garcia.txt,0,DevOps; no ML
+mateo_silva,Mateo Silva,resumes/mateo_silva.md,0,application security; no ML
+meera_pillai,Meera Pillai,resumes/meera_pillai.md,2,8 yrs MLE; LLM/RAG pipelines; offline+online eval; MLOps on AWS/K8s
+mei_lin,Mei Lin,resumes/mei_lin.md,0,CV research scientist; little backend/production systems evidence
+mia_schneider,Mia Schneider,resumes/mia_schneider.md,0,full-stack web; no ML
+minh_nguyen,Minh Nguyen,resumes/minh_nguyen.txt,0,mobile; no ML
+nadia_benali,Nadia Benali,resumes/nadia_benali.md,0,data scientist; no backend or LLM
+natalia_popescu,Natalia Popescu,resumes/natalia_popescu.txt,0,Java backend; no ML
+neha_gupta,Neha Gupta,resumes/neha_gupta.md,0,product manager; no hands-on ML engineering
+noah_fischer,Noah Fischer,resumes/noah_fischer.docx,0,full-stack web; no ML
+olivia_bennett,Olivia Bennett,resumes/olivia_bennett.txt,0,data scientist; no backend or LLM
+oluwaseun_adeyemi,Oluwaseun Adeyemi,resumes/oluwaseun_adeyemi.md,0,Java backend; no ML
+omar_haddad,Omar Haddad,resumes/omar_haddad.md,0,SRE; no ML
+oscar_mendes,Oscar Mendes,resumes/oscar_mendes.md,0,backend; no ML
+pablo_ruiz,Pablo Ruiz,resumes/pablo_ruiz.md,0,Go/Python backend; no ML/LLM or eval work
+patrick_oneill,Patrick O'Neill,resumes/patrick_oneill.txt,0,early-career web dev; TensorFlow only in a keyword list
+priya_sharma,Priya Sharma,resumes/priya_sharma.md,2,8+ yrs MLE; RAG with LangChain/Pinecone; NLP pipelines; MLflow on K8s
+priyanka_nair,Priyanka Nair,resumes/priyanka_nair.txt,0,Android; no ML
+rahul_verma,Rahul Verma,resumes/rahul_verma.md,0,data engineer (Kafka/Spark); no ML/LLM
+rania_saleh,Rania Saleh,resumes/rania_saleh.md,0,DevOps; no ML
+ravi_shankar,Ravi Shankar,resumes/ravi_shankar.txt,0,Java backend; no ML
+rebecca_stone,Rebecca Stone,resumes/rebecca_stone.txt,0,cloud architect; no ML
+resume_aisha_bello,Aisha Bello,resumes/resume_aisha_bello.docx,0,product manager; no ML engineering
+resume_david_kim,David Kim,resumes/resume_david_kim.txt,2,6 yrs MLE; real-time model serving at 15 ms p99; MLflow drift monitoring; FastAPI
+resume_elena_rodriguez,Elena Rodriguez,resumes/resume_elena_rodriguez.docx,0,SRE; no ML
+resume_john_doe,John Doe,resumes/resume_john_doe.pdf,0,Python backend; no ML/LLM or eval work
+resume_john_smith,John Smith,resumes/resume_john_smith.docx,0,frontend; no ML
+resume_marcus_chen,Marcus Chen,resumes/resume_marcus_chen.pdf,0,Java/Kafka backend; no ML
+resume_priya_sharma,Priya Sharma,resumes/resume_priya_sharma.pdf,0,data scientist (forecasting/A-B tests); no backend or LLM
+resume_sofia_novak,Sofia Novak,resumes/resume_sofia_novak.txt,0,mobile; no ML
+ricardo_alves,Ricardo Alves,resumes/ricardo_alves.txt,0,data scientist; no backend or LLM
+rohan_desai,Rohan Desai,resumes/rohan_desai.txt,0,full-stack web; no ML
+samuel_osei,Samuel Osei,resumes/samuel_osei.md,0,DevOps/SRE; no ML
+sara_kim,Sara Kim,resumes/sara_kim.txt,0,data scientist; no backend or LLM
+siddharth_iyengar,Siddharth Iyengar,resumes/siddharth_iyengar.md,0,QA automation; no ML
+sneha_kulkarni,Sneha Kulkarni,resumes/sneha_kulkarni.md,0,Android; no ML
+sophie_laurent,Sophie Laurent,resumes/sophie_laurent.docx,0,product designer; no ML
+sven_larsen,Sven Larsen,resumes/sven_larsen.md,0,data engineer (Kafka/Spark); no ML/LLM
+tariq_mahmood,Tariq Mahmood,resumes/tariq_mahmood.txt,2,4 yrs MLE; LLM pipeline + vector DBs; FastAPI/Flask serving; offline+online eval
+thandiwe_dlamini,Thandiwe Dlamini,resumes/thandiwe_dlamini.txt,0,data engineer; no ML
+tomas_herrera,Tomás Herrera,resumes/tomas_herrera.md,2,7 yrs MLE; two-tower retrieval/ranking; A/B testing; Spark + K8s deployment; no LLM
+tomasz_kowalski,Tomasz Kowalski,resumes/tomasz_kowalski.md,0,Java backend; no ML
+vikram_iyer,Vikram Iyer,resumes/vikram_iyer.md,2,LLM/RAG applied scientist (FAISS/HF on SageMaker); dense retrieval research; light backend evidence
+vivek_menon,Vivek Menon,resumes/vivek_menon.txt,0,Kotlin/Java backend; no ML
+william_turner,William Turner,resumes/william_turner.md,0,full-stack web; no ML
+yara_nasser,Yara Nasser,resumes/yara_nasser.md,0,QA automation; no ML
+yuki_tanaka,Yuki Tanaka,resumes/yuki_tanaka.txt,0,product designer; no ML
+zainab_yusuf,Zainab Yusuf,resumes/zainab_yusuf.txt,0,DevOps/SRE; no ML

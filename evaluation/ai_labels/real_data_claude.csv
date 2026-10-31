@@ -1,0 +1,13 @@
+candidate_id,name,resume_path,human_grade,notes
+amina_diallo,Amina Diallo,resumes/amina_diallo.txt,0,3 yrs DE with BigQuery/Airflow; no Snowflake or dbt; junior for a senior role
+diego_fernandez,Diego Fernández,resumes/diego_fernandez.txt,2,5 yrs DE; Snowflake + dbt + Airflow + Kafka/PySpark; meets all core requirements
+hannah_brooks,Hannah Brooks,resumes/hannah_brooks.md,1,dbt/Snowflake/Airflow but analytics-engineering/BI scope; ~3.5 yrs in that role
+jakub_novotny,Jakub Novotny,resumes/jakub_novotny.md,0,7 yrs Spark/Kafka/Flink DE but no Snowflake/dbt/Airflow
+kofi_asante,Kofi Asante,resumes/kofi_asante.md,0,~2 yrs DE (Databricks/Spark); no Snowflake/dbt/Airflow
+lars_johansson,Lars Johansson,resumes/lars_johansson.md,1,6 yrs DE with Airflow/Redshift/Kafka; missing Snowflake and dbt
+li_wei,Li Wei,resumes/li_wei.txt,0,MLOps platform engineer; not a warehouse/pipeline DE; no Snowflake or dbt
+maria_garcia,Maria Garcia,resumes/maria_garcia.txt,0,DevOps/platform engineer; no data engineering
+rahul_verma,Rahul Verma,resumes/rahul_verma.md,2,9 yrs DE; Hadoop-to-Snowflake migration + dbt + Airflow + Kafka; Azure/AWS
+sara_kim,Sara Kim,resumes/sara_kim.txt,0,data scientist; uses Snowflake/dbt for metrics but no pipeline/platform engineering
+sven_larsen,Sven Larsen,resumes/sven_larsen.md,1,9 yrs DE with Airflow/dbt/Kafka/Terraform but BigQuery not Snowflake
+thandiwe_dlamini,Thandiwe Dlamini,resumes/thandiwe_dlamini.txt,2,~4.7 yrs DE; built Snowflake warehouse + dbt + Airflow/Kafka; just under 5 yrs

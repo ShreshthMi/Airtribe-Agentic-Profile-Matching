@@ -1,0 +1,18 @@
+candidate_id,name,resume_path,human_grade,notes
+ahmed_karim,Ahmed Karim,resumes/ahmed_karim.md,2,10 yrs backend in Go with Kafka/Postgres/Redis; payments ledger; no crypto/Azure/security shown
+arash_karimi,Arash Karimi,resumes/arash_karimi.md,0,AppSec/pentesting background; strong on security but not a backend developer
+arjun_mehta,Arjun Mehta,resumes/arjun_mehta.md,2,9+ yrs Java/Go microservices; payment routing at 10k TPS; Kafka; K8s/Terraform
+farhan_chowdhury,Farhan Chowdhury,resumes/farhan_chowdhury.txt,1,5 yrs backend in PHP/Node/TS; payments ledger; none of the listed languages; light for senior
+felix_wagner,Felix Wagner,resumes/felix_wagner.docx,0,DevOps/SRE with Azure and Terraform; no backend service development
+george_mathews,George Mathews,resumes/george_mathews.txt,1,9 yrs hands-on Java payments backend but managing for the last 5 yrs; IC fit unclear
+ingrid_halvorsen,Ingrid Halvorsen,resumes/ingrid_halvorsen.md,2,9 yrs C#/.NET microservices on Azure; payments ledger; closest stack match
+maria_garcia,Maria Garcia,resumes/maria_garcia.txt,0,DevOps/platform engineer; no backend development
+mateo_silva,Mateo Silva,resumes/mateo_silva.md,0,AppSec engineer; no backend service development
+natalia_popescu,Natalia Popescu,resumes/natalia_popescu.txt,2,~6 yrs Java/Spring Boot/Kafka backend; payments ledger; services at 250k rpm
+oluwaseun_adeyemi,Oluwaseun Adeyemi,resumes/oluwaseun_adeyemi.md,2,9 yrs Java/Spring microservices for card payments; Kafka; Redis; K8s; Terraform
+pablo_ruiz,Pablo Ruiz,resumes/pablo_ruiz.md,2,7 yrs backend in Go/gRPC and Python; K8s; strong scale work; no fintech shown
+ravi_shankar,Ravi Shankar,resumes/ravi_shankar.txt,1,~4 yrs Java/Spring Boot fintech microservices; below the 5-7 yr senior bar
+rebecca_stone,Rebecca Stone,resumes/rebecca_stone.txt,0,cloud architect (AWS/Azure landing zones); not a backend developer
+resume_john_doe,John Doe,resumes/resume_john_doe.pdf,1,8 yrs strong Python/Django/FastAPI backend; none of the listed languages; no fintech/security
+tomasz_kowalski,Tomasz Kowalski,resumes/tomasz_kowalski.md,2,7 yrs Java/Spring Boot/Kafka; payments ledger; services at 600k rpm
+vivek_menon,Vivek Menon,resumes/vivek_menon.txt,2,~7 yrs Java/Kotlin/Spring Boot/Kafka; payments ledger; AWS
