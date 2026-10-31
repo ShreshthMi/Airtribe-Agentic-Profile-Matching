@@ -1,0 +1,712 @@
+{
+  "screening_round": 1,
+  "date": "2026-10-31",
+  "requirements": {
+    "role_title": "Frontend Engineer - Design Systems",
+    "must_have": [
+      "3+ years building production web apps with React and TypeScript",
+      "Solid HTML and CSS",
+      "Accessibility (WCAG) experience",
+      "Testing with Jest or Playwright",
+      "Experience working closely with designers in Figma"
+    ],
+    "nice_to_have": [
+      "Next.js and server-side rendering",
+      "GraphQL",
+      "Performance optimisation (Core Web Vitals)"
+    ],
+    "notes": "Read '3+ years' as applying to building production web apps with React and TypeScript together, not to overall experience. 'Jest or Playwright' is satisfied by either tool."
+  },
+  "shortlist": [
+    {
+      "rank": 1,
+      "candidate_id": "amara_okonkwo",
+      "name": "Amara Okonkwo",
+      "resume_path": "resumes/amara_okonkwo.md",
+      "rag_score": 100,
+      "fit_score": 85,
+      "recommendation": "hire",
+      "recommendation_reason": "Meets every must-have, with evidence quoted from the resume.",
+      "must_haves_met": "5/5",
+      "verdicts": [
+        {
+          "requirement": "3+ years building production web apps with React and TypeScript",
+          "verdict": "met",
+          "evidence": "Built the merchant dashboard in React, TypeScript and Next.js; audited and fixed WCAG 2.2 issues across 40 screens.",
+          "reasoning": "Jun 2023–Oct 2026 is about 3 years 4 months, plus Sep 2022–May 2023 is about 9 months, for roughly 4.1 years of React and TypeScript, which is at least 3.",
+          "evidence_verified": true
+        },
+        {
+          "requirement": "Solid HTML and CSS",
+          "verdict": "met",
+          "evidence": "React and TypeScript features for a loan application flow; HTML and CSS email templates.",
+          "reasoning": "HTML and CSS were used in a job role, and the frontend work builds on them.",
+          "evidence_verified": true
+        },
+        {
+          "requirement": "Accessibility (WCAG) experience",
+          "verdict": "met",
+          "evidence": "audited and fixed WCAG 2.2 issues across 40 screens.",
+          "reasoning": "There is direct WCAG audit and remediation work in the current role.",
+          "evidence_verified": true
+        },
+        {
+          "requirement": "Testing with Jest or Playwright",
+          "verdict": "met",
+          "evidence": "Playwright and Jest suites in CI; shared components built from Figma designs.",
+          "reasoning": "Both Jest and Playwright test suites were used in CI at work.",
+          "evidence_verified": true
+        },
+        {
+          "requirement": "Experience working closely with designers in Figma",
+          "verdict": "met",
+          "evidence": "shared components built from Figma designs.",
+          "reasoning": "The candidate builds components from Figma designs in the current role, which implies working from designers' output.",
+          "evidence_verified": true
+        },
+        {
+          "requirement": "Next.js and server-side rendering",
+          "verdict": "partial",
+          "evidence": "Built the merchant dashboard in React, TypeScript and Next.js",
+          "reasoning": "Next.js was used in a job, but server-side rendering is not explicitly mentioned.",
+          "evidence_verified": true
+        },
+        {
+          "requirement": "GraphQL",
+          "verdict": "partial",
+          "evidence": "TypeScript, JavaScript, React, Next.js, HTML, CSS, Accessibility (WCAG), Jest, Playwright, Figma, GraphQL",
+          "reasoning": "GraphQL appears only in the skills list and in no job.",
+          "evidence_verified": true
+        },
+        {
+          "requirement": "Performance optimisation (Core Web Vitals)",
+          "verdict": "missing",
+          "evidence": "",
+          "reasoning": "There is no mention of performance optimisation or Core Web Vitals.",
+          "evidence_verified": false
+        }
+      ]
+    },
+    {
+      "rank": 2,
+      "candidate_id": "hana_sato",
+      "name": "Hana Sato",
+      "resume_path": "resumes/hana_sato.md",
+      "rag_score": 90,
+      "fit_score": 77,
+      "recommendation": "borderline",
+      "recommendation_reason": "Only partly meets must-have: Solid HTML and CSS.",
+      "must_haves_met": "4/5",
+      "verdicts": [
+        {
+          "requirement": "3+ years building production web apps with React and TypeScript",
+          "verdict": "met",
+          "evidence": "Built and maintained React components in TypeScript for a customer-facing web app with 600k monthly users.",
+          "reasoning": "Arclight role Jul 2022 to Present (Oct 2026) is about 4 years 3 months of React and TypeScript, which is at least 3 years.",
+          "evidence_verified": true
+        },
+        {
+          "requirement": "Solid HTML and CSS",
+          "verdict": "partial",
+          "evidence": "Introduced Redux and Sass into the team's workflow and wrote the conventions guide.",
+          "reasoning": "Sass shows CSS work in a job, but HTML and CSS are not explicitly stated.",
+          "evidence_verified": true
+        },
+        {
+          "requirement": "Accessibility (WCAG) experience",
+          "verdict": "met",
+          "evidence": "Worked with designers in Figma to ship an accessible (WCAG 2.1 AA) component library in React.",
+          "reasoning": "The candidate shipped a WCAG 2.1 AA compliant component library in a current role.",
+          "evidence_verified": true
+        },
+        {
+          "requirement": "Testing with Jest or Playwright",
+          "verdict": "met",
+          "evidence": "Introduced React Query and Playwright into the team's workflow and wrote the conventions guide.",
+          "reasoning": "The candidate introduced Playwright into the team's workflow in a current job.",
+          "evidence_verified": true
+        },
+        {
+          "requirement": "Experience working closely with designers in Figma",
+          "verdict": "met",
+          "evidence": "Worked with designers in Figma to ship an accessible (WCAG 2.1 AA) component library in React.",
+          "reasoning": "The resume directly states the candidate collaborated with designers in Figma.",
+          "evidence_verified": true
+        },
+        {
+          "requirement": "Next.js and server-side rendering",
+          "verdict": "missing",
+          "evidence": "",
+          "reasoning": "The resume does not mention Next.js or server-side rendering.",
+          "evidence_verified": false
+        },
+        {
+          "requirement": "GraphQL",
+          "verdict": "missing",
+          "evidence": "",
+          "reasoning": "The resume does not mention GraphQL.",
+          "evidence_verified": false
+        },
+        {
+          "requirement": "Performance optimisation (Core Web Vitals)",
+          "verdict": "met",
+          "evidence": "Improved Core Web Vitals on the checkout flow, reducing LCP by 35% with code splitting.",
+          "reasoning": "The candidate improved Core Web Vitals with a measurable LCP reduction in a job.",
+          "evidence_verified": true
+        }
+      ]
+    },
+    {
+      "rank": 3,
+      "candidate_id": "aaliyah_johnson",
+      "name": "Aaliyah Johnson",
+      "resume_path": "resumes/aaliyah_johnson.txt",
+      "rag_score": 83,
+      "fit_score": 69,
+      "recommendation": "borderline",
+      "recommendation_reason": "Only partly meets must-have: 3+ years building production web apps with React and TypeScript.",
+      "must_haves_met": "4/5",
+      "verdicts": [
+        {
+          "requirement": "3+ years building production web apps with React and TypeScript",
+          "verdict": "partial",
+          "evidence": "Junior Frontend Developer, Arclight Mobility\nOct 2025 - Present",
+          "reasoning": "Oct 2025 to Oct 2026 is 1 year of React, short of 3, and the resume shows JavaScript rather than TypeScript.",
+          "evidence_verified": true
+        },
+        {
+          "requirement": "Solid HTML and CSS",
+          "verdict": "met",
+          "evidence": "Introduced HTML/CSS and Jest into the team's workflow and wrote the conventions guide.",
+          "reasoning": "HTML/CSS is used in the current role and listed in the skills section.",
+          "evidence_verified": true
+        },
+        {
+          "requirement": "Accessibility (WCAG) experience",
+          "verdict": "met",
+          "evidence": "Worked with designers in Figma to ship an accessible (WCAG 2.1 AA) component library in React.",
+          "reasoning": "She shipped a WCAG 2.1 AA compliant component library in her job.",
+          "evidence_verified": true
+        },
+        {
+          "requirement": "Testing with Jest or Playwright",
+          "verdict": "met",
+          "evidence": "Introduced HTML/CSS and Jest into the team's workflow and wrote the conventions guide.",
+          "reasoning": "She introduced Jest into the team's workflow in her current role.",
+          "evidence_verified": true
+        },
+        {
+          "requirement": "Experience working closely with designers in Figma",
+          "verdict": "met",
+          "evidence": "Worked with designers in Figma to ship an accessible (WCAG 2.1 AA) component library in React.",
+          "reasoning": "The resume states directly that she worked with designers in Figma.",
+          "evidence_verified": true
+        },
+        {
+          "requirement": "Next.js and server-side rendering",
+          "verdict": "missing",
+          "evidence": "",
+          "reasoning": "The resume does not mention Next.js or server-side rendering.",
+          "evidence_verified": false
+        },
+        {
+          "requirement": "GraphQL",
+          "verdict": "missing",
+          "evidence": "",
+          "reasoning": "The resume does not mention GraphQL.",
+          "evidence_verified": false
+        },
+        {
+          "requirement": "Performance optimisation (Core Web Vitals)",
+          "verdict": "missing",
+          "evidence": "",
+          "reasoning": "The resume does not mention performance optimisation or Core Web Vitals.",
+          "evidence_verified": false
+        }
+      ]
+    },
+    {
+      "rank": 4,
+      "candidate_id": "resume_john_smith",
+      "name": "John Smith",
+      "resume_path": "resumes/resume_john_smith.docx",
+      "rag_score": 100,
+      "fit_score": 58,
+      "recommendation": "borderline",
+      "recommendation_reason": "Only partly meets must-have: 3+ years building production web apps with React and TypeScript; Solid HTML and CSS; Accessibility (WCAG) experience; Experience working closely with designers in Figma.",
+      "must_haves_met": "1/5",
+      "verdicts": [
+        {
+          "requirement": "3+ years building production web apps with React and TypeScript",
+          "verdict": "partial",
+          "evidence": "Rebuilt the subscriber dashboard in React and Next.js, improving Largest Contentful Paint from 4.1 s to 1.6 s.",
+          "reasoning": "React appears at Quillfeather (2022 to Oct 2026, about 4 years) but TypeScript appears only at Mosaic (2020 to 2022, about 2 years), so no role shows both together for 3+ years.",
+          "evidence_verified": true
+        },
+        {
+          "requirement": "Solid HTML and CSS",
+          "verdict": "partial",
+          "evidence": "HTML5, CSS and Sass",
+          "reasoning": "HTML and CSS appear only in the skills list and are not described in any job.",
+          "evidence_verified": true
+        },
+        {
+          "requirement": "Accessibility (WCAG) experience",
+          "verdict": "partial",
+          "evidence": "Frontend engineer with 5 years of experience building accessible, fast web apps",
+          "reasoning": "Accessibility is claimed in the summary and WCAG 2.2 is in the skills list, but no role describes accessibility work.",
+          "evidence_verified": true
+        },
+        {
+          "requirement": "Testing with Jest or Playwright",
+          "verdict": "met",
+          "evidence": "Introduced Playwright end-to-end tests that caught more than 30 regressions before release.",
+          "reasoning": "Playwright testing is shown in the Mosaic Learning role.",
+          "evidence_verified": true
+        },
+        {
+          "requirement": "Experience working closely with designers in Figma",
+          "verdict": "partial",
+          "evidence": "Figma",
+          "reasoning": "Figma appears only in the skills list, with no described collaboration with designers.",
+          "evidence_verified": false
+        },
+        {
+          "requirement": "Next.js and server-side rendering",
+          "verdict": "partial",
+          "evidence": "Rebuilt the subscriber dashboard in React and Next.js",
+          "reasoning": "Next.js is used in a job, but server-side rendering is never mentioned explicitly.",
+          "evidence_verified": true
+        },
+        {
+          "requirement": "GraphQL",
+          "verdict": "missing",
+          "evidence": "",
+          "reasoning": "GraphQL is not mentioned anywhere in the resume.",
+          "evidence_verified": false
+        },
+        {
+          "requirement": "Performance optimisation (Core Web Vitals)",
+          "verdict": "met",
+          "evidence": "improving Largest Contentful Paint from 4.1 s to 1.6 s.",
+          "reasoning": "The candidate improved LCP, a Core Web Vital, in the Quillfeather role.",
+          "evidence_verified": true
+        }
+      ]
+    },
+    {
+      "rank": 5,
+      "candidate_id": "emily_chen",
+      "name": "Emily Chen",
+      "resume_path": "resumes/emily_chen.txt",
+      "rag_score": 98,
+      "fit_score": 58,
+      "recommendation": "borderline",
+      "recommendation_reason": "Only partly meets must-have: Solid HTML and CSS; Accessibility (WCAG) experience; Testing with Jest or Playwright; Experience working closely with designers in Figma.",
+      "must_haves_met": "1/5",
+      "verdicts": [
+        {
+          "requirement": "3+ years building production web apps with React and TypeScript",
+          "verdict": "met",
+          "evidence": "Rebuilt checkout in React and TypeScript, improving conversion by 3%.",
+          "reasoning": "The Etsy role uses React and TypeScript from Jan 2022 to today (Oct 2026), about 4.8 years, which is at least 3.",
+          "evidence_verified": true
+        },
+        {
+          "requirement": "Solid HTML and CSS",
+          "verdict": "partial",
+          "evidence": "JavaScript, TypeScript, React, Next.js, Node.js, HTML, CSS, Tailwind, GraphQL, Jest, Figma, Git",
+          "reasoning": "HTML and CSS appear only in the skills list, not in any role description.",
+          "evidence_verified": true
+        },
+        {
+          "requirement": "Accessibility (WCAG) experience",
+          "verdict": "partial",
+          "evidence": "Frontend engineer, 5 years of experience building accessible web applications with React and TypeScript.",
+          "reasoning": "The summary claims accessible apps, but no role mentions accessibility work or WCAG.",
+          "evidence_verified": true
+        },
+        {
+          "requirement": "Testing with Jest or Playwright",
+          "verdict": "partial",
+          "evidence": "JavaScript, TypeScript, React, Next.js, Node.js, HTML, CSS, Tailwind, GraphQL, Jest, Figma, Git",
+          "reasoning": "Jest is listed only in the skills section, with no testing work described in any job.",
+          "evidence_verified": true
+        },
+        {
+          "requirement": "Experience working closely with designers in Figma",
+          "verdict": "partial",
+          "evidence": "JavaScript, TypeScript, React, Next.js, Node.js, HTML, CSS, Tailwind, GraphQL, Jest, Figma, Git",
+          "reasoning": "Figma appears only in the skills list, with no described collaboration with designers.",
+          "evidence_verified": true
+        },
+        {
+          "requirement": "Next.js and server-side rendering",
+          "verdict": "partial",
+          "evidence": "JavaScript, TypeScript, React, Next.js, Node.js, HTML, CSS, Tailwind, GraphQL, Jest, Figma, Git",
+          "reasoning": "Next.js is only in the skills list, and server-side rendering is not mentioned anywhere.",
+          "evidence_verified": true
+        },
+        {
+          "requirement": "GraphQL",
+          "verdict": "met",
+          "evidence": "Built a GraphQL client layer and shared component library.",
+          "reasoning": "The candidate built a GraphQL client layer in the current Etsy role.",
+          "evidence_verified": true
+        },
+        {
+          "requirement": "Performance optimisation (Core Web Vitals)",
+          "verdict": "missing",
+          "evidence": "",
+          "reasoning": "There is no mention of performance optimisation or Core Web Vitals; the conversion gain is not a performance metric.",
+          "evidence_verified": false
+        }
+      ]
+    },
+    {
+      "rank": 6,
+      "candidate_id": "ethan_walsh",
+      "name": "Ethan Walsh",
+      "resume_path": "resumes/ethan_walsh.txt",
+      "rag_score": 82,
+      "fit_score": 50,
+      "recommendation": "no_hire",
+      "recommendation_reason": "Misses must-have: Accessibility (WCAG) experience; Experience working closely with designers in Figma.",
+      "must_haves_met": "2/5",
+      "verdicts": [
+        {
+          "requirement": "3+ years building production web apps with React and TypeScript",
+          "verdict": "met",
+          "evidence": "Built and maintained React components in TypeScript for a customer-facing web app with 120k monthly users.",
+          "reasoning": "Coral Telecom role runs Jun 2023 to Oct 2026, about 3 years 4 months of React and TypeScript, which meets 3+ years.",
+          "evidence_verified": true
+        },
+        {
+          "requirement": "Solid HTML and CSS",
+          "verdict": "partial",
+          "evidence": "Built and maintained React components in TypeScript for a customer-facing web app with 120k monthly users.",
+          "reasoning": "HTML and CSS are never named, though frontend component work implies some exposure.",
+          "evidence_verified": true
+        },
+        {
+          "requirement": "Accessibility (WCAG) experience",
+          "verdict": "missing",
+          "evidence": "",
+          "reasoning": "The resume does not mention accessibility or WCAG.",
+          "evidence_verified": false
+        },
+        {
+          "requirement": "Testing with Jest or Playwright",
+          "verdict": "met",
+          "evidence": "Introduced Next.js and Playwright into the team's workflow and wrote the conventions guide.",
+          "reasoning": "Playwright was introduced at Coral Telecom and Jest at Vantage Learning, both in jobs.",
+          "evidence_verified": true
+        },
+        {
+          "requirement": "Experience working closely with designers in Figma",
+          "verdict": "missing",
+          "evidence": "",
+          "reasoning": "The resume does not mention designers or Figma.",
+          "evidence_verified": false
+        },
+        {
+          "requirement": "Next.js and server-side rendering",
+          "verdict": "partial",
+          "evidence": "Introduced Next.js and Playwright into the team's workflow and wrote the conventions guide.",
+          "reasoning": "Next.js was used in a job, but server-side rendering is not explicitly mentioned.",
+          "evidence_verified": true
+        },
+        {
+          "requirement": "GraphQL",
+          "verdict": "missing",
+          "evidence": "",
+          "reasoning": "The resume does not mention GraphQL.",
+          "evidence_verified": false
+        },
+        {
+          "requirement": "Performance optimisation (Core Web Vitals)",
+          "verdict": "met",
+          "evidence": "Improved Core Web Vitals on the checkout flow, reducing LCP by 35% with code splitting.",
+          "reasoning": "This shows direct Core Web Vitals optimisation work with a measurable result.",
+          "evidence_verified": true
+        }
+      ]
+    },
+    {
+      "rank": 7,
+      "candidate_id": "yuki_tanaka",
+      "name": "Yuki Tanaka",
+      "resume_path": "resumes/yuki_tanaka.txt",
+      "rag_score": 84,
+      "fit_score": 46,
+      "recommendation": "no_hire",
+      "recommendation_reason": "Misses must-have: Testing with Jest or Playwright.",
+      "must_haves_met": "2/5",
+      "verdicts": [
+        {
+          "requirement": "3+ years building production web apps with React and TypeScript",
+          "verdict": "partial",
+          "evidence": "Ran usability tests and worked with React engineers on accessible components.",
+          "reasoning": "The candidate worked alongside React engineers as a designer but shows no hands-on React or TypeScript development.",
+          "evidence_verified": true
+        },
+        {
+          "requirement": "Solid HTML and CSS",
+          "verdict": "partial",
+          "evidence": "Figma, User research, Prototyping, Design systems, Accessibility (WCAG), HTML, CSS, Usability testing",
+          "reasoning": "HTML and CSS appear only in the skills list and in no job description.",
+          "evidence_verified": true
+        },
+        {
+          "requirement": "Accessibility (WCAG) experience",
+          "verdict": "met",
+          "evidence": "Ran usability tests and worked with React engineers on accessible components.",
+          "reasoning": "WCAG is listed as a skill and the current role involves accessible components, though from a design perspective.",
+          "evidence_verified": true
+        },
+        {
+          "requirement": "Testing with Jest or Playwright",
+          "verdict": "missing",
+          "evidence": "",
+          "reasoning": "Only usability testing is mentioned; there is no Jest or Playwright.",
+          "evidence_verified": false
+        },
+        {
+          "requirement": "Experience working closely with designers in Figma",
+          "verdict": "met",
+          "evidence": "Led the redesign of the payments web app; built the Figma design system used by 5 squads.",
+          "reasoning": "As a designer, the candidate works extensively in Figma and collaborates with engineers.",
+          "evidence_verified": true
+        },
+        {
+          "requirement": "Next.js and server-side rendering",
+          "verdict": "missing",
+          "evidence": "",
+          "reasoning": "There is no mention of Next.js or server-side rendering.",
+          "evidence_verified": false
+        },
+        {
+          "requirement": "GraphQL",
+          "verdict": "missing",
+          "evidence": "",
+          "reasoning": "There is no mention of GraphQL.",
+          "evidence_verified": false
+        },
+        {
+          "requirement": "Performance optimisation (Core Web Vitals)",
+          "verdict": "missing",
+          "evidence": "",
+          "reasoning": "There is no mention of performance optimisation or Core Web Vitals.",
+          "evidence_verified": false
+        }
+      ]
+    },
+    {
+      "rank": 8,
+      "candidate_id": "grace_liu",
+      "name": "Grace Liu",
+      "resume_path": "resumes/grace_liu.md",
+      "rag_score": 83,
+      "fit_score": 35,
+      "recommendation": "no_hire",
+      "recommendation_reason": "Misses must-have: Accessibility (WCAG) experience; Testing with Jest or Playwright.",
+      "must_haves_met": "1/5",
+      "verdicts": [
+        {
+          "requirement": "3+ years building production web apps with React and TypeScript",
+          "verdict": "partial",
+          "evidence": "Led the migration of legacy pages to React, cutting the JavaScript bundle by 30%.",
+          "reasoning": "React is used in both jobs, Sep 2018 to Oct 2026, about 8 years, but TypeScript appears only in the skills list and in no role.",
+          "evidence_verified": true
+        },
+        {
+          "requirement": "Solid HTML and CSS",
+          "verdict": "partial",
+          "evidence": "React, JavaScript, Redux, Sass, TypeScript, Storybook, Figma",
+          "reasoning": "Sass suggests CSS skills but appears only in the skills list, and HTML is never mentioned.",
+          "evidence_verified": true
+        },
+        {
+          "requirement": "Accessibility (WCAG) experience",
+          "verdict": "missing",
+          "evidence": "",
+          "reasoning": "The resume does not mention accessibility or WCAG.",
+          "evidence_verified": false
+        },
+        {
+          "requirement": "Testing with Jest or Playwright",
+          "verdict": "missing",
+          "evidence": "",
+          "reasoning": "The resume does not mention Jest, Playwright or any testing.",
+          "evidence_verified": false
+        },
+        {
+          "requirement": "Experience working closely with designers in Figma",
+          "verdict": "met",
+          "evidence": "Introduced Storybook and Figma into the team's workflow and wrote the conventions guide.",
+          "reasoning": "Bringing Figma into the team's workflow in a current role shows hands-on design-collaboration experience in Figma.",
+          "evidence_verified": true
+        },
+        {
+          "requirement": "Next.js and server-side rendering",
+          "verdict": "missing",
+          "evidence": "",
+          "reasoning": "The resume does not mention Next.js or server-side rendering.",
+          "evidence_verified": false
+        },
+        {
+          "requirement": "GraphQL",
+          "verdict": "missing",
+          "evidence": "",
+          "reasoning": "The resume does not mention GraphQL.",
+          "evidence_verified": false
+        },
+        {
+          "requirement": "Performance optimisation (Core Web Vitals)",
+          "verdict": "partial",
+          "evidence": "Led the migration of legacy pages to React, cutting the JavaScript bundle by 18%.",
+          "reasoning": "Bundle-size reduction is related performance work, but Core Web Vitals are not mentioned.",
+          "evidence_verified": true
+        }
+      ]
+    },
+    {
+      "rank": 9,
+      "candidate_id": "lucia_romano",
+      "name": "Lucia Romano",
+      "resume_path": "resumes/lucia_romano.md",
+      "rag_score": 82,
+      "fit_score": 31,
+      "recommendation": "no_hire",
+      "recommendation_reason": "Misses must-have: Accessibility (WCAG) experience; Testing with Jest or Playwright.",
+      "must_haves_met": "1/5",
+      "verdicts": [
+        {
+          "requirement": "3+ years building production web apps with React and TypeScript",
+          "verdict": "partial",
+          "evidence": "Built responsive landing pages in React and Tailwind from Figma designs.",
+          "reasoning": "React appears only in the Apr 2025 to Present role, which is about 1 year 7 months to Oct 2026, short of 3 years, and TypeScript is never mentioned.",
+          "evidence_verified": true
+        },
+        {
+          "requirement": "Solid HTML and CSS",
+          "verdict": "met",
+          "evidence": "HTML, CSS and JavaScript fixes for client websites.",
+          "reasoning": "Both roles involved HTML and CSS work, including responsive pages and fixes on client websites.",
+          "evidence_verified": true
+        },
+        {
+          "requirement": "Accessibility (WCAG) experience",
+          "verdict": "missing",
+          "evidence": "",
+          "reasoning": "The resume never mentions accessibility or WCAG.",
+          "evidence_verified": false
+        },
+        {
+          "requirement": "Testing with Jest or Playwright",
+          "verdict": "missing",
+          "evidence": "",
+          "reasoning": "The resume never mentions Jest, Playwright or any testing.",
+          "evidence_verified": false
+        },
+        {
+          "requirement": "Experience working closely with designers in Figma",
+          "verdict": "partial",
+          "evidence": "Built responsive landing pages in React and Tailwind from Figma designs.",
+          "reasoning": "She implemented Figma designs, but the resume does not describe working closely with designers.",
+          "evidence_verified": true
+        },
+        {
+          "requirement": "Next.js and server-side rendering",
+          "verdict": "missing",
+          "evidence": "",
+          "reasoning": "The resume never mentions Next.js or server-side rendering.",
+          "evidence_verified": false
+        },
+        {
+          "requirement": "GraphQL",
+          "verdict": "missing",
+          "evidence": "",
+          "reasoning": "The resume never mentions GraphQL.",
+          "evidence_verified": false
+        },
+        {
+          "requirement": "Performance optimisation (Core Web Vitals)",
+          "verdict": "missing",
+          "evidence": "",
+          "reasoning": "The resume never mentions performance optimisation or Core Web Vitals.",
+          "evidence_verified": false
+        }
+      ]
+    },
+    {
+      "rank": 10,
+      "candidate_id": "benjamin_carter",
+      "name": "Benjamin Carter",
+      "resume_path": "resumes/benjamin_carter.md",
+      "rag_score": 87,
+      "fit_score": 19,
+      "recommendation": "no_hire",
+      "recommendation_reason": "Misses must-have: Accessibility (WCAG) experience; Testing with Jest or Playwright; Experience working closely with designers in Figma.",
+      "must_haves_met": "0/5",
+      "verdicts": [
+        {
+          "requirement": "3+ years building production web apps with React and TypeScript",
+          "verdict": "partial",
+          "evidence": "Reviewed React pull requests for a team of 8 engineers and ran a weekly frontend guild.",
+          "reasoning": "React appears at Lumenfield (Mar 2017 to Aug 2023, about 6.4 years), but as reviewing rather than building, TypeScript appears only in the skills list, and the work stopped about 3 years ago.",
+          "evidence_verified": true
+        },
+        {
+          "requirement": "Solid HTML and CSS",
+          "verdict": "partial",
+          "evidence": "JavaScript, jQuery, Backbone.js, HTML/CSS, React, TypeScript",
+          "reasoning": "HTML/CSS appears only in the skills list and is not described in any role.",
+          "evidence_verified": true
+        },
+        {
+          "requirement": "Accessibility (WCAG) experience",
+          "verdict": "missing",
+          "evidence": "",
+          "reasoning": "The resume does not mention accessibility or WCAG.",
+          "evidence_verified": false
+        },
+        {
+          "requirement": "Testing with Jest or Playwright",
+          "verdict": "missing",
+          "evidence": "",
+          "reasoning": "The resume does not mention testing, Jest or Playwright.",
+          "evidence_verified": false
+        },
+        {
+          "requirement": "Experience working closely with designers in Figma",
+          "verdict": "missing",
+          "evidence": "",
+          "reasoning": "The resume does not mention designers or Figma.",
+          "evidence_verified": false
+        },
+        {
+          "requirement": "Next.js and server-side rendering",
+          "verdict": "missing",
+          "evidence": "",
+          "reasoning": "The resume does not mention Next.js or server-side rendering.",
+          "evidence_verified": false
+        },
+        {
+          "requirement": "GraphQL",
+          "verdict": "missing",
+          "evidence": "",
+          "reasoning": "The resume does not mention GraphQL.",
+          "evidence_verified": false
+        },
+        {
+          "requirement": "Performance optimisation (Core Web Vitals)",
+          "verdict": "partial",
+          "evidence": "Led the migration of legacy pages to JavaScript, cutting the JavaScript bundle by 55%.",
+          "reasoning": "Bundle-size reduction is related performance work, but it dates from 2015 to 2017 and is not tied to Core Web Vitals.",
+          "evidence_verified": true
+        }
+      ]
+    }
+  ]
+}

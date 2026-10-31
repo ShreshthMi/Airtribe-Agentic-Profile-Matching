@@ -1,0 +1,19 @@
+# The demo conversation recorded by scripts/record_demo.py. chat.py ignores lines starting
+# with '#'; lines starting with '## ' become the video's captions for the message after them.
+## A one-line request. The agent turns it into checkable requirements, then runs three screening rounds over 100 resumes.
+Find me candidates with React and 3+ years experience
+## The comparison comes straight from the Round 2 judgements, so it needs no new model calls.
+Compare the top 3 matches side by side
+## "Why A above B?" has an exact answer: the requirements on which their judgements differ.
+Why did the #1 candidate rank higher than Kenji Watanabe?
+## The recruiter changes the requirements. Only the new ones are judged, so every move in the ranking is explained by the change.
+TypeScript is a must-have too, and Next.js would be nice to have. Re-rank.
+## A detailed match report: strengths and gaps, each backed by a quote checked against the resume.
+Show me the full match report for the highest-ranked borderline candidate
+## Interview questions aimed at that candidate's gaps.
+Draft 3 screening questions for them
+## Milestone 2's RAG search looks beyond the shortlist, and Milestone 1's file tools open the resumes.
+Search all the resumes for React Native experience. Should any of those people be on this list?
+## Recommendations support a human decision. The agent will not rank people on protected characteristics.
+Which of the hires is the youngest?
+quit

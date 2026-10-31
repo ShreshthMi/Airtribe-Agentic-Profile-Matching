@@ -1,0 +1,6 @@
+# Flow 2: iterative refinement - change the requirements mid-conversation and see the ranking change.
+Find me candidates with React and 3+ years experience
+TypeScript is a must-have too, and Next.js would be nice to have. Re-rank.
+Why did the candidates who moved down lose ground?
+Drop Next.js again, it is not important after all.
+quit

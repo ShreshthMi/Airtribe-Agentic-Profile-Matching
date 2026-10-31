@@ -1,0 +1,6 @@
+# Flow 5: the Milestone 1 and 2 tools - look beyond the shortlist, read a resume, save a note.
+Senior ML engineer with 5+ years of Python and production experience with LLMs or RAG
+Is anyone outside the shortlist worth a look? Search the resumes for computer vision experience.
+Compare Mei Lin with the top-ranked candidate.
+Save a short summary of the top 3 for the hiring manager to reports/ml_hiring_summary.md
+quit

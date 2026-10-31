@@ -1,0 +1,6 @@
+# Flow 3: a full job description file, the multi-round screen, a match report and interview questions.
+job_descriptions/frontend_engineer.txt
+Give me the detailed match report for the top candidate.
+What would it take for the borderline candidates to become a clear yes?
+Draft 4 screening interview questions for the highest-ranked borderline candidate.
+quit

@@ -1,0 +1,214 @@
+{
+  "screening_round": 1,
+  "date": "2026-10-31",
+  "requirements": {
+    "role_title": "Android Developer",
+    "must_have": [
+      "4+ years of professional Android development experience with Kotlin"
+    ],
+    "nice_to_have": [],
+    "notes": "Read the 4+ years as applying to professional Android development using Kotlin, kept as a single combined requirement."
+  },
+  "shortlist": [
+    {
+      "rank": 1,
+      "candidate_id": "priyanka_nair",
+      "name": "Priyanka Nair",
+      "resume_path": "resumes/priyanka_nair.txt",
+      "rag_score": 100,
+      "fit_score": 100,
+      "recommendation": "hire",
+      "recommendation_reason": "Meets every must-have, with evidence quoted from the resume.",
+      "must_haves_met": "1/1",
+      "verdicts": [
+        {
+          "requirement": "4+ years of professional Android development experience with Kotlin",
+          "verdict": "met",
+          "evidence": "Migrated the app to Jetpack Compose in Kotlin; offline ticket wallet with Room and coroutines.",
+          "reasoning": "Kotlin Android work at Chalo Transit (Aug 2023–Oct 2026 ≈ 3.2 yrs) plus Swiftcart Grocery (Jul 2021–Jul 2023 = 2 yrs) totals ≈ 5.2 years, which is at least 4.",
+          "evidence_verified": true
+        }
+      ]
+    },
+    {
+      "rank": 2,
+      "candidate_id": "lukas_becker",
+      "name": "Lukas Becker",
+      "resume_path": "resumes/lukas_becker.txt",
+      "rag_score": 84,
+      "fit_score": 100,
+      "recommendation": "hire",
+      "recommendation_reason": "Meets every must-have, with evidence quoted from the resume.",
+      "must_haves_met": "1/1",
+      "verdicts": [
+        {
+          "requirement": "4+ years of professional Android development experience with Kotlin",
+          "verdict": "met",
+          "evidence": "Ships the iOS app in Swift and SwiftUI and the Android app in Kotlin and Jetpack Compose from a shared GraphQL API.",
+          "reasoning": "Both roles involved Kotlin Android work: Feb 2022–Oct 2026 is about 4 years 8 months, and Aug 2021–Jan 2022 is about 6 months, totalling about 5 years 2 months, which is at least 4 years (the current role is shared with iOS work).",
+          "evidence_verified": true
+        }
+      ]
+    },
+    {
+      "rank": 3,
+      "candidate_id": "resume_sofia_novak",
+      "name": "Sofia Novak",
+      "resume_path": "resumes/resume_sofia_novak.txt",
+      "rag_score": 80,
+      "fit_score": 100,
+      "recommendation": "hire",
+      "recommendation_reason": "Meets every must-have, with evidence quoted from the resume.",
+      "must_haves_met": "1/1",
+      "verdicts": [
+        {
+          "requirement": "4+ years of professional Android development experience with Kotlin",
+          "verdict": "met",
+          "evidence": "Built offline sync for the Android app with Kotlin coroutines and Room.",
+          "reasoning": "The Kestrel Mobile role (2021 to Present, Oct 2026) gives about 5 years of Android work in Kotlin, which is at least the 4 required; the Mosaic Android work (2018-2021) names no language, so it is not counted.",
+          "evidence_verified": true
+        }
+      ]
+    },
+    {
+      "rank": 4,
+      "candidate_id": "sneha_kulkarni",
+      "name": "Sneha Kulkarni",
+      "resume_path": "resumes/sneha_kulkarni.md",
+      "rag_score": 99,
+      "fit_score": 50,
+      "recommendation": "borderline",
+      "recommendation_reason": "Only partly meets must-have: 4+ years of professional Android development experience with Kotlin.",
+      "must_haves_met": "0/1",
+      "verdicts": [
+        {
+          "requirement": "4+ years of professional Android development experience with Kotlin",
+          "verdict": "partial",
+          "evidence": "Rewrote the onboarding flow in Kotlin, lifting completion by 18%.",
+          "reasoning": "Kotlin appears only in the Cinder Games role (Sep 2023 to Oct 2026, about 3.1 years), short of 4 years; the Ember Analytics Android work (Sep 2020 to Aug 2023, 3 years) does not mention Kotlin.",
+          "evidence_verified": true
+        }
+      ]
+    },
+    {
+      "rank": 5,
+      "candidate_id": "laura_bianchi",
+      "name": "Laura Bianchi",
+      "resume_path": "resumes/laura_bianchi.docx",
+      "rag_score": 84,
+      "fit_score": 50,
+      "recommendation": "borderline",
+      "recommendation_reason": "Only partly meets must-have: 4+ years of professional Android development experience with Kotlin.",
+      "must_haves_met": "0/1",
+      "verdicts": [
+        {
+          "requirement": "4+ years of professional Android development experience with Kotlin",
+          "verdict": "partial",
+          "evidence": "Set up SwiftUI and Kotlin for the mobile team and automated store releases.",
+          "reasoning": "Kotlin appears only in the Greystone role (Jun 2024 to Oct 2026, about 2.4 years), which is below the 4 years asked; the Coral Telecom role (Jun 2021 to May 2024) used Flutter/Dart rather than Kotlin.",
+          "evidence_verified": true
+        }
+      ]
+    },
+    {
+      "rank": 6,
+      "candidate_id": "vivek_menon",
+      "name": "Vivek Menon",
+      "resume_path": "resumes/vivek_menon.txt",
+      "rag_score": 66,
+      "fit_score": 50,
+      "recommendation": "borderline",
+      "recommendation_reason": "Only partly meets must-have: 4+ years of professional Android development experience with Kotlin.",
+      "must_haves_met": "0/1",
+      "verdicts": [
+        {
+          "requirement": "4+ years of professional Android development experience with Kotlin",
+          "verdict": "partial",
+          "evidence": "Built and operated Kotlin services handling 120k requests per minute at peak.",
+          "reasoning": "Kotlin appears only in backend work at Stratawave (Jun 2023 to Oct 2026 = about 3 years 4 months, under 4), and the resume shows no Android development at all.",
+          "evidence_verified": true
+        }
+      ]
+    },
+    {
+      "rank": 7,
+      "candidate_id": "minh_nguyen",
+      "name": "Minh Nguyen",
+      "resume_path": "resumes/minh_nguyen.txt",
+      "rag_score": 61,
+      "fit_score": 50,
+      "recommendation": "borderline",
+      "recommendation_reason": "Only partly meets must-have: 4+ years of professional Android development experience with Kotlin.",
+      "must_haves_met": "0/1",
+      "verdicts": [
+        {
+          "requirement": "4+ years of professional Android development experience with Kotlin",
+          "verdict": "partial",
+          "evidence": "Built the React Native app used by 600k monthly active users, rated 4.6 in the store.",
+          "reasoning": "Apr 2022 to Oct 2026 is about 4.5 years of mobile work, but it is React Native/TypeScript rather than Kotlin, Kotlin is never mentioned, and Android appears only in the skills list.",
+          "evidence_verified": true
+        }
+      ]
+    },
+    {
+      "rank": 8,
+      "candidate_id": "haruto_kimura",
+      "name": "Haruto Kimura",
+      "resume_path": "resumes/haruto_kimura.txt",
+      "rag_score": 47,
+      "fit_score": 50,
+      "recommendation": "borderline",
+      "recommendation_reason": "Only partly meets must-have: 4+ years of professional Android development experience with Kotlin.",
+      "must_haves_met": "0/1",
+      "verdicts": [
+        {
+          "requirement": "4+ years of professional Android development experience with Kotlin",
+          "verdict": "partial",
+          "evidence": "Mobile engineer with 6 years of experience, most recently working with iOS, Swift, SwiftUI.",
+          "reasoning": "The candidate has about 6.5 years of mobile experience (May 2020 to Oct 2022 is about 2.4 years, plus Nov 2022 to Oct 2026 is about 4 years), but all of it is iOS/Swift, with no Android or Kotlin mentioned, so this is only neighbouring evidence.",
+          "evidence_verified": true
+        }
+      ]
+    },
+    {
+      "rank": 9,
+      "candidate_id": "yuki_tanaka",
+      "name": "Yuki Tanaka",
+      "resume_path": "resumes/yuki_tanaka.txt",
+      "rag_score": 60,
+      "fit_score": 0,
+      "recommendation": "no_hire",
+      "recommendation_reason": "Misses must-have: 4+ years of professional Android development experience with Kotlin.",
+      "must_haves_met": "0/1",
+      "verdicts": [
+        {
+          "requirement": "4+ years of professional Android development experience with Kotlin",
+          "verdict": "missing",
+          "evidence": "",
+          "reasoning": "The candidate is a product designer, and no role, skill or project shows Android development or Kotlin; designing the Android booking flow is design work, not development, so 0 of the 4 required years.",
+          "evidence_verified": false
+        }
+      ]
+    },
+    {
+      "rank": 10,
+      "candidate_id": "george_mathews",
+      "name": "George Mathews",
+      "resume_path": "resumes/george_mathews.txt",
+      "rag_score": 49,
+      "fit_score": 0,
+      "recommendation": "no_hire",
+      "recommendation_reason": "Misses must-have: 4+ years of professional Android development experience with Kotlin.",
+      "must_haves_met": "0/1",
+      "verdicts": [
+        {
+          "requirement": "4+ years of professional Android development experience with Kotlin",
+          "verdict": "missing",
+          "evidence": "",
+          "reasoning": "The resume shows only Java backend work and engineering management, with no mention of Android development or Kotlin, so 0 of the required 4 years are shown.",
+          "evidence_verified": false
+        }
+      ]
+    }
+  ]
+}

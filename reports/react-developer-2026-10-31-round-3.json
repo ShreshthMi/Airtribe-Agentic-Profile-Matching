@@ -1,0 +1,285 @@
+{
+  "screening_round": 3,
+  "date": "2026-10-31",
+  "requirements": {
+    "role_title": "React Developer",
+    "must_have": [
+      "3+ years of React experience",
+      "TypeScript"
+    ],
+    "nice_to_have": [],
+    "notes": "The request does not say whether '3+ years experience' means years of React or years of professional experience overall. I read it as 3+ years of React, which also covers the React requirement. No role title was given, so 'React Developer' is inferred from the skill."
+  },
+  "shortlist": [
+    {
+      "rank": 1,
+      "candidate_id": "hana_sato",
+      "name": "Hana Sato",
+      "resume_path": "resumes/hana_sato.md",
+      "rag_score": 98,
+      "fit_score": 100,
+      "recommendation": "hire",
+      "recommendation_reason": "Meets every must-have, with evidence quoted from the resume.",
+      "must_haves_met": "2/2",
+      "verdicts": [
+        {
+          "requirement": "3+ years of React experience",
+          "verdict": "met",
+          "evidence": "Built and maintained React components in TypeScript for a customer-facing web app with 600k monthly users.",
+          "reasoning": "React is shown at Arclight Mobility from Jul 2022 to Present (31 Oct 2026), which is about 4 years 3 months and at least the 3 years asked; Northgate is not counted because it does not name React.",
+          "evidence_verified": true
+        },
+        {
+          "requirement": "TypeScript",
+          "verdict": "met",
+          "evidence": "Built and maintained React components in TypeScript for a customer-facing web app with 600k monthly users.",
+          "reasoning": "TypeScript is used in the current Senior Frontend Engineer role, which runs from Jul 2022 to Present.",
+          "evidence_verified": true
+        }
+      ]
+    },
+    {
+      "rank": 2,
+      "candidate_id": "noah_fischer",
+      "name": "Noah Fischer",
+      "resume_path": "resumes/noah_fischer.docx",
+      "rag_score": 98,
+      "fit_score": 100,
+      "recommendation": "hire",
+      "recommendation_reason": "Meets every must-have, with evidence quoted from the resume.",
+      "must_haves_met": "2/2",
+      "verdicts": [
+        {
+          "requirement": "3+ years of React experience",
+          "verdict": "met",
+          "evidence": "Shipped end-to-end features with React and Node.js, from database schema to UI.",
+          "reasoning": "React appears only in the Northgate role, Oct 2023 to Present (Oct 2026), which is 3 years and meets the 3+ requirement.",
+          "evidence_verified": true
+        },
+        {
+          "requirement": "TypeScript",
+          "verdict": "met",
+          "evidence": "Moved the team's deployment to TypeScript and AWS, cutting release time from days to hours.",
+          "reasoning": "TypeScript is used in the current role at Northgate Travel (Oct 2023 - Present), and no minimum years were requested.",
+          "evidence_verified": true
+        }
+      ]
+    },
+    {
+      "rank": 3,
+      "candidate_id": "amara_okonkwo",
+      "name": "Amara Okonkwo",
+      "resume_path": "resumes/amara_okonkwo.md",
+      "rag_score": 97,
+      "fit_score": 100,
+      "recommendation": "hire",
+      "recommendation_reason": "Meets every must-have, with evidence quoted from the resume.",
+      "must_haves_met": "2/2",
+      "verdicts": [
+        {
+          "requirement": "3+ years of React experience",
+          "verdict": "met",
+          "evidence": "Built the merchant dashboard in React, TypeScript and Next.js; audited and fixed WCAG 2.2 issues across 40 screens.",
+          "reasoning": "React is used in both roles: Savanna Pay from Jun 2023 to today (Oct 2026) is about 3 years 4 months, plus Kilima Digital from Sep 2022 to May 2023 is about 9 months, totalling about 4 years 1 month, which is at least 3 years.",
+          "evidence_verified": true
+        },
+        {
+          "requirement": "TypeScript",
+          "verdict": "met",
+          "evidence": "Built the merchant dashboard in React, TypeScript and Next.js; audited and fixed WCAG 2.2 issues across 40 screens.",
+          "reasoning": "TypeScript was used in both roles, Sep 2022 to May 2023 and Jun 2023 to Present, and no minimum years were asked.",
+          "evidence_verified": true
+        }
+      ]
+    },
+    {
+      "rank": 4,
+      "candidate_id": "emily_chen",
+      "name": "Emily Chen",
+      "resume_path": "resumes/emily_chen.txt",
+      "rag_score": 97,
+      "fit_score": 100,
+      "recommendation": "hire",
+      "recommendation_reason": "Meets every must-have, with evidence quoted from the resume.",
+      "must_haves_met": "2/2",
+      "verdicts": [
+        {
+          "requirement": "3+ years of React experience",
+          "verdict": "met",
+          "evidence": "Rebuilt checkout in React and TypeScript, improving conversion by 3%.",
+          "reasoning": "React was used at Etsy from Jan 2022 to Present (about 4 years 10 months) plus Squarespace from Aug 2019 to Dec 2021 (about 2 years 5 months), giving about 7.25 years, which is at least 3.",
+          "evidence_verified": true
+        },
+        {
+          "requirement": "TypeScript",
+          "verdict": "met",
+          "evidence": "Rebuilt checkout in React and TypeScript, improving conversion by 3%.",
+          "reasoning": "TypeScript was used in the candidate's current role at Etsy.",
+          "evidence_verified": true
+        }
+      ]
+    },
+    {
+      "rank": 5,
+      "candidate_id": "ethan_walsh",
+      "name": "Ethan Walsh",
+      "resume_path": "resumes/ethan_walsh.txt",
+      "rag_score": 96,
+      "fit_score": 100,
+      "recommendation": "hire",
+      "recommendation_reason": "Meets every must-have, with evidence quoted from the resume.",
+      "must_haves_met": "2/2",
+      "verdicts": [
+        {
+          "requirement": "3+ years of React experience",
+          "verdict": "met",
+          "evidence": "Built and maintained React components in TypeScript for a customer-facing web app with 120k monthly users.",
+          "reasoning": "React was used at Coral Telecom from Jun 2023 to Present (Oct 2026), about 3 years 4 months, which meets the 3+ years required; the Vantage Learning role used Vue.",
+          "evidence_verified": true
+        },
+        {
+          "requirement": "TypeScript",
+          "verdict": "met",
+          "evidence": "Built and maintained React components in TypeScript for a customer-facing web app with 120k monthly users.",
+          "reasoning": "TypeScript is used in the current Coral Telecom role (Jun 2023 - Present), and no minimum years were requested.",
+          "evidence_verified": true
+        }
+      ]
+    },
+    {
+      "rank": 6,
+      "candidate_id": "william_turner",
+      "name": "William Turner",
+      "resume_path": "resumes/william_turner.md",
+      "rag_score": 95,
+      "fit_score": 100,
+      "recommendation": "hire",
+      "recommendation_reason": "Meets every must-have, with evidence quoted from the resume.",
+      "must_haves_met": "2/2",
+      "verdicts": [
+        {
+          "requirement": "3+ years of React experience",
+          "verdict": "met",
+          "evidence": "Shipped end-to-end features with React and TypeScript, from database schema to UI.",
+          "reasoning": "React is used at Orbitly from Jul 2021 to Present (Oct 2026), which is about 5 years 3 months, at least the 3 years required.",
+          "evidence_verified": true
+        },
+        {
+          "requirement": "TypeScript",
+          "verdict": "met",
+          "evidence": "Shipped end-to-end features with React and TypeScript, from database schema to UI.",
+          "reasoning": "TypeScript is used in the current role at Orbitly (Jul 2021 - Present), and the requirement names no minimum years.",
+          "evidence_verified": true
+        }
+      ]
+    },
+    {
+      "rank": 7,
+      "candidate_id": "resume_john_smith",
+      "name": "John Smith",
+      "resume_path": "resumes/resume_john_smith.docx",
+      "rag_score": 91,
+      "fit_score": 100,
+      "recommendation": "hire",
+      "recommendation_reason": "Meets every must-have, with evidence quoted from the resume.",
+      "must_haves_met": "2/2",
+      "verdicts": [
+        {
+          "requirement": "3+ years of React experience",
+          "verdict": "met",
+          "evidence": "Frontend Engineer - Quillfeather Media (2022 - Present)\nRebuilt the subscriber dashboard in React and Next.js",
+          "reasoning": "React was used at Quillfeather from 2022 to Present (October 2026), about 4 years, which is at least 3.",
+          "evidence_verified": true
+        },
+        {
+          "requirement": "TypeScript",
+          "verdict": "met",
+          "evidence": "Built interactive course pages in JavaScript and TypeScript.",
+          "reasoning": "TypeScript was used in the Mosaic Learning role (2020 - 2022), not only listed as a skill.",
+          "evidence_verified": true
+        }
+      ]
+    },
+    {
+      "rank": 8,
+      "candidate_id": "chloe_martin",
+      "name": "Chloe Martin",
+      "resume_path": "resumes/chloe_martin.md",
+      "rag_score": 100,
+      "fit_score": 75,
+      "recommendation": "borderline",
+      "recommendation_reason": "Only partly meets must-have: 3+ years of React experience.",
+      "must_haves_met": "1/2",
+      "verdicts": [
+        {
+          "requirement": "3+ years of React experience",
+          "verdict": "partial",
+          "evidence": "Built and maintained React components in TypeScript for a customer-facing web app with 120k monthly users.",
+          "reasoning": "React appears only in the Silverpine role, Sep 2025 to Oct 2026, about 1 year 2 months, which is under the 3 years asked; the Cinder Games role (Mar 2021 - Aug 2025) used Angular.",
+          "evidence_verified": true
+        },
+        {
+          "requirement": "TypeScript",
+          "verdict": "met",
+          "evidence": "Built and maintained React components in TypeScript for a customer-facing web app with 120k monthly users.",
+          "reasoning": "TypeScript is used in a current job role at Silverpine Energy, not just listed as a skill.",
+          "evidence_verified": true
+        }
+      ]
+    },
+    {
+      "rank": 9,
+      "candidate_id": "camila_reyes",
+      "name": "Camila Reyes",
+      "resume_path": "resumes/camila_reyes.md",
+      "rag_score": 97,
+      "fit_score": 75,
+      "recommendation": "borderline",
+      "recommendation_reason": "Only partly meets must-have: TypeScript.",
+      "must_haves_met": "1/2",
+      "verdicts": [
+        {
+          "requirement": "3+ years of React experience",
+          "verdict": "met",
+          "evidence": "Reviewed React pull requests for a team of 3 engineers and ran a weekly frontend guild.",
+          "reasoning": "The Nimbusly role, Oct 2022 to Present (Oct 2026), is about 4 years of React work, which meets the 3-year requirement.",
+          "evidence_verified": true
+        },
+        {
+          "requirement": "TypeScript",
+          "verdict": "partial",
+          "evidence": "React, TypeScript, Next.js, GraphQL",
+          "reasoning": "TypeScript appears only in the skills list and summary, and no job bullet shows it being used.",
+          "evidence_verified": true
+        }
+      ]
+    },
+    {
+      "rank": 10,
+      "candidate_id": "gabriel_costa",
+      "name": "Gabriel Costa",
+      "resume_path": "resumes/gabriel_costa.txt",
+      "rag_score": 96,
+      "fit_score": 75,
+      "recommendation": "borderline",
+      "recommendation_reason": "Only partly meets must-have: 3+ years of React experience.",
+      "must_haves_met": "1/2",
+      "verdicts": [
+        {
+          "requirement": "3+ years of React experience",
+          "verdict": "partial",
+          "evidence": "Shipped end-to-end features with Next.js and React, from database schema to UI.",
+          "reasoning": "React appears only in the Bluefinch role, which runs from Nov 2024 to Oct 2026, about 2 years, short of the 3 asked; the Lattice role does not mention React.",
+          "evidence_verified": true
+        },
+        {
+          "requirement": "TypeScript",
+          "verdict": "met",
+          "evidence": "Owned on-call for the TypeScript services and reduced paging alerts by 30%.",
+          "reasoning": "TypeScript is used in both the Bluefinch and Lattice Robotics roles.",
+          "evidence_verified": true
+        }
+      ]
+    }
+  ]
+}

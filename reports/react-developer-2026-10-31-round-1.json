@@ -1,0 +1,214 @@
+{
+  "screening_round": 1,
+  "date": "2026-10-31",
+  "requirements": {
+    "role_title": "React Developer",
+    "must_have": [
+      "3+ years of React experience"
+    ],
+    "nice_to_have": [],
+    "notes": "No role title was given, so 'React Developer' is inferred from the required skill. '3+ years experience' is read as 3+ years of React specifically, not 3+ years of overall professional experience. This single item also covers knowing React. As a short search query, everything is treated as a must-have."
+  },
+  "shortlist": [
+    {
+      "rank": 1,
+      "candidate_id": "grace_liu",
+      "name": "Grace Liu",
+      "resume_path": "resumes/grace_liu.md",
+      "rag_score": 91,
+      "fit_score": 100,
+      "recommendation": "hire",
+      "recommendation_reason": "Meets every must-have, with evidence quoted from the resume.",
+      "must_haves_met": "1/1",
+      "verdicts": [
+        {
+          "requirement": "3+ years of React experience",
+          "verdict": "met",
+          "evidence": "Led the migration of legacy pages to React, cutting the JavaScript bundle by 18%.",
+          "reasoning": "React used at Willow Insurance Sep 2018–Aug 2021 (~3 years) plus Hollowbrook Health Sep 2021–Oct 2026 (~5.2 years) totals ~8.2 years, which is at least 3.",
+          "evidence_verified": true
+        }
+      ]
+    },
+    {
+      "rank": 2,
+      "candidate_id": "hana_sato",
+      "name": "Hana Sato",
+      "resume_path": "resumes/hana_sato.md",
+      "rag_score": 90,
+      "fit_score": 100,
+      "recommendation": "hire",
+      "recommendation_reason": "Meets every must-have, with evidence quoted from the resume.",
+      "must_haves_met": "1/1",
+      "verdicts": [
+        {
+          "requirement": "3+ years of React experience",
+          "verdict": "met",
+          "evidence": "Built and maintained React components in TypeScript for a customer-facing web app with 600k monthly users.",
+          "reasoning": "The Arclight role uses React and runs from Jul 2022 to today (Oct 2026), about 4 years 3 months, which is at least 3 years; the Northgate role does not mention React.",
+          "evidence_verified": true
+        }
+      ]
+    },
+    {
+      "rank": 3,
+      "candidate_id": "william_turner",
+      "name": "William Turner",
+      "resume_path": "resumes/william_turner.md",
+      "rag_score": 88,
+      "fit_score": 100,
+      "recommendation": "hire",
+      "recommendation_reason": "Meets every must-have, with evidence quoted from the resume.",
+      "must_haves_met": "1/1",
+      "verdicts": [
+        {
+          "requirement": "3+ years of React experience",
+          "verdict": "met",
+          "evidence": "Shipped end-to-end features with React and TypeScript, from database schema to UI.",
+          "reasoning": "React is used at Orbitly from Jul 2021 to Present (31 Oct 2026), which is about 5 years and 3 months, at least the 3 years required.",
+          "evidence_verified": true
+        }
+      ]
+    },
+    {
+      "rank": 4,
+      "candidate_id": "amara_okonkwo",
+      "name": "Amara Okonkwo",
+      "resume_path": "resumes/amara_okonkwo.md",
+      "rag_score": 87,
+      "fit_score": 100,
+      "recommendation": "hire",
+      "recommendation_reason": "Meets every must-have, with evidence quoted from the resume.",
+      "must_haves_met": "1/1",
+      "verdicts": [
+        {
+          "requirement": "3+ years of React experience",
+          "verdict": "met",
+          "evidence": "Built the merchant dashboard in React, TypeScript and Next.js; audited and fixed WCAG 2.2 issues across 40 screens.",
+          "reasoning": "React was used in both roles: Savanna Pay from Jun 2023 to Present (Oct 2026) is about 3 years 5 months, and Kilima Digital from Sep 2022 to May 2023 is about 9 months, so the total is roughly 4.2 years, which is at least 3.",
+          "evidence_verified": true
+        }
+      ]
+    },
+    {
+      "rank": 5,
+      "candidate_id": "ethan_walsh",
+      "name": "Ethan Walsh",
+      "resume_path": "resumes/ethan_walsh.txt",
+      "rag_score": 87,
+      "fit_score": 100,
+      "recommendation": "hire",
+      "recommendation_reason": "Meets every must-have, with evidence quoted from the resume.",
+      "must_haves_met": "1/1",
+      "verdicts": [
+        {
+          "requirement": "3+ years of React experience",
+          "verdict": "met",
+          "evidence": "Built and maintained React components in TypeScript for a customer-facing web app with 120k monthly users.",
+          "reasoning": "React is used only in the Coral Telecom role, which runs from Jun 2023 to today (Oct 2026): about 3 years 4 months, which is at least 3 years.",
+          "evidence_verified": true
+        }
+      ]
+    },
+    {
+      "rank": 6,
+      "candidate_id": "noah_fischer",
+      "name": "Noah Fischer",
+      "resume_path": "resumes/noah_fischer.docx",
+      "rag_score": 87,
+      "fit_score": 100,
+      "recommendation": "hire",
+      "recommendation_reason": "Meets every must-have, with evidence quoted from the resume.",
+      "must_haves_met": "1/1",
+      "verdicts": [
+        {
+          "requirement": "3+ years of React experience",
+          "verdict": "met",
+          "evidence": "Shipped end-to-end features with React and Node.js, from database schema to UI.",
+          "reasoning": "React appears only in the Northgate Travel role, Oct 2023 to Present (Oct 2026), which is 3 years and meets the 3-year minimum.",
+          "evidence_verified": true
+        }
+      ]
+    },
+    {
+      "rank": 7,
+      "candidate_id": "chloe_martin",
+      "name": "Chloe Martin",
+      "resume_path": "resumes/chloe_martin.md",
+      "rag_score": 89,
+      "fit_score": 50,
+      "recommendation": "borderline",
+      "recommendation_reason": "Only partly meets must-have: 3+ years of React experience.",
+      "must_haves_met": "0/1",
+      "verdicts": [
+        {
+          "requirement": "3+ years of React experience",
+          "verdict": "partial",
+          "evidence": "Built and maintained React components in TypeScript for a customer-facing web app with 120k monthly users.",
+          "reasoning": "React appears only in the Silverpine role (Sep 2025 to Oct 2026 = about 1 year 2 months), since the Cinder Games role used Angular, so about 1.2 years is short of the 3 required.",
+          "evidence_verified": true
+        }
+      ]
+    },
+    {
+      "rank": 8,
+      "candidate_id": "kenji_watanabe",
+      "name": "Kenji Watanabe",
+      "resume_path": "resumes/kenji_watanabe.md",
+      "rag_score": 87,
+      "fit_score": 50,
+      "recommendation": "borderline",
+      "recommendation_reason": "Only partly meets must-have: 3+ years of React experience.",
+      "must_haves_met": "0/1",
+      "verdicts": [
+        {
+          "requirement": "3+ years of React experience",
+          "verdict": "partial",
+          "evidence": "Built the React Native app used by 600k monthly active users, rated 4.8 in the store.",
+          "reasoning": "The candidate has about 5.4 years of React Native (Oct 2023–Oct 2026 = 3.0 years, plus May 2021–Sep 2023 = 2.3 years), but React Native is a neighbouring technology, and the resume never shows React for the web.",
+          "evidence_verified": true
+        }
+      ]
+    },
+    {
+      "rank": 9,
+      "candidate_id": "lucia_romano",
+      "name": "Lucia Romano",
+      "resume_path": "resumes/lucia_romano.md",
+      "rag_score": 87,
+      "fit_score": 50,
+      "recommendation": "borderline",
+      "recommendation_reason": "Only partly meets must-have: 3+ years of React experience.",
+      "must_haves_met": "0/1",
+      "verdicts": [
+        {
+          "requirement": "3+ years of React experience",
+          "verdict": "partial",
+          "evidence": "Built responsive landing pages in React and Tailwind from Figma designs.",
+          "reasoning": "React appears only in the Junior Frontend Developer role (Apr 2025 to Oct 2026, about 1 year 7 months), and the internship mentions no React, so the total is about 1.6 years, short of the 3 years required.",
+          "evidence_verified": true
+        }
+      ]
+    },
+    {
+      "rank": 10,
+      "candidate_id": "rohan_desai",
+      "name": "Rohan Desai",
+      "resume_path": "resumes/rohan_desai.txt",
+      "rag_score": 87,
+      "fit_score": 50,
+      "recommendation": "borderline",
+      "recommendation_reason": "Only partly meets must-have: 3+ years of React experience.",
+      "must_haves_met": "0/1",
+      "verdicts": [
+        {
+          "requirement": "3+ years of React experience",
+          "verdict": "partial",
+          "evidence": "Built an internal admin dashboard with React used daily by 6 operations staff.",
+          "reasoning": "React appears only in the Bluefinch role, Apr 2024 to Present (Oct 2026), which is about 2.5 years; 2.5 is less than the 3 years required, and the Brightloop role mentions only Django.",
+          "evidence_verified": true
+        }
+      ]
+    }
+  ]
+}

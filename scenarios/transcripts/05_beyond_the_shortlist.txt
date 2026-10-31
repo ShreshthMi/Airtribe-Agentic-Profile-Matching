@@ -1,0 +1,159 @@
+# Transcript of scenarios/05_beyond_the_shortlist.txt, run live on 2026-10-31
+# (chat.py --script; exit code 0, 82s)
+
+╭───────────────────────────────────────── Agentic Profile Matching ─────────────────────────────────────────╮
+│ Describe who you are looking for in one line, or give a job description file such as                       │
+│ job_descriptions/frontend_engineer.txt. Type quit to leave.                                                │
+╰────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+You: Senior ML engineer with 5+ years of Python and production experience with LLMs or RAG
+✓ Parse JD
+  Reading the job description for must-haves and nice-to-haves
+✓ Extract requirements
+  Round 1: ranking all 100 resumes with the Milestone 2 hybrid RAG search
+  Round 1: top 10 - Adaeze Nwosu, Meera Pillai, Priya Sharma, Karan Malhotra, Ananya Rao, Vikram Iyer, Tariq 
+Mahmood, Li Wei, Clara Jensen, Ishaan Kapoor
+✓ Search resumes - Round 1
+  Round 2: Claude judges 10 resumes against 2 requirements (only judgements not already made)
+    judged Adaeze Nwosu on 2 requirement(s)
+    judged Ananya Rao on 2 requirement(s)
+    judged Clara Jensen on 2 requirement(s)
+    judged Ishaan Kapoor on 2 requirement(s)
+    judged Karan Malhotra on 2 requirement(s)
+    judged Li Wei on 2 requirement(s)
+    judged Meera Pillai on 2 requirement(s)
+    judged Priya Sharma on 2 requirement(s)
+    judged Tariq Mahmood on 2 requirement(s)
+    judged Vikram Iyer on 2 requirement(s)
+✓ Rank candidates - Round 2
+  Round 3: improvement suggestions for 4 borderline candidate(s)
+✓ Generate report - Round 3
+╭────────────────────────────────────────────────── Agent ───────────────────────────────────────────────────╮
+│ Screening round 1: Senior ML Engineer                                                                      │
+│                                                                                                            │
+│ Round 1 ranked 100 resumes and kept 10. Round 2 judged them against 2 requirements. Round 3: 3 hire, 4     │
+│ borderline, 3 no hire.                                                                                     │
+│                                                                                                            │
+│ Requirements                                                                                               │
+│                                                                                                            │
+│  • 5+ years of Python (must-have)                                                                          │
+│  • Production experience with LLMs or RAG (must-have)                                                      │
+│                                                                                                            │
+│ How I read the request: Read '5+ years' as applying to Python specifically, not to overall experience.     │
+│ Read 'production experience with LLMs or RAG' as one requirement that either technology satisfies, with no │
+│ stated duration. 'Senior' is captured in the role title and not listed as a separate requirement.          │
+│                                                                                                            │
+│ Top candidates                                                                                             │
+│                                                                                                            │
+│  1 Priya Sharma priya_sharma - Hire, fit 100. Meets every must-have, with evidence quoted from the resume. │
+│  2 Ananya Rao ananya_rao - Hire, fit 100. Meets every must-have, with evidence quoted from the resume.     │
+│  3 Vikram Iyer vikram_iyer - Hire, fit 100. Meets every must-have, with evidence quoted from the resume.   │
+│  4 Adaeze Nwosu adaeze_nwosu - Borderline, fit 75. Only partly meets must-have: 5+ years of Python.        │
+│  5 Meera Pillai meera_pillai - Borderline, fit 75. Only partly meets must-have: 5+ years of Python.        │
+│                                                                                                            │
+│ Full report with the evidence for all 10: reports/senior-ml-engineer-2026-10-31-round-1.md                 │
+╰────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+You: Is anyone outside the shortlist worth a look? Search the resumes for computer vision experience.
+  tool: search_resumes(query="computer vision experience (image classification, object..., top_k=10)
+✓ Agent answered
+╭────────────────────────────────────────────────── Agent ───────────────────────────────────────────────────╮
+│ Three people outside the shortlist have clear computer vision experience. Computer vision isn't one of     │
+│ your requirements, so this search tells us nothing yet about Python years or LLM/RAG work.                 │
+│                                                                                                            │
+│ Strong computer vision matches outside the shortlist                                                       │
+│                                                                                                            │
+│                                                                                                            │
+│  Candidate                   Search score  Total experience                                                │
+│  ──────────────────────────────────────────────────────────                                                │
+│  John Doe john_doe           90            7.8 yrs                                                         │
+│  Mei Lin mei_lin             83            8.2 yrs                                                         │
+│  Hyun-woo Choi hyunwoo_choi  75            6.5 yrs                                                         │
+│                                                                                                            │
+│                                                                                                            │
+│ Already on the shortlist                                                                                   │
+│                                                                                                            │
+│  • Ishaan Kapoor ishaan_kapoor scored 79 for computer vision. But Round 2 found he doesn't meet either     │
+│    must-have (No hire, fit 25), so computer vision skills alone won't move him up.                         │
+│  • Tariq Mahmood, Meera Pillai, Adaeze Nwosu and Li Wei also appeared in the results, but with low scores  │
+│    (31–36) and no computer vision skill matched.                                                           │
+│  • Aisha Khan aisha_khan and Leila Ahmadi leila_ahmadi scored low (33–38) with no computer vision skills   │
+│    matched, so they're not worth a look on this basis.                                                     │
+│                                                                                                            │
+│ Caveat: "Total experience" is overall years, not years of Python. These three scored low on your actual    │
+│ requirements, which is probably why they missed the top 10.                                                │
+│                                                                                                            │
+│ Next steps (your call):                                                                                    │
+│                                                                                                            │
+│  1 Check them against your current must-haves. I can run compare_candidates on John Doe, Mei Lin and       │
+│    Hyun-woo Choi, maybe alongside Priya Sharma priya_sharma as a benchmark. This won't change the          │
+│    screening.                                                                                              │
+│  2 Make computer vision count in the screening. I can add it as a nice-to-have (or a must-have) and        │
+│    re-run, so it affects the ranking.                                                                      │
+╰────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+You: Compare Mei Lin with the top-ranked candidate.
+  tool: compare_candidates(candidate_ids=["priya_sharma", "mei_lin"])
+✓ Agent answered
+╭────────────────────────────────────────────────── Agent ───────────────────────────────────────────────────╮
+│ Here's Mei Lin mei_lin next to the top-ranked candidate, Priya Sharma priya_sharma:                        │
+│                                                                                                            │
+│                                                                                                            │
+│                                                 Priya Sharma (#1)  Mei Lin                                 │
+│  ─────────────────────────────────────────────────────────────────────────                                 │
+│  Fit score                                      100                50                                      │
+│  Recommendation                                 Hire               No hire                                 │
+│  Round 1 RAG score                              89                 n/a                                     │
+│  5+ years of Python (must)                      ✓ met              ✓ met                                   │
+│  Production experience with LLMs or RAG (must)  ✗ missing                                                  │
+│                                                                                                            │
+│                                                                                                            │
+│ Correction to the last row: Priya meets it (✓) and Mei Lin is missing it (✗). The table reads: Priya ✓     │
+│ met, Mei Lin ✗ missing.                                                                                    │
+│                                                                                                            │
+│ What this means                                                                                            │
+│                                                                                                            │
+│  • Both meet the 5+ years of Python requirement.                                                           │
+│  • Priya has production experience with LLMs or RAG. Mei Lin's resume has no evidence of it. That missing  │
+│    must-have is why she gets No hire.                                                                      │
+│  • Mei Lin wasn't on the shortlist, so she was judged just now. She has no Round 1 score, and this         │
+│    comparison doesn't change the screening.                                                                │
+│                                                                                                            │
+│ Options                                                                                                    │
+│                                                                                                            │
+│  • If computer vision matters for this role, I can add it as a nice-to-have. That would make Mei Lin's     │
+│    computer vision experience count, but she'd still be missing the LLM/RAG must-have.                     │
+│  • If LLM/RAG production work could be loosened (for example, to "ML models in production"), tell me and   │
+│    I'll update the requirements and re-run the screening.                                                  │
+│  • I can also write interview questions to check whether she's done any LLM/RAG work that isn't on her     │
+│    resume.                                                                                                 │
+│                                                                                                            │
+│ The recommendations are there to help you decide. The final decision is yours.                             │
+╰────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+You: Save a short summary of the top 3 for the hiring manager to reports/ml_hiring_summary.md
+  tool: get_candidate_report(candidate_id="priya_sharma")
+  tool: get_candidate_report(candidate_id="ananya_rao")
+  tool: get_candidate_report(candidate_id="vikram_iyer")
+  tool: write_file(filepath="reports/ml_hiring_summary.md", content="# Senior ML Engineer: Top 3 
+Candidates\n\n**Requirements...)
+✓ Agent answered
+╭────────────────────────────────────────────────── Agent ───────────────────────────────────────────────────╮
+│ I saved the summary to reports/ml_hiring_summary.md. Each candidate's details come from their candidate    │
+│ report.                                                                                                    │
+│                                                                                                            │
+│ What's in it                                                                                               │
+│                                                                                                            │
+│  • Priya Sharma priya_sharma: About 11 years of Python. She built a RAG assistant at Flipkart that         │
+│    searches 2M product documents.                                                                          │
+│  • Ananya Rao ananya_rao: About 7 years of Python. She built a RAG assistant over 4M support articles, and │
+│    she fine-tuned LLMs (large language models) and ran them in production on Kubernetes.                   │
+│  • Vikram Iyer vikram_iyer: About 6.4 years of Python. At Amazon he built RAG pipelines that run on AWS    │
+│    SageMaker, and he fine-tuned LLMs.                                                                      │
+│                                                                                                            │
+│ All three are rated Hire and meet both must-haves. The file says these ratings are meant to inform the     │
+│ hiring manager's decision, not make it.                                                                    │
+│                                                                                                            │
+│ One thing to check: In Vikram's main role at Amazon, his Python use is only implied by the libraries he    │
+│ lists (PyTorch, Hugging Face). His resume doesn't state it directly. The summary marks this so it can be   │
+│ confirmed at interview. I can write screening questions on it if that would help.                          │
+╰────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+You: quit
+Goodbye. Claude usage: 23 calls, 19,409 input tokens (+19,411 from cache), 9,272 output tokens on 
+claude-opus-5-5.

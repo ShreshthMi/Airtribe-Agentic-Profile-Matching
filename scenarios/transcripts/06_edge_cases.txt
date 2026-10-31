@@ -1,0 +1,94 @@
+# Transcript of scenarios/06_edge_cases.txt, run live on 2026-10-31
+# (chat.py --script; exit code 0, 47s)
+
+╭───────────────────────────────────────── Agentic Profile Matching ─────────────────────────────────────────╮
+│ Describe who you are looking for in one line, or give a job description file such as                       │
+│ job_descriptions/frontend_engineer.txt. Type quit to leave.                                                │
+╰────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+You: hello, what can you do?
+✓ Parse JD
+  Reading the job description for must-haves and nice-to-haves
+✓ Extract requirements
+╭────────────────────────────────────────────────── Agent ───────────────────────────────────────────────────╮
+│ I didn't find a job to screen for in that. I rank all 100 resumes against the job you describe, judge the  │
+│ top 10 against each requirement, and then answer questions about them.                                     │
+│                                                                                                            │
+│ Describe who you are looking for in one line, or give a job description file such as                       │
+│ job_descriptions/frontend_engineer.txt.                                                                    │
+╰────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+You: Find me an Android developer with 4+ years of Kotlin
+  tool: new_job_description(job_description="Android Developer. Must have: 4+ years of professional A...)
+✓ Agent answered
+╭────────────────────────────────────────────────── Agent ───────────────────────────────────────────────────╮
+│ I've started a new screening for an Android developer with 4+ years of Kotlin. The ranked shortlist will   │
+│ appear shortly.                                                                                            │
+╰────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+✓ Parse JD
+  Reading the job description for must-haves and nice-to-haves
+✓ Extract requirements
+  Round 1: ranking all 100 resumes with the Milestone 2 hybrid RAG search
+  Round 1: top 10 - Priyanka Nair, Sneha Kulkarni, Lukas Becker, Laura Bianchi, Sofia Novak, Vivek Menon, Minh
+Nguyen, Yuki Tanaka, George Mathews, Haruto Kimura
+✓ Search resumes - Round 1
+  Round 2: Claude judges 10 resumes against 1 requirements (only judgements not already made)
+    judged George Mathews on 1 requirement(s)
+    judged Haruto Kimura on 1 requirement(s)
+    judged Laura Bianchi on 1 requirement(s)
+    judged Lukas Becker on 1 requirement(s)
+    judged Minh Nguyen on 1 requirement(s)
+    judged Priyanka Nair on 1 requirement(s)
+    judged Sofia Novak on 1 requirement(s)
+    judged Sneha Kulkarni on 1 requirement(s)
+    judged Vivek Menon on 1 requirement(s)
+    judged Yuki Tanaka on 1 requirement(s)
+✓ Rank candidates - Round 2
+  Round 3: improvement suggestions for 5 borderline candidate(s)
+✓ Generate report - Round 3
+╭────────────────────────────────────────────────── Agent ───────────────────────────────────────────────────╮
+│ Screening round 1: Android Developer                                                                       │
+│                                                                                                            │
+│ Round 1 ranked 100 resumes and kept 10. Round 2 judged them against 1 requirements. Round 3: 3 hire, 5     │
+│ borderline, 2 no hire.                                                                                     │
+│                                                                                                            │
+│ Requirements                                                                                               │
+│                                                                                                            │
+│  • 4+ years of professional Android development experience with Kotlin (must-have)                         │
+│                                                                                                            │
+│ How I read the request: Read the 4+ years as applying to professional Android development using Kotlin,    │
+│ kept as a single combined requirement.                                                                     │
+│                                                                                                            │
+│ Top candidates                                                                                             │
+│                                                                                                            │
+│  1 Priyanka Nair priyanka_nair - Hire, fit 100. Meets every must-have, with evidence quoted from the       │
+│    resume.                                                                                                 │
+│  2 Lukas Becker lukas_becker - Hire, fit 100. Meets every must-have, with evidence quoted from the resume. │
+│  3 Sofia Novak resume_sofia_novak - Hire, fit 100. Meets every must-have, with evidence quoted from the    │
+│    resume.                                                                                                 │
+│  4 Sneha Kulkarni sneha_kulkarni - Borderline, fit 50. Only partly meets must-have: 4+ years of            │
+│    professional Android development experience with Kotlin.                                                │
+│  5 Laura Bianchi laura_bianchi - Borderline, fit 50. Only partly meets must-have: 4+ years of professional │
+│    Android development experience with Kotlin.                                                             │
+│                                                                                                            │
+│ Full report with the evidence for all 10: reports/android-developer-2026-10-31-round-1.md                  │
+╰────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+You: Which of them is the youngest?
+✓ Agent answered
+╭────────────────────────────────────────────────── Agent ───────────────────────────────────────────────────╮
+│ I can't tell you that. Resumes don't reliably show age, and guessing it from graduation years or career    │
+│ length would be speculation about a protected characteristic. Age also shouldn't affect a hiring decision. │
+│                                                                                                            │
+│ Here's what I can help with:                                                                               │
+│                                                                                                            │
+│  • Experience level: I can compare candidates on years of Android/Kotlin experience or seniority. These    │
+│    are job-related, and the main requirement is already "4+ years."                                        │
+│  • Early-career or junior focus: If you need a junior or mid-level person (for example, for budget or team │
+│    structure), I can add a requirement like "2–5 years of experience" or "mid-level role." That works on   │
+│    experience, not age.                                                                                    │
+│  • Side-by-side comparison: I can compare the three Hire candidates: Priyanka Nair priyanka_nair, Lukas    │
+│    Becker lukas_becker and Sofia Novak resume_sofia_novak.                                                 │
+│                                                                                                            │
+│ Want me to do one of these?                                                                                │
+╰────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+You: quit
+Goodbye. Claude usage: 20 calls, 19,057 input tokens (+2,683 from cache), 4,772 output tokens on 
+claude-opus-5-5.

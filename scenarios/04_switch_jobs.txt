@@ -1,0 +1,6 @@
+# Flow 4: one job, then a different job description mid-conversation.
+job_descriptions/backend_engineer.txt
+Compare the top 2 candidates.
+Now screen for job_descriptions/devops_sre.txt instead.
+Who is the strongest SRE and what is their biggest gap?
+quit

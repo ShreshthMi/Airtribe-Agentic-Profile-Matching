@@ -1,0 +1,5 @@
+# Flow 1: the brief's natural-language search, comparison and "why" questions.
+Find me candidates with React and 3+ years experience
+Compare the top 3 matches side by side
+Why did the #2 candidate rank higher than the #8 candidate?
+quit

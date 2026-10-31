@@ -1,0 +1,285 @@
+{
+  "screening_round": 1,
+  "date": "2026-10-31",
+  "requirements": {
+    "role_title": "Senior ML Engineer",
+    "must_have": [
+      "5+ years of Python",
+      "Production experience with LLMs or RAG"
+    ],
+    "nice_to_have": [],
+    "notes": "Read '5+ years' as applying to Python specifically, not to overall experience. Read 'production experience with LLMs or RAG' as one requirement that either technology satisfies, with no stated duration. 'Senior' is captured in the role title and not listed as a separate requirement."
+  },
+  "shortlist": [
+    {
+      "rank": 1,
+      "candidate_id": "priya_sharma",
+      "name": "Priya Sharma",
+      "resume_path": "resumes/priya_sharma.md",
+      "rag_score": 89,
+      "fit_score": 100,
+      "recommendation": "hire",
+      "recommendation_reason": "Meets every must-have, with evidence quoted from the resume.",
+      "must_haves_met": "2/2",
+      "verdicts": [
+        {
+          "requirement": "5+ years of Python",
+          "verdict": "met",
+          "evidence": "Developed demand forecasting models in Python with scikit-learn and Spark on AWS.",
+          "reasoning": "Python appears in three roles: Flipkart Jan 2021–Oct 2026 (~5.8 yrs), Swiggy Jul 2017–Dec 2020 (3.5 yrs) and Mu Sigma Jun 2015–Jun 2017 (2 yrs), which adds up to about 11.3 years, well above 5.",
+          "evidence_verified": true
+        },
+        {
+          "requirement": "Production experience with LLMs or RAG",
+          "verdict": "met",
+          "evidence": "Built a retrieval-augmented generation (RAG) assistant over 2M product documents using Python, LangChain and Pinecone.",
+          "reasoning": "The candidate built a RAG assistant at Flipkart in her current role, over 2M product documents, which shows hands-on RAG work at production scale.",
+          "evidence_verified": true
+        }
+      ]
+    },
+    {
+      "rank": 2,
+      "candidate_id": "ananya_rao",
+      "name": "Ananya Rao",
+      "resume_path": "resumes/ananya_rao.md",
+      "rag_score": 87,
+      "fit_score": 100,
+      "recommendation": "hire",
+      "recommendation_reason": "Meets every must-have, with evidence quoted from the resume.",
+      "must_haves_met": "2/2",
+      "verdicts": [
+        {
+          "requirement": "5+ years of Python",
+          "verdict": "met",
+          "evidence": "Built a retrieval-augmented generation (RAG) assistant in Python over 4M support articles using Weaviate and PyTorch rerankers.",
+          "reasoning": "Python is used in all three roles: Feb 2023 to Oct 2026 (~3.7 yrs), Aug 2020 to Jan 2023 (~2.4 yrs) and Jul 2019 to Jul 2020 (~1.1 yrs), which totals about 7.2 years, at least 5.",
+          "evidence_verified": true
+        },
+        {
+          "requirement": "Production experience with LLMs or RAG",
+          "verdict": "met",
+          "evidence": "Fine-tuned open LLMs with Hugging Face and served them with Docker on Kubernetes (EKS) on AWS.",
+          "reasoning": "At her current job she built a RAG assistant over 4M support articles and served fine-tuned LLMs on Kubernetes, which shows production LLM and RAG work.",
+          "evidence_verified": true
+        }
+      ]
+    },
+    {
+      "rank": 3,
+      "candidate_id": "vikram_iyer",
+      "name": "Vikram Iyer",
+      "resume_path": "resumes/vikram_iyer.md",
+      "rag_score": 83,
+      "fit_score": 100,
+      "recommendation": "hire",
+      "recommendation_reason": "Meets every must-have, with evidence quoted from the resume.",
+      "must_haves_met": "2/2",
+      "verdicts": [
+        {
+          "requirement": "5+ years of Python",
+          "verdict": "met",
+          "evidence": "Fine-tuned large language models in PyTorch for product question answering.",
+          "reasoning": "The Amazon role (Sep 2020 to Present, about 6.1 years to Oct 2026) uses PyTorch and Hugging Face, both Python libraries, and the internship (May to Aug 2019, about 0.3 years) names Python explicitly, so 6.1 + 0.3 ≈ 6.4 years, which is at least 5, though Python is only implied in the Amazon role.",
+          "evidence_verified": true
+        },
+        {
+          "requirement": "Production experience with LLMs or RAG",
+          "verdict": "met",
+          "evidence": "Built retrieval augmented generation pipelines with FAISS and Hugging Face; deployed on AWS SageMaker.",
+          "reasoning": "At Amazon the candidate built RAG pipelines, deployed them on SageMaker, and fine-tuned LLMs, which shows production LLM and RAG work.",
+          "evidence_verified": true
+        }
+      ]
+    },
+    {
+      "rank": 4,
+      "candidate_id": "adaeze_nwosu",
+      "name": "Adaeze Nwosu",
+      "resume_path": "resumes/adaeze_nwosu.md",
+      "rag_score": 100,
+      "fit_score": 75,
+      "recommendation": "borderline",
+      "recommendation_reason": "Only partly meets must-have: 5+ years of Python.",
+      "must_haves_met": "1/2",
+      "verdicts": [
+        {
+          "requirement": "5+ years of Python",
+          "verdict": "partial",
+          "evidence": "Improved ranking quality (nDCG@10) by 40% with a retrained Python model.",
+          "reasoning": "Python is named only in the Juniper role (May 2020 - Oct 2022, about 2.4 years), short of 5; the Kestrel role (Nov 2022 - Present, about 4 years) uses PyTorch, which implies Python but never names it.",
+          "evidence_verified": true
+        },
+        {
+          "requirement": "Production experience with LLMs or RAG",
+          "verdict": "met",
+          "evidence": "Productionised models with RAG and AWS, with offline and online evaluation.",
+          "reasoning": "The current Kestrel Pay role explicitly describes putting RAG-based models into production.",
+          "evidence_verified": true
+        }
+      ]
+    },
+    {
+      "rank": 5,
+      "candidate_id": "meera_pillai",
+      "name": "Meera Pillai",
+      "resume_path": "resumes/meera_pillai.md",
+      "rag_score": 100,
+      "fit_score": 75,
+      "recommendation": "borderline",
+      "recommendation_reason": "Only partly meets must-have: 5+ years of Python.",
+      "must_haves_met": "1/2",
+      "verdicts": [
+        {
+          "requirement": "5+ years of Python",
+          "verdict": "partial",
+          "evidence": "Python, Spark, MLOps, AWS, LLMs, RAG, PyTorch, Kubernetes",
+          "reasoning": "Python appears only in the skills list and is named in no role, so the ML roles from May 2018 to Oct 2026 (about 8.5 years) cannot be counted as Python years.",
+          "evidence_verified": true
+        },
+        {
+          "requirement": "Production experience with LLMs or RAG",
+          "verdict": "met",
+          "evidence": "Trained and deployed LLMs models serving 75k predictions a day.",
+          "reasoning": "The current Quillstone role shows LLMs deployed in production serving live traffic and a RAG pipeline built.",
+          "evidence_verified": true
+        }
+      ]
+    },
+    {
+      "rank": 6,
+      "candidate_id": "karan_malhotra",
+      "name": "Karan Malhotra",
+      "resume_path": "resumes/karan_malhotra.txt",
+      "rag_score": 88,
+      "fit_score": 75,
+      "recommendation": "borderline",
+      "recommendation_reason": "Only partly meets must-have: 5+ years of Python.",
+      "must_haves_met": "1/2",
+      "verdicts": [
+        {
+          "requirement": "5+ years of Python",
+          "verdict": "partial",
+          "evidence": "Built RAG chatbots with LangChain, Pinecone and GPT-4 for insurance customers; Python FastAPI backend on AWS.",
+          "reasoning": "Python roles span Jul 2023–Dec 2023 (0.5 years) plus Jan 2024–Oct 2026 (about 2.8 years), roughly 3.3 years in total, which is short of the 5 years asked.",
+          "evidence_verified": true
+        },
+        {
+          "requirement": "Production experience with LLMs or RAG",
+          "verdict": "met",
+          "evidence": "Built RAG chatbots with LangChain, Pinecone and GPT-4 for insurance customers; Python FastAPI backend on AWS.",
+          "reasoning": "The current role shows RAG chatbots built with GPT-4 and delivered to insurance customers, which is clear production LLM/RAG experience.",
+          "evidence_verified": true
+        }
+      ]
+    },
+    {
+      "rank": 7,
+      "candidate_id": "tariq_mahmood",
+      "name": "Tariq Mahmood",
+      "resume_path": "resumes/tariq_mahmood.txt",
+      "rag_score": 78,
+      "fit_score": 75,
+      "recommendation": "borderline",
+      "recommendation_reason": "Only partly meets must-have: 5+ years of Python.",
+      "must_haves_met": "1/2",
+      "verdicts": [
+        {
+          "requirement": "5+ years of Python",
+          "verdict": "partial",
+          "evidence": "Improved ranking quality (nDCG@10) by 18% with a retrained Python model.",
+          "reasoning": "Python is named only at Kestrel Pay (Jan 2022–Dec 2023, 2 years); even counting the PyTorch work at Pinecrest (Jan 2024–Oct 2026, about 2.8 years), the total is about 4.8 years, short of 5.",
+          "evidence_verified": true
+        },
+        {
+          "requirement": "Production experience with LLMs or RAG",
+          "verdict": "met",
+          "evidence": "Built a LLMs pipeline that cut model iteration time from weeks to days.",
+          "reasoning": "The candidate built an LLM pipeline in a current paid role, though RAG is not mentioned explicitly.",
+          "evidence_verified": true
+        }
+      ]
+    },
+    {
+      "rank": 8,
+      "candidate_id": "li_wei",
+      "name": "Li Wei",
+      "resume_path": "resumes/li_wei.txt",
+      "rag_score": 66,
+      "fit_score": 25,
+      "recommendation": "no_hire",
+      "recommendation_reason": "Misses must-have: Production experience with LLMs or RAG.",
+      "must_haves_met": "0/2",
+      "verdicts": [
+        {
+          "requirement": "5+ years of Python",
+          "verdict": "partial",
+          "evidence": "Python SDK for feature store access; Airflow retraining pipelines.",
+          "reasoning": "Python is named only in the Grab role (Apr 2022 to Oct 2026 = about 4.5 years); the Shopee role does not mention it, so 4.5 < 5 years.",
+          "evidence_verified": true
+        },
+        {
+          "requirement": "Production experience with LLMs or RAG",
+          "verdict": "missing",
+          "evidence": "",
+          "reasoning": "The resume describes general ML platform work with no mention of LLMs or RAG.",
+          "evidence_verified": false
+        }
+      ]
+    },
+    {
+      "rank": 9,
+      "candidate_id": "clara_jensen",
+      "name": "Clara Jensen",
+      "resume_path": "resumes/clara_jensen.pdf",
+      "rag_score": 65,
+      "fit_score": 25,
+      "recommendation": "no_hire",
+      "recommendation_reason": "Misses must-have: Production experience with LLMs or RAG.",
+      "must_haves_met": "0/2",
+      "verdicts": [
+        {
+          "requirement": "5+ years of Python",
+          "verdict": "partial",
+          "evidence": "Built and operated Python services handling 75k requests per minute at peak.",
+          "reasoning": "Only the Bluefinch role (Nov 2023 to Oct 2026, about 3 years) mentions Python; the Nimbusly role (Apr 2021 to Oct 2023) names no language, so roughly 3 years is short of the 5 asked.",
+          "evidence_verified": true
+        },
+        {
+          "requirement": "Production experience with LLMs or RAG",
+          "verdict": "missing",
+          "evidence": "",
+          "reasoning": "The resume does not mention LLMs, RAG, or any related AI work.",
+          "evidence_verified": false
+        }
+      ]
+    },
+    {
+      "rank": 10,
+      "candidate_id": "ishaan_kapoor",
+      "name": "Ishaan Kapoor",
+      "resume_path": "resumes/ishaan_kapoor.txt",
+      "rag_score": 63,
+      "fit_score": 25,
+      "recommendation": "no_hire",
+      "recommendation_reason": "Misses must-have: Production experience with LLMs or RAG.",
+      "must_haves_met": "0/2",
+      "verdicts": [
+        {
+          "requirement": "5+ years of Python",
+          "verdict": "partial",
+          "evidence": "TensorFlow, Python, Computer Vision, Docker, PyTorch, MLOps, GCP",
+          "reasoning": "Python appears only in the skills list; neither role names it, though the ML roles from Jul 2020 to Oct 2026 (about 6.3 years) used PyTorch and TensorFlow, which suggests it.",
+          "evidence_verified": true
+        },
+        {
+          "requirement": "Production experience with LLMs or RAG",
+          "verdict": "missing",
+          "evidence": "",
+          "reasoning": "The resume mentions computer vision and ranking models but nothing involving LLMs or RAG.",
+          "evidence_verified": false
+        }
+      ]
+    }
+  ]
+}

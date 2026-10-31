@@ -1,0 +1,203 @@
+# Transcript of scenarios/04_switch_jobs.txt, run live on 2026-10-31
+# (chat.py --script; exit code 0, 93s)
+
+╭───────────────────────────────────────── Agentic Profile Matching ─────────────────────────────────────────╮
+│ Describe who you are looking for in one line, or give a job description file such as                       │
+│ job_descriptions/frontend_engineer.txt. Type quit to leave.                                                │
+╰────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+You: job_descriptions/backend_engineer.txt
+✓ Parse JD
+  Reading the job description for must-haves and nice-to-haves
+✓ Extract requirements
+  Round 1: ranking all 100 resumes with the Milestone 2 hybrid RAG search
+  Round 1: top 10 - Arjun Mehta, Oluwaseun Adeyemi, George Mathews, Ravi Shankar, Vivek Menon, Tomasz 
+Kowalski, Natalia Popescu, Ahmed Karim, Divya Reddy, Samuel Osei
+✓ Search resumes - Round 1
+  Round 2: Claude judges 10 resumes against 12 requirements (only judgements not already made)
+    judged Ahmed Karim on 12 requirement(s)
+    judged Arjun Mehta on 12 requirement(s)
+    judged Divya Reddy on 12 requirement(s)
+    judged George Mathews on 12 requirement(s)
+    judged Natalia Popescu on 12 requirement(s)
+    judged Oluwaseun Adeyemi on 12 requirement(s)
+    judged Ravi Shankar on 12 requirement(s)
+    judged Samuel Osei on 12 requirement(s)
+    judged Tomasz Kowalski on 12 requirement(s)
+    judged Vivek Menon on 12 requirement(s)
+✓ Rank candidates - Round 2
+✓ Generate report - Round 3
+╭────────────────────────────────────────────────── Agent ───────────────────────────────────────────────────╮
+│ Screening round 1: Senior Backend Engineer (Payments)                                                      │
+│                                                                                                            │
+│ Round 1 ranked 100 resumes and kept 10. Round 2 judged them against 12 requirements. Round 3: 2 hire, 0    │
+│ borderline, 8 no hire.                                                                                     │
+│                                                                                                            │
+│ Requirements                                                                                               │
+│                                                                                                            │
+│  • 6+ years of backend development experience (must-have)                                                  │
+│  • Java (must-have)                                                                                        │
+│  • Spring Boot (must-have)                                                                                 │
+│  • Microservices (must-have)                                                                               │
+│  • REST APIs (must-have)                                                                                   │
+│  • Kafka (must-have)                                                                                       │
+│  • Redis (must-have)                                                                                       │
+│  • Kubernetes (must-have)                                                                                  │
+│  • AWS (must-have)                                                                                         │
+│  • Terraform (nice-have)                                                                                   │
+│  • System design experience (nice-have)                                                                    │
+│  • Go (nice-have)                                                                                          │
+│                                                                                                            │
+│ How I read the request: The 6+ years is read as overall backend development experience, as stated, not as  │
+│ years in each listed technology. 'Kubernetes on AWS' is split into two separate items, Kubernetes and AWS, │
+│ so each can be checked on its own. The opening line about reliable, high-throughput distributed services   │
+│ describes the job and is not listed as a requirement.                                                      │
+│                                                                                                            │
+│ Top candidates                                                                                             │
+│                                                                                                            │
+│  1 Arjun Mehta arjun_mehta - Hire, fit 98. Meets every must-have, with evidence quoted from the resume.    │
+│  2 Oluwaseun Adeyemi oluwaseun_adeyemi - Hire, fit 95. Meets every must-have, with evidence quoted from    │
+│    the resume.                                                                                             │
+│  3 George Mathews george_mathews - No hire, fit 69. Misses must-have: REST APIs; Redis.                    │
+│  4 Ravi Shankar ravi_shankar - No hire, fit 69. Misses must-have: AWS.                                     │
+│  5 Tomasz Kowalski tomasz_kowalski - No hire, fit 52. Misses must-have: REST APIs; Redis; AWS.             │
+│                                                                                                            │
+│ Full report with the evidence for all 10: reports/senior-backend-engineer-payments-2026-10-31-round-1.md   │
+╰────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+You: Compare the top 2 candidates.
+  tool: compare_candidates(candidate_ids=["arjun_mehta", "oluwaseun_adeyemi"])
+✓ Agent answered
+╭────────────────────────────────────────────────── Agent ───────────────────────────────────────────────────╮
+│                                                                                                            │
+│                                                                                                            │
+│                                                     Arjun Mehta (#1)  Oluwaseun Adeyemi (#2)               │
+│  ───────────────────────────────────────────────────────────────────────────────────────────               │
+│  Fit score                                          98                95                                   │
+│  Recommendation                                     Hire              Hire                                 │
+│  Round 1 RAG score                                  100               99                                   │
+│  6+ years of backend development experience (must)  ✓ met             ✓ met                                │
+│  Java (must)                                        ✓ met             ✓ met                                │
+│  Spring Boot (must)                                 ✓ met             ✓ met                                │
+│  Microservices (must)                               ✓ met             ✓ met                                │
+│  REST APIs (must)                                   ✓ met             ✓ met                                │
+│  Kafka (must)                                       ✓ met             ✓ met                                │
+│  Redis (must)                                       ✓ met             ✓ met                                │
+│  Kubernetes (must)                                  ✓ met             ✓ met                                │
+│  AWS (must)                                         ✓ met             ✓ met                                │
+│  Terraform (nice)                                   ✓ met             ✓ met                                │
+│  System design experience (nice)                    ✓ met             ✓ met                                │
+│  Go (nice)                                          ~ partial         ✗ missing                            │
+│                                                                                                            │
+│                                                                                                            │
+│ Summary: Arjun Mehta arjun_mehta and Oluwaseun Adeyemi oluwaseun_adeyemi are almost tied. Both meet all 9  │
+│ must-haves, plus Terraform and system design. The only difference is Go, a nice-to-have. Arjun shows       │
+│ partial Go experience and Oluwaseun shows none, which explains the 3-point gap (98 vs 95).                 │
+│                                                                                                            │
+│ Since Go is only a nice-to-have, this gap shouldn't decide things alone. Both are good candidates to       │
+│ interview. The ranking is meant to help your decision, not make it.                                        │
+│                                                                                                            │
+│ Next steps I can help with:                                                                                │
+│                                                                                                            │
+│  • A full report on either candidate, with quotes from their resume                                        │
+│  • Interview questions for each, for example to check how deep Arjun's Go goes                             │
+│  • Making Go count for more or less, if it matters more or less to the team than it does now               │
+╰────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+You: Now screen for job_descriptions/devops_sre.txt instead.
+  tool: new_job_description(job_description="job_descriptions/devops_sre.txt")
+✓ Agent answered
+╭────────────────────────────────────────────────── Agent ───────────────────────────────────────────────────╮
+│ I've switched to job_descriptions/devops_sre.txt, and a new three-round screening for that role will start │
+│ after this message.                                                                                        │
+╰────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+✓ Parse JD
+  Reading the job description for must-haves and nice-to-haves
+✓ Extract requirements
+  Round 1: ranking all 100 resumes with the Milestone 2 hybrid RAG search
+  Round 1: top 10 - Elena Rodriguez, Omar Haddad, Maria Garcia, Zainab Yusuf, Divya Reddy, Rebecca Stone, 
+Andile Khumalo, Samuel Osei, Li Wei, Felix Wagner
+✓ Search resumes - Round 1
+  Round 2: Claude judges 10 resumes against 11 requirements (only judgements not already made)
+    judged Andile Khumalo on 11 requirement(s)
+    judged Divya Reddy on 11 requirement(s)
+    judged Felix Wagner on 11 requirement(s)
+    judged Li Wei on 11 requirement(s)
+    judged Maria Garcia on 11 requirement(s)
+    judged Omar Haddad on 11 requirement(s)
+    judged Rebecca Stone on 11 requirement(s)
+    judged Elena Rodriguez on 11 requirement(s)
+    judged Samuel Osei on 11 requirement(s)
+    judged Zainab Yusuf on 11 requirement(s)
+✓ Rank candidates - Round 2
+  Round 3: improvement suggestions for 5 borderline candidate(s)
+✓ Generate report - Round 3
+╭────────────────────────────────────────────────── Agent ───────────────────────────────────────────────────╮
+│ Screening round 1: Site Reliability Engineer                                                               │
+│                                                                                                            │
+│ Round 1 ranked 100 resumes and kept 10. Round 2 judged them against 11 requirements. Round 3: 1 hire, 5    │
+│ borderline, 4 no hire.                                                                                     │
+│                                                                                                            │
+│ Requirements                                                                                               │
+│                                                                                                            │
+│  • 5+ years of experience in DevOps, SRE or platform engineering (must-have)                               │
+│  • Kubernetes in production (must-have)                                                                    │
+│  • Docker in production (must-have)                                                                        │
+│  • Infrastructure as code with Terraform (must-have)                                                       │
+│  • Experience with AWS or GCP (must-have)                                                                  │
+│  • CI/CD pipelines (GitHub Actions, Jenkins or similar) (must-have)                                        │
+│  • Linux (must-have)                                                                                       │
+│  • Scripting in Python or Go (must-have)                                                                   │
+│  • Monitoring with Prometheus and Grafana (must-have)                                                      │
+│  • Incident response and on-call leadership (nice-have)                                                    │
+│  • Cloud cost optimisation (nice-have)                                                                     │
+│                                                                                                            │
+│ How I read the request: Read the 5+ years as total experience across DevOps, SRE or platform engineering   │
+│ combined, not 5+ years in each. 'Kubernetes and Docker in production' was split into two separate checks,  │
+│ both requiring production use. 'Python or Go' and 'AWS or GCP' are each satisfied by either option.        │
+│                                                                                                            │
+│ Top candidates                                                                                             │
+│                                                                                                            │
+│  1 Omar Haddad omar_haddad - Hire, fit 95. Meets every must-have, with evidence quoted from the resume.    │
+│  2 Maria Garcia maria_garcia - Borderline, fit 88. Only partly meets must-have: Monitoring with Prometheus │
+│    and Grafana.                                                                                            │
+│  3 Elena Rodriguez resume_elena_rodriguez - Borderline, fit 80. Only partly meets must-have: Docker in     │
+│    production; Experience with AWS or GCP; Linux; Monitoring with Prometheus and Grafana.                  │
+│  4 Zainab Yusuf zainab_yusuf - Borderline, fit 70. Only partly meets must-have: Kubernetes in production;  │
+│    Docker in production; Infrastructure as code with Terraform; Linux; Monitoring with Prometheus and      │
+│    Grafana.                                                                                                │
+│  5 Rebecca Stone rebecca_stone - No hire, fit 70. Misses must-have: Monitoring with Prometheus and         │
+│    Grafana.                                                                                                │
+│                                                                                                            │
+│ Full report with the evidence for all 10: reports/site-reliability-engineer-2026-10-31-round-1.md          │
+╰────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+You: Who is the strongest SRE and what is their biggest gap?
+  tool: get_candidate_report(candidate_id="omar_haddad")
+✓ Agent answered
+╭────────────────────────────────────────────────── Agent ───────────────────────────────────────────────────╮
+│ The strongest SRE is Omar Haddad omar_haddad: Hire, fit 95. He's the only candidate who meets all 9        │
+│ must-haves.                                                                                                │
+│                                                                                                            │
+│ Why he leads                                                                                               │
+│                                                                                                            │
+│  • Experience: About 5 years 10 months as Senior SRE at Petra Cloud (Jan 2021 to now). That's enough for   │
+│    the 5+ years without counting his earlier systems role.                                                 │
+│  • Scale: "Operates 25 GKE Kubernetes clusters on GCP with Terraform modules for every environment."       │
+│  • Scripting and monitoring: "Wrote Go operators and Python tooling for automated failover; Prometheus and │
+│    Grafana alerting."                                                                                      │
+│  • Incident response and on-call (nice-to-have): "Leads incident reviews and the on-call rotation for 40   │
+│    engineers."                                                                                             │
+│                                                                                                            │
+│ Biggest gap                                                                                                │
+│                                                                                                            │
+│  • Cloud cost optimisation (nice-to-have): His resume doesn't mention it at all. This is the only          │
+│    requirement he doesn't meet.                                                                            │
+│                                                                                                            │
+│ Worth checking in the interview His Docker, Jenkins CI/CD and Linux evidence all comes from one line about │
+│ his earlier hosting role (2018–2020): "Linux administration, Docker migration and Jenkins CI/CD pipelines  │
+│ on AWS." His current role doesn't mention them. It's worth asking how much he uses them today.             │
+│                                                                                                            │
+│ The ranking is meant to help your decision, not make it. I can write interview questions on cost           │
+│ optimisation and his recent CI/CD and Docker work, or compare him with Maria Garcia maria_garcia, who is   │
+│ #2.                                                                                                        │
+╰────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+You: quit
+Goodbye. Claude usage: 33 calls, 36,948 input tokens (+13,983 from cache), 29,046 output tokens on 
+claude-opus-5-5.
