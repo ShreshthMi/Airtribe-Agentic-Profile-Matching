@@ -153,7 +153,7 @@ class MatchingAgent:
     def search_resumes(self, state: ScreeningState) -> dict:
         reqs = state["requirements"]
         _progress(f"Round 1: ranking all {self.corpus.size} resumes with the Milestone 2 hybrid RAG search")
-        ranking = self.corpus.search(_search_query(state["job_description"], reqs), k=self.corpus.size,
+        ranking = self.corpus.search(search_query(state["job_description"], reqs), k=self.corpus.size,
                                      must_haves=reqs["must_have"])
         top = ranking[:ROUND1_SIZE]
         _progress(f"Round 1: top {ROUND1_SIZE} - " + ", ".join(c["name"] for c in top))
@@ -333,7 +333,7 @@ def _say(text: str, **updates) -> dict:
     return {"messages": [{"role": "assistant", "content": text}], **updates}
 
 
-def _search_query(job_description: str, reqs: dict) -> str:
+def search_query(job_description: str, reqs: dict) -> str:
     """The Round 1 query: the job text plus the current requirements, which may have been refined since."""
     lines = [job_description, "", "Requirements", *[f"- {r}" for r in reqs["must_have"]]]
     if reqs["nice_to_have"]:

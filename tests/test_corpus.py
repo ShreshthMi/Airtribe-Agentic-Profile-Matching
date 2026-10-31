@@ -24,7 +24,7 @@ def corpus(tmp_path):
 
 
 def test_a_missing_index_says_how_to_build_one(tmp_path):
-    with pytest.raises(CorpusError, match="python milestone2_rag/resume_rag.py"):
+    with pytest.raises(CorpusError, match="python scripts/build_index.py --provider huggingface"):
         Corpus(root=tmp_path, db_path=tmp_path / "nowhere")
 
 
