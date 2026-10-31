@@ -186,3 +186,20 @@ def test_make_sheets_writes_pooled_blank_sheets(tmp_path, monkeypatch, capsys):
     rows = list(csv.DictReader((labels / "real_frontend_B.csv").open()))
     assert len(rows) == 13 and all(r["human_grade"] == "" for r in rows)
     assert (tmp_path / "frozen" / "real_frontend.json").is_file()
+
+
+def test_sheets_not_yet_graded_are_skipped_with_a_note(tmp_path, capsys):
+    write_sheet(tmp_path / "real_sre_A.csv", {"ana_ruiz": 2, "ben_ito": 0})
+    write_sheet(tmp_path / "real_sre_B.csv", {"ana_ruiz": "", "ben_ito": ""})
+
+    labels = evaluate.load_labels(tmp_path)
+
+    assert labels == {"real_sre": {"A": {"ana_ruiz": 2, "ben_ito": 0}}}
+    assert "skipping 1 sheet(s) not graded yet: real_sre_B.csv" in capsys.readouterr().out
+
+
+def test_when_no_sheet_is_graded_the_evaluation_says_what_to_do(tmp_path):
+    write_sheet(tmp_path / "real_sre_A.csv", {"ana_ruiz": ""})
+
+    with pytest.raises(ValueError, match="None of the 1 sheets .* has been graded yet. Send the labelling packs"):
+        evaluate.load_labels(tmp_path)

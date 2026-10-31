@@ -30,6 +30,11 @@ GRADES = (0, 1, 2)
 AGENT_GRADE = {"hire": 2, "borderline": 1, "no_hire": 0}
 # Landis and Koch's reading of kappa, the usual yardstick for agreement between annotators
 KAPPA_BANDS = ((0.8, "almost perfect"), (0.6, "substantial"), (0.4, "moderate"), (0.2, "fair"), (0.0, "slight"))
+MAX_PROBLEMS_LISTED = 10
+
+
+class UngradedSheet(ValueError):
+    """A sheet nobody has started: every human_grade is still blank."""
 
 
 # --------------------------------------------------------------------------- #
@@ -69,9 +74,28 @@ def read_grades(rows: list[dict], required: set[str] = frozenset()) -> dict[str,
             grades[cid] = int(grade)
     listed = {(row.get("candidate_id") or "").strip() for row in rows}
     problems += [f"no row for {cid}" for cid in sorted(required - listed)]
+    if len(problems) > MAX_PROBLEMS_LISTED:
+        problems = problems[:MAX_PROBLEMS_LISTED] + [f"... and {len(problems) - MAX_PROBLEMS_LISTED} more"]
     if problems:
         raise ValueError("The labelling sheet has problems:\n  " + "\n  ".join(problems))
     return grades
+
+
+def grades_from(path: Path, required: set[str] = frozenset()) -> dict[str, int]:
+    """Grades from one sheet file. Errors name the file; a sheet nobody has started is one line."""
+    rows = read_sheet(path)
+    if rows and not any((row.get("human_grade") or "").strip() for row in rows):
+        raise UngradedSheet(f"{_shown(path)} hasn't been graded yet: all {len(rows)} rows are blank.")
+    try:
+        return read_grades(rows, required)
+    except ValueError as exc:
+        raise ValueError(f"{_shown(path)}: {exc}") from exc
+
+
+def _shown(path: Path) -> str:
+    """A path relative to the project when it is inside it, for shorter messages."""
+    path = path.resolve()
+    return str(path.relative_to(ROOT)) if path.is_relative_to(ROOT) else str(path)
 
 
 # --------------------------------------------------------------------------- #
@@ -178,12 +202,11 @@ def main(argv: list[str] | None = None) -> None:
             else:
                 parser.error("give a report, or --all for every resume")
         elif args.command == "agreement":
-            print(agreement(read_grades(read_sheet(args.first)), read_grades(read_sheet(args.second)),
-                            (args.first.stem, args.second.stem)))
+            print(agreement(grades_from(args.first), grades_from(args.second), (args.first.stem, args.second.stem)))
         else:
             report = json.loads(args.report.read_text())
             shortlist = {e["candidate_id"] for e in report["shortlist"]}
-            sheets = {path.stem: read_grades(read_sheet(path), shortlist) for path in args.labels}
+            sheets = {path.stem: grades_from(path, shortlist) for path in args.labels}
             sections = [f"Screening round for: {report['requirements'].get('role_title')}", ""]
             sections += [score(report, grades, who) + "\n" for who, grades in sheets.items()]
             if len(sheets) > 1:

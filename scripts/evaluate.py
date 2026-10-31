@@ -82,13 +82,26 @@ def ndcg_at(order: list[str], gains: dict[str, float], k: int) -> float | None:
 # Labels
 # --------------------------------------------------------------------------- #
 def load_labels(folder: Path) -> dict[str, dict[str, dict[str, int]]]:
-    """posting -> labeller -> candidate_id -> grade, from <posting>_<labeller>.csv files."""
+    """posting -> labeller -> candidate_id -> grade, from <posting>_<labeller>.csv files.
+
+    Sheets nobody has started are skipped with a note, so the evaluation can run on the
+    labellers who have finished; a sheet that is started but has a problem stops it.
+    """
     labels: dict[str, dict[str, dict[str, int]]] = defaultdict(dict)
+    ungraded = []
     for path in sorted(folder.glob("*.csv")):
         posting, _, labeller = path.stem.rpartition("_")
         if not posting:
             raise ValueError(f"{path.name}: name label sheets <posting>_<labeller>.csv")
-        labels[posting][labeller] = human_eval.read_grades(human_eval.read_sheet(path))
+        try:
+            labels[posting][labeller] = human_eval.grades_from(path)
+        except human_eval.UngradedSheet:
+            ungraded.append(path.name)
+    if ungraded and not labels:
+        raise ValueError(f"None of the {len(ungraded)} sheets in {folder.name}/ has been graded yet. Send the "
+                         "labelling packs in evaluation/private/packs/ and save the returned sheets over these.")
+    if ungraded:
+        print(f"skipping {len(ungraded)} sheet(s) not graded yet: {', '.join(ungraded)}", flush=True)
     return dict(labels)
 
 

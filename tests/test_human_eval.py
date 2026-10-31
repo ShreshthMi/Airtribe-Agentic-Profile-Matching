@@ -126,3 +126,24 @@ def test_a_sheet_missing_a_shortlisted_candidate_is_an_error_not_a_traceback(tmp
         human_eval.main(["score", str(report), str(partial)])
 
     assert exit_info.value.code == 2
+
+
+def test_a_sheet_nobody_has_started_is_reported_in_one_line_naming_the_file(tmp_path):
+    blank = tmp_path / "real_sre_A.csv"
+    with blank.open("w", newline="") as f:
+        human_eval.write_template(REPORT["shortlist"], f)
+
+    with pytest.raises(human_eval.UngradedSheet, match=r"real_sre_A\.csv hasn't been graded yet: all 3 rows are blank"):
+        human_eval.grades_from(blank)
+
+
+def test_a_partly_graded_sheet_names_the_file_and_caps_the_list(tmp_path):
+    rows = {f"p{i:02d}": ("" if i else 2) for i in range(30)}  # one graded, 29 blank
+    path = sheet(tmp_path, "real_ml_B", rows)
+
+    with pytest.raises(ValueError) as error:
+        human_eval.grades_from(path)
+
+    message = str(error.value)
+    assert message.startswith(f"{path}: The labelling sheet has problems:")
+    assert message.count("must be 0, 1 or 2") == human_eval.MAX_PROBLEMS_LISTED and "... and 19 more" in message
