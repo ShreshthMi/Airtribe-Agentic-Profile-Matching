@@ -8,9 +8,9 @@ halfway through, and it re-screens and tells you who moved and why.
 ```bash
 uv venv --python 3.12 .venv && VIRTUAL_ENV=.venv uv pip install -r requirements-dev.txt
 cp .env.example .env            # then add your ANTHROPIC_API_KEY
-.venv/bin/python milestone2_rag/resume_rag.py --resumes resumes --db chroma_db --reset   # build the index once
+.venv/bin/python scripts/build_index.py   # build the Round 1 index once (local MiniLM by default)
 .venv/bin/python chat.py        # talk to the agent
-.venv/bin/python -m pytest      # 178 tests, offline, a few seconds
+.venv/bin/python -m pytest      # 208 tests, offline, a few seconds
 ```
 
 ## Deliverables
@@ -132,8 +132,51 @@ The reply then lists each change, for example
 | M1: the design is hard to follow for a beginner | One file per job, each opening with what it does and who calls it. Scoring rules are plain functions in `screening.py`; every Claude prompt is in `claude_tasks.py`; only `llm.py` calls the API |
 | M1: add a walkthrough from tool schema to final answer | [`docs/walkthrough.md`](docs/walkthrough.md) |
 | M2: metadata extraction is rule- and vocabulary-based | Requirements are read by Claude, and Round 2 reads each resume against them, so skills outside Milestone 2's 73-word vocabulary (Svelte, Elixir, Flink, Databricks) count. Milestone 2's rule checks are still shown beside Claude's judgement, and the corpus includes resumes where the two disagree ([`DATASET.md`](DATASET.md#deliberate-traps)) |
-| M2: evaluation needs independent human labels | Not solved, and not claimed: labels written in this project would repeat the problem. [`scripts/human_eval.py`](scripts/human_eval.py) makes a blind labelling sheet from any screening round and scores the agent against it once a person has filled it in |
-| M2: embeddings are HuggingFace-only | Unchanged. Round 1 still uses Milestone 2's local MiniLM model; its `Embedder` is the place to swap in a hosted embedding API |
+| M2: evaluation needs independent human labels | The tooling is built; the labels need people. Labels written in this project would repeat the problem, so none are claimed. See [Evaluating against human labels](#evaluating-against-human-labels) |
+| M2: embeddings are HuggingFace-only | Round 1 can use Ollama (local, no key), Voyage AI or OpenAI as well as MiniLM: [`embedders.py`](embedders.py), built with `scripts/build_index.py`. Which one is better on this task is measured against the human labels, not assumed |
+
+## Evaluating against human labels
+
+The resumes, the traps and the agent were all written in this project, so the only
+evaluation that means anything is one done by people who were not. The tools for it are
+here; the labels have to come from outside.
+
+1. **Postings.** Put 3-5 real job postings, written by people who never saw these resumes,
+   in `job_descriptions/` as `<posting>.txt` (for example `real_frontend.txt`).
+2. **Sheets.** Screen each posting (`python chat.py --jd job_descriptions/real_frontend.txt`),
+   then make a blind sheet from the round's JSON report, listing candidates alphabetically
+   with no rank or verdict:
+   `python scripts/human_eval.py template reports/<round>.json > evaluation/labels/real_frontend_alice.csv`.
+   For one or two postings use `template --all`, which lists every resume; recall cannot be
+   measured without it.
+3. **Labels.** Two people grade every row on their own copy: 2 would interview, 1
+   borderline, 0 would not. Then check they read the rubric the same way:
+   `python scripts/human_eval.py agreement evaluation/labels/real_frontend_alice.csv evaluation/labels/real_frontend_bob.csv`
+   reports Cohen's kappa, plain and weighted, and lists any 2-versus-0 disagreements.
+4. **The agent's recommendations** against each labeller and their consensus:
+   `python scripts/human_eval.py score reports/<round>.json evaluation/labels/real_frontend_*.csv`.
+5. **The rankings, and embedding providers.** Build an index per provider, then evaluate:
+
+   ```bash
+   .venv/bin/python scripts/build_index.py --provider huggingface
+   .venv/bin/python scripts/build_index.py --provider ollama     # or voyage / openai, with a key in .env
+   .venv/bin/python scripts/evaluate.py --providers huggingface ollama
+   ```
+
+   For every posting and provider, `evaluate.py` reports Round 1's P@5, P@10, nDCG@10 and
+   (with a full sheet) R@10, and Round 2's P@5, nDCG@10 and how many of its *Hire*
+   recommendations the labellers agree with. The table goes to `evaluation/results.md`.
+
+Two details keep the comparison fair. Milestone 2 scales similarity through a band
+hand-set for MiniLM (0.15-0.65); another model scores on another scale, so
+`build_index.py` measures each model's own band over the job descriptions and saves it
+with the index (MiniLM's measured band is 0.33-0.68), and `evaluate.py` refuses an index
+without one. And Round 2's judgements are shared between providers, so a candidate both
+rank highly is judged once and judged the same way.
+
+Not done here: no labels exist yet, and nothing has been measured with them. The
+`chroma_db` index the chat, the scenarios and the demo used was built before calibration
+and uses Milestone 2's hand-set band.
 
 ## The demo video
 
@@ -227,7 +270,10 @@ resumes/               100 resumes          job_descriptions/   7 job descriptio
 scenarios/             six conversation scripts and their live transcripts
 demo/                  demo video, its script and the recorded session
 docs/                  walkthrough, state machine diagram
-scripts/               resume generator, scenario runner, demo recorder, human evaluation
+embedders.py           Round 1 embedding providers: MiniLM, Ollama, Voyage AI, OpenAI
+scripts/               index builder, resume generator, scenario runner, demo recorder,
+                       human labelling (human_eval.py) and evaluation (evaluate.py)
+evaluation/labels/     where label sheets go; evaluation/results.md is written beside it
 tests/                 pytest suite and the scripted stand-ins
 reports/               screening reports written by the agent
 ```

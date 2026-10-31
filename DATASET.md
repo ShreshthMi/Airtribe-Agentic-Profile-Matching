@@ -70,5 +70,7 @@ one-line description such as "Find me candidates with React and 3+ years experie
 Milestone 2's review asked for evaluation against independent, human-labelled data. That
 is still the gap: the resumes, the traps above and the agent were all written within this
 project, so a trap the agent catches is a trap its author knew to set. The traps show the
-agent behaves as designed, not that it generalises. `scripts/human_eval.py` (see the README)
-sets up the blind labelling a human reviewer would need to measure it properly.
+agent behaves as designed, not that it generalises. `scripts/human_eval.py` and
+`scripts/evaluate.py` (see "Evaluating against human labels" in the README) set up the
+blind labelling, and the measurement, that independent reviewers and real job postings
+would need.
