@@ -1,0 +1,18 @@
+Name: Patrick O'Neill
+patrick.oneill@example.com | Cork, Ireland
+
+SUMMARY
+Full-stack developer experienced in React, Vue, Angular, Node.js, Python, Kubernetes, AWS and machine learning with TensorFlow.
+
+SKILLS
+PHP, WordPress, jQuery, React, Vue, Angular, Node.js, Python, Kubernetes, AWS, TensorFlow, Docker, GraphQL
+
+EXPERIENCE
+Web Developer, Ferncastle
+Oct 2024 - Present
+- Worked with designers in Figma to ship an accessible (WCAG 2.1 AA) component library in PHP.
+- Improved Core Web Vitals on the checkout flow, reducing LCP by 18% with code splitting.
+- Introduced jQuery and React into the team's workflow and wrote the conventions guide.
+
+EDUCATION
+B.Sc. in Computer Science, University of Cork, 2024

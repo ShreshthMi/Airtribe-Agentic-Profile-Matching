@@ -1,0 +1,23 @@
+Name: Haruto Kimura
+haruto.kimura@example.com | Fukuoka, Japan
+
+SUMMARY
+Mobile engineer with 6 years of experience, most recently working with iOS, Swift, SwiftUI.
+
+SKILLS
+iOS, Swift, UIKit, Core Data, SwiftUI, Combine
+
+EXPERIENCE
+Senior Mobile Engineer, Coral Telecom
+Nov 2022 - Present
+- Set up SwiftUI and Combine for the mobile team and automated store releases.
+- Built the iOS app used by 120k monthly active users, rated 4.6 in the store.
+- Paired with backend engineers to design offline-first sync for iOS.
+
+Junior Mobile Developer, Greystone Logistics
+May 2020 - Oct 2022
+- Set up UIKit and Core Data for the mobile team and automated store releases.
+- Reduced app start-up time by 35% through lazy loading and image caching.
+
+EDUCATION
+B.Sc. in Computer Science, University of Fukuoka, 2020

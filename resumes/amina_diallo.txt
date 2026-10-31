@@ -1,0 +1,18 @@
+Name: Amina Diallo
+amina.diallo@example.com | Dakar, Senegal
+
+SUMMARY
+Data engineer with 3 years of experience, most recently working with Python, SQL, BigQuery.
+
+SKILLS
+Python, SQL, BigQuery, Airflow
+
+EXPERIENCE
+Data Engineer, Pinecrest Media
+Oct 2023 - Present
+- Cut pipeline cost by 18% by repartitioning tables and pruning unused jobs.
+- Introduced data quality checks and orchestration with Airflow.
+- Worked with analysts to define core metrics and their Python lineage.
+
+EDUCATION
+B.Sc. in Information Systems, University of Dakar, 2023

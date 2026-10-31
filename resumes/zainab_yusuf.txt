@@ -1,0 +1,23 @@
+Name: Zainab Yusuf
+zainab.yusuf@example.com | Abuja, Nigeria
+
+SUMMARY
+DevOps engineer with 5 years of experience, most recently working with Kubernetes, GCP, Terraform.
+
+SKILLS
+Linux, Docker, GCP, GitLab CI, Kubernetes, Terraform, Go
+
+EXPERIENCE
+Senior Site Reliability Engineer, Bluefinch
+Nov 2023 - Present
+- Introduced SLOs and alerting that reduced pages per week by 30%.
+- Led incident response and wrote postmortems; raised availability to 99.94.7%.
+- Built CI/CD pipelines with Go that cut deployment time by 30%.
+
+Junior DevOps Engineer, Silverpine Energy
+Jan 2021 - Oct 2023
+- Codified environments with GCP, replacing hand-built servers.
+- Built CI/CD pipelines with GitLab CI that cut deployment time by 40%.
+
+EDUCATION
+B.Sc. in Computer Networks, University of Abuja, 2021

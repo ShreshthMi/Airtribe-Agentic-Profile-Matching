@@ -1,0 +1,23 @@
+Name: Ishaan Kapoor
+ishaan.kapoor@example.com | Pune, India
+
+SUMMARY
+Machine learning engineer with 6 years of experience, most recently working with PyTorch, Computer Vision, MLOps.
+
+SKILLS
+TensorFlow, Python, Computer Vision, Docker, PyTorch, MLOps, GCP
+
+EXPERIENCE
+Senior Machine Learning Engineer, Kestrel Pay
+Jul 2023 - Present
+- Built a Computer Vision pipeline that cut model iteration time from weeks to days.
+- Improved ranking quality (nDCG@10) by 25% with a retrained PyTorch model.
+- Mentored 4 engineers on experiment design and model evaluation.
+
+Machine Learning Engineer, Meridian Freight
+Jul 2020 - Jun 2023
+- Trained and deployed TensorFlow models serving 600k predictions a day.
+- Improved ranking quality (nDCG@10) by 18% with a retrained TensorFlow model.
+
+EDUCATION
+M.Sc. in Machine Learning, University of Pune, 2020

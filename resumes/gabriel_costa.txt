@@ -1,0 +1,23 @@
+Name: Gabriel Costa
+gabriel.costa@example.com | Rio de Janeiro, Brazil
+
+SUMMARY
+Full-stack engineer with 5 years of experience, most recently working with Next.js, React, TypeScript.
+
+SKILLS
+Node.js, TypeScript, NestJS, PostgreSQL, Next.js, React, Prisma
+
+EXPERIENCE
+Senior Full-Stack Engineer, Bluefinch
+Nov 2024 - Present
+- Shipped end-to-end features with Next.js and React, from database schema to UI.
+- Moved the team's deployment to TypeScript and Prisma, cutting release time from days to hours.
+- Designed REST APIs consumed by web and mobile clients serving 40k users.
+
+Full-Stack Developer, Lattice Robotics
+Jul 2021 - Oct 2024
+- Owned on-call for the TypeScript services and reduced paging alerts by 30%.
+- Moved the team's deployment to NestJS and PostgreSQL, cutting release time from days to hours.
+
+EDUCATION
+B.Sc. in Computer Science, University of Rio de Janeiro, 2021

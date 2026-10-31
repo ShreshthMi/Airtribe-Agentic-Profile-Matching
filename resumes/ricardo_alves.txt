@@ -1,0 +1,23 @@
+Name: Ricardo Alves
+ricardo.alves@example.com | Porto, Portugal
+
+SUMMARY
+Data scientist with 5 years of experience, most recently working with Python, SQL, Statistics.
+
+SKILLS
+Excel, SQL, Statistics, Power BI, Python, Tableau
+
+EXPERIENCE
+Senior Data Scientist, Pinecrest Media
+Apr 2024 - Present
+- Created self-serve dashboards in Tableau used weekly by 5 managers.
+- Built churn and lifetime-value models in Python, adopted by the growth team.
+- Designed and evaluated A/B tests for pricing changes affecting 75k customers.
+
+Data Analyst, Cinder Games
+Apr 2021 - Mar 2024
+- Automated monthly reporting with Statistics, saving 8 analyst-days a month.
+- Built churn and lifetime-value models in Excel, adopted by the growth team.
+
+EDUCATION
+M.Sc. in Statistics, University of Porto, 2021

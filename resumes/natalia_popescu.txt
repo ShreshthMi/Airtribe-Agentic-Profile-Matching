@@ -1,0 +1,27 @@
+Name: Natalia Popescu
+natalia.popescu@example.com | Bucharest, Romania
+
+SUMMARY
+Backend engineer with 6 years of experience, most recently working with Java, Spring Boot, Kafka.
+
+SKILLS
+Java, Spring Boot, PostgreSQL, Docker, Kafka, Kubernetes
+
+EXPERIENCE
+Senior Backend Engineer, Saffron Commerce
+Sep 2024 - Present
+- Introduced Kubernetes for the team's services and documented the runbooks.
+- Designed the Kafka data model for the payments ledger and wrote its migration plan.
+- Built and operated Java services handling 250k requests per minute at peak.
+
+Career break
+Dec 2022 - Aug 2024
+- Career break for family caregiving.
+
+Backend Engineer, Pinecrest Media
+Dec 2018 - Nov 2022
+- Built and operated Java services handling 75k requests per minute at peak.
+- Designed the PostgreSQL data model for the payments ledger and wrote its migration plan.
+
+EDUCATION
+B.Sc. in Computer Engineering, University of Bucharest, 2018

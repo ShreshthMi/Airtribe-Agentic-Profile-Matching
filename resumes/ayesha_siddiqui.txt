@@ -1,0 +1,18 @@
+Name: Ayesha Siddiqui
+ayesha.siddiqui@example.com | Lahore, Pakistan
+
+SUMMARY
+QA automation engineer with 2 years of experience, most recently working with Cypress, JavaScript, React Testing Library.
+
+SKILLS
+Cypress, JavaScript, React Testing Library, GitHub Actions
+
+EXPERIENCE
+QA Analyst, Copperleaf Systems
+Jul 2024 - Present
+- Ran the test suite in GitHub Actions on every pull request, blocking regressions before release.
+- Built an end-to-end test suite with Cypress and JavaScript covering 250 critical user journeys.
+- Introduced React Testing Library for API contract testing between 3 services.
+
+EDUCATION
+B.Sc. in Software Engineering, University of Lahore, 2024

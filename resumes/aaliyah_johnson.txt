@@ -1,0 +1,19 @@
+Name: Aaliyah Johnson
+aaliyah.johnson@example.com | Atlanta, GA
+
+SUMMARY
+Frontend engineer with 1 years of experience, most recently working with React, JavaScript, HTML/CSS.
+
+SKILLS
+React, JavaScript, HTML/CSS, Jest
+
+EXPERIENCE
+Junior Frontend Developer, Arclight Mobility
+Oct 2025 - Present
+- Worked with designers in Figma to ship an accessible (WCAG 2.1 AA) component library in React.
+- Reviewed React pull requests for a team of 6 engineers and ran a weekly frontend guild.
+- Introduced HTML/CSS and Jest into the team's workflow and wrote the conventions guide.
+
+EDUCATION
+Full-Stack Web Development Certificate, Peachtree Coding Bootcamp, 2025
+B.A. in Psychology, Georgia State University, 2023

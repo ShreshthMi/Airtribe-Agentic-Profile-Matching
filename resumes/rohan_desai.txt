@@ -1,0 +1,23 @@
+Name: Rohan Desai
+rohan.desai@example.com | Bengaluru, India
+
+SUMMARY
+Full-stack engineer with 5 years of experience, most recently working with React, Django, TypeScript.
+
+SKILLS
+Django, Python, PostgreSQL, jQuery, React, TypeScript, Docker
+
+EXPERIENCE
+Senior Full-Stack Engineer, Bluefinch
+Apr 2024 - Present
+- Built an internal admin dashboard with React used daily by 6 operations staff.
+- Owned on-call for the Django services and reduced paging alerts by 35%.
+- Moved the team's deployment to TypeScript and Docker, cutting release time from days to hours.
+
+Full-Stack Developer, Brightloop
+Apr 2021 - Mar 2024
+- Built an internal admin dashboard with Django used daily by 6 operations staff.
+- Designed REST APIs consumed by web and mobile clients serving 250k users.
+
+EDUCATION
+B.Sc. in Computer Science, University of Bengaluru, 2021

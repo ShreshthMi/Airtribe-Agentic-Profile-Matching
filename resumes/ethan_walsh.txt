@@ -1,0 +1,23 @@
+Name: Ethan Walsh
+ethan.walsh@example.com | Dublin, Ireland
+
+SUMMARY
+Frontend engineer with 5 years of experience, most recently working with React, TypeScript, Next.js.
+
+SKILLS
+Vue, JavaScript, Vuex, Jest, React, TypeScript, Next.js, Playwright
+
+EXPERIENCE
+Frontend Engineer, Coral Telecom
+Jun 2023 - Present
+- Led the migration of legacy pages to React, cutting the JavaScript bundle by 25%.
+- Built and maintained React components in TypeScript for a customer-facing web app with 120k monthly users.
+- Introduced Next.js and Playwright into the team's workflow and wrote the conventions guide.
+
+Junior Frontend Developer, Vantage Learning
+Jun 2021 - May 2023
+- Improved Core Web Vitals on the checkout flow, reducing LCP by 35% with code splitting.
+- Introduced Vuex and Jest into the team's workflow and wrote the conventions guide.
+
+EDUCATION
+B.Sc. in Computer Science, University of Dublin, 2021

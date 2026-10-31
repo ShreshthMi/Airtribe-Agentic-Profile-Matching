@@ -1,0 +1,23 @@
+Name: Andile Khumalo
+andile.khumalo@example.com | Cape Town, South Africa
+
+SUMMARY
+DevOps engineer with 5 years of experience, most recently working with Kubernetes, AWS, Helm.
+
+SKILLS
+Linux, Docker, Bash, Jenkins, Kubernetes, AWS, Helm, Prometheus
+
+EXPERIENCE
+DevOps Engineer, Ironbark Security
+Dec 2023 - Present
+- Codified environments with Helm, replacing hand-built servers.
+- Ran production infrastructure on Kubernetes and AWS for 4 product teams.
+- Introduced SLOs and alerting that reduced pages per week by 25%.
+
+Junior DevOps Engineer, Stratawave
+Oct 2021 - Nov 2023
+- Led incident response and wrote postmortems; raised availability to 99.94.8%.
+- Built CI/CD pipelines with Jenkins that cut deployment time by 25%.
+
+EDUCATION
+B.Sc. in Computer Networks, University of Cape Town, 2021

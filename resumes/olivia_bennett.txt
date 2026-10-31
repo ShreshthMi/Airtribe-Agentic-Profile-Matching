@@ -1,0 +1,23 @@
+Name: Olivia Bennett
+olivia.bennett@example.com | Manchester, UK
+
+SUMMARY
+Data scientist with 5 years of experience, most recently working with Python, SQL, Statistics.
+
+SKILLS
+R, SQL, Excel, Statistics, Python, Looker
+
+EXPERIENCE
+Data Scientist, Lattice Robotics
+Jun 2023 - Present
+- Analysed product funnels with Python and SQL and presented findings to leadership.
+- Built churn and lifetime-value models in Python, adopted by the growth team.
+- Automated monthly reporting with Statistics, saving 4 analyst-days a month.
+
+Junior Data Analyst, Kestrel Pay
+Jun 2021 - May 2023
+- Analysed product funnels with R and SQL and presented findings to leadership.
+- Built churn and lifetime-value models in R, adopted by the growth team.
+
+EDUCATION
+M.Sc. in Statistics, University of Manchester, 2021

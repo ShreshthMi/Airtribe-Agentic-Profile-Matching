@@ -1,0 +1,23 @@
+Name: Thandiwe Dlamini
+thandiwe.dlamini@example.com | Johannesburg, South Africa
+
+SUMMARY
+Data engineer with 4 years of experience, most recently working with dbt, Kafka, Snowflake.
+
+SKILLS
+SQL, Python, Snowflake, dbt, Kafka, Airflow
+
+EXPERIENCE
+Data Engineer, Bluefinch
+Apr 2024 - Present
+- Worked with analysts to define core metrics and their dbt lineage.
+- Modelled the analytics warehouse in Snowflake, replacing 4 ad-hoc reporting databases.
+- Cut pipeline cost by 35% by repartitioning tables and pruning unused jobs.
+
+Junior Data Engineer, Coral Telecom
+Feb 2022 - Mar 2024
+- Worked with analysts to define core metrics and their SQL lineage.
+- Modelled the analytics warehouse in Snowflake, replacing 8 ad-hoc reporting databases.
+
+EDUCATION
+B.Sc. in Information Systems, University of Johannesburg, 2022

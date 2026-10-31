@@ -1,0 +1,23 @@
+Name: Elif Yildiz
+elif.yildiz@example.com | Istanbul, Turkey
+
+SUMMARY
+Frontend engineer with 5 years of experience, most recently working with Vue, TypeScript, Nuxt.
+
+SKILLS
+Vue, JavaScript, Vuex, Sass, TypeScript, Nuxt, Vitest
+
+EXPERIENCE
+Frontend Engineer, Orbitly
+Jan 2024 - Present
+- Introduced Nuxt and Vitest into the team's workflow and wrote the conventions guide.
+- Worked with designers in Figma to ship an accessible (WCAG 2.1 AA) component library in Vue.
+- Led the migration of legacy pages to Vue, cutting the JavaScript bundle by 25%.
+
+Junior Frontend Developer, Hollowbrook Health
+Jul 2021 - Dec 2023
+- Worked with designers in Figma to ship an accessible (WCAG 2.1 AA) component library in Vue.
+- Improved Core Web Vitals on the checkout flow, reducing LCP by 18% with code splitting.
+
+EDUCATION
+B.Sc. in Computer Science, University of Istanbul, 2021

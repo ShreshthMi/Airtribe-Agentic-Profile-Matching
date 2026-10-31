@@ -1,0 +1,23 @@
+Name: Farhan Chowdhury
+farhan.chowdhury@example.com | Dhaka, Bangladesh
+
+SUMMARY
+Backend engineer with 5 years of experience, most recently working with Node.js, TypeScript, PostgreSQL.
+
+SKILLS
+PHP, Laravel, MySQL, Redis, Node.js, TypeScript, PostgreSQL, AWS
+
+EXPERIENCE
+Backend Engineer, Ironbark Security
+Apr 2023 - Present
+- Introduced AWS for the team's services and documented the runbooks.
+- Mentored 8 engineers and led design reviews for new TypeScript services.
+- Designed the PostgreSQL data model for the payments ledger and wrote its migration plan.
+
+Junior Backend Developer, Orbitly
+Apr 2021 - Mar 2023
+- Designed the MySQL data model for the payments ledger and wrote its migration plan.
+- Cut p99 latency of the orders API by 55% by reworking queries and caching.
+
+EDUCATION
+B.Sc. in Computer Engineering, University of Dhaka, 2021

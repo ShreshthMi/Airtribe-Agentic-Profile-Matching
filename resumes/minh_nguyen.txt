@@ -1,0 +1,18 @@
+Name: Minh Nguyen
+minh.nguyen@example.com | Ho Chi Minh City, Vietnam
+
+SUMMARY
+Mobile engineer with 4 years of experience, most recently working with React Native, TypeScript, GraphQL.
+
+SKILLS
+React Native, TypeScript, GraphQL, Android
+
+EXPERIENCE
+Mobile Engineer, Stratawave
+Apr 2022 - Present
+- Built the React Native app used by 600k monthly active users, rated 4.6 in the store.
+- Paired with backend engineers to design offline-first sync for React Native.
+- Reduced app start-up time by 18% through lazy loading and image caching.
+
+EDUCATION
+B.Sc. in Computer Science, University of Ho Chi Minh City, 2022

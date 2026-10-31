@@ -1,0 +1,23 @@
+Name: Tariq Mahmood
+tariq.mahmood@example.com | Karachi, Pakistan
+
+SUMMARY
+Machine learning engineer with 4 years of experience, most recently working with PyTorch, LLMs, Vector Databases.
+
+SKILLS
+Python, Pandas, scikit-learn, Flask, PyTorch, LLMs, Vector Databases, FastAPI
+
+EXPERIENCE
+Machine Learning Engineer, Pinecrest Media
+Jan 2024 - Present
+- Built a LLMs pipeline that cut model iteration time from weeks to days.
+- Mentored 3 engineers on experiment design and model evaluation.
+- Improved ranking quality (nDCG@10) by 40% with a retrained PyTorch model.
+
+Junior ML Engineer, Kestrel Pay
+Jan 2022 - Dec 2023
+- Improved ranking quality (nDCG@10) by 18% with a retrained Python model.
+- Productionised models with scikit-learn and Flask, with offline and online evaluation.
+
+EDUCATION
+M.Sc. in Machine Learning, University of Karachi, 2022

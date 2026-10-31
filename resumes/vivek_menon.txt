@@ -1,0 +1,23 @@
+Name: Vivek Menon
+vivek.menon@example.com | Kochi, India
+
+SUMMARY
+Backend engineer with 6 years of experience, most recently working with Kotlin, Spring Boot, Kafka.
+
+SKILLS
+Java, Spring Boot, Oracle, Jenkins, Kotlin, Kafka, AWS
+
+EXPERIENCE
+Senior Backend Engineer, Stratawave
+Jun 2023 - Present
+- Mentored 8 engineers and led design reviews for new Spring Boot services.
+- Built and operated Kotlin services handling 120k requests per minute at peak.
+- Designed the Kafka data model for the payments ledger and wrote its migration plan.
+
+Backend Engineer, Willow Insurance
+Dec 2019 - May 2023
+- Introduced Jenkins for the team's services and documented the runbooks.
+- Mentored 8 engineers and led design reviews for new Spring Boot services.
+
+EDUCATION
+B.Sc. in Computer Engineering, University of Kochi, 2019
