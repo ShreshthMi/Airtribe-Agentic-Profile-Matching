@@ -102,7 +102,7 @@ def test_update_requirements_records_the_change_and_asks_for_a_rescreen(setup):
     toolbox, _ = setup
 
     result = run(toolbox, "update_requirements", must_have=["3+ years of React", " TypeScript "],
-                 nice_to_have=["Next.js", ""], change_summary="add TypeScript")
+                 nice_to_have=["Next.js", ""], interview_only=[], change_summary="add TypeScript")
 
     assert not result["is_error"] and "added must: TypeScript" in result["content"]
     assert toolbox.next_step == "rerank"
@@ -114,7 +114,7 @@ def test_update_requirements_records_the_change_and_asks_for_a_rescreen(setup):
 def test_update_requirements_with_no_change_does_not_rescreen(setup):
     toolbox, _ = setup
 
-    result = run(toolbox, "update_requirements", must_have=["3+ years of React"], nice_to_have=[], change_summary="")
+    result = run(toolbox, "update_requirements", must_have=["3+ years of React"], nice_to_have=[], interview_only=[], change_summary="")
 
     assert "nothing changed" in result["content"] and toolbox.next_step is None
 
@@ -122,7 +122,7 @@ def test_update_requirements_with_no_change_does_not_rescreen(setup):
 def test_update_requirements_refuses_an_empty_set(setup):
     toolbox, _ = setup
 
-    assert run(toolbox, "update_requirements", must_have=[" "], nice_to_have=[], change_summary="")["is_error"]
+    assert run(toolbox, "update_requirements", must_have=[" "], nice_to_have=[], interview_only=[], change_summary="")["is_error"]
 
 
 def test_new_job_description_steers_the_graph_back_to_parse_jd(setup):
@@ -196,9 +196,9 @@ def test_changing_requirements_twice_in_one_turn_compares_with_the_pending_chang
     toolbox, _ = setup
 
     run(toolbox, "update_requirements", must_have=["3+ years of React", "TypeScript"], nice_to_have=[],
-        change_summary="add TypeScript")
+        interview_only=[], change_summary="add TypeScript")
     back = run(toolbox, "update_requirements", must_have=["3+ years of React"], nice_to_have=[],
-               change_summary="drop it again")
+               interview_only=[], change_summary="drop it again")
 
     assert "no re-screen needed" in back["content"]
     assert toolbox.next_step is None and "requirements" not in toolbox.updates
@@ -208,7 +208,7 @@ def test_a_requirement_cannot_be_both_must_have_and_nice_to_have(setup):
     toolbox, _ = setup
 
     run(toolbox, "update_requirements", must_have=["3+ years of React", "TypeScript"],
-        nice_to_have=["typescript ", "Next.js", "next.js"], change_summary="")
+        nice_to_have=["typescript ", "Next.js", "next.js"], interview_only=[], change_summary="")
 
     assert toolbox.updates["requirements"]["nice_to_have"] == ["Next.js"]
 
@@ -258,3 +258,25 @@ def test_the_state_snapshot_keeps_names_and_requirements_inside_its_tag(setup):
 
     assert snapshot.count("</screening_state>") == 1 and snapshot.endswith("</screening_state>")
     assert "Eve" in snapshot and "React" in snapshot
+
+
+def test_interview_checks_show_in_the_snapshot_and_changing_them_does_not_rescreen(setup):
+    toolbox, _ = setup
+    toolbox.state = {**toolbox.state, "requirements": {**REACT_ROLE, "interview_only": ["Clear communication"]}}
+
+    assert "Interview checks (a resume cannot show these; not screened): Clear communication" in state_snapshot(
+        toolbox.state)
+    result = run(toolbox, "update_requirements", must_have=["3+ years of React"], nice_to_have=[],
+                 interview_only=["Clear communication", "Works well asynchronously"], change_summary="")
+
+    assert "ranking is unchanged" in result["content"] and toolbox.next_step is None
+    assert toolbox.updates["requirements"]["interview_only"] == ["Clear communication", "Works well asynchronously"]
+
+
+def test_interview_questions_cover_the_interview_checks(setup):
+    toolbox, claude = setup
+    toolbox.state = {**toolbox.state, "requirements": {**REACT_ROLE, "interview_only": ["Clear communication"]}}
+
+    run(toolbox, "generate_interview_questions", candidate_id="ana_ruiz", count=2)
+
+    assert "cover at least one in the interview:\n- Clear communication" in claude.prompts[-1]

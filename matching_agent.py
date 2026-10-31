@@ -41,8 +41,8 @@ import claude_tasks
 from agent_tools import SYSTEM_PROMPT, TOOLS, Toolbox, brief_args, state_snapshot
 from corpus import ROUND1_SIZE, Corpus
 from llm import Claude, LLMError
-from screening import (LABEL, current_verdicts, describe_change, rank_by_fit, ranking_changes, render_report,
-                       requirement_key, suggestion_key, weighted_requirements)
+from screening import (LABEL, current_verdicts, describe_change, interview_checks, rank_by_fit, ranking_changes,
+                       render_report, requirement_key, suggestion_key, weighted_requirements)
 
 REPORT_FIELDS = ("rank", "candidate_id", "name", "resume_path", "rag_score", "fit_score", "recommendation",
                  "recommendation_reason", "must_haves_met")
@@ -371,6 +371,9 @@ def _round_summary(state: ScreeningState, changes: list[dict], corpus_size: int,
              f"{counts['borderline']} borderline, {counts['no_hire']} no hire."]
     if state["screening_round"] == 1:
         lines += ["", "**Requirements**", *[f"- {t} ({k}-have)" for t, k, _ in weighted_requirements(reqs)]]
+        if interview_checks(reqs):
+            lines += ["", "**For the interview** (a resume cannot show these, so they are not screened)",
+                      *[f"- {t}" for t in interview_checks(reqs)]]
         if reqs.get("notes"):
             lines += ["", f"_How I read the request: {reqs['notes']}_"]
     if changes:

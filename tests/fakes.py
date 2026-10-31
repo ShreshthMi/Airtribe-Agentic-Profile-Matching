@@ -144,17 +144,19 @@ class ScriptedClaude:
         self.replies = deque(replies or [])
         self.judged: list[tuple[str, list[str]]] = []   # (candidate name, requirement texts) per judging call
         self.conversations: list[list[dict]] = []       # messages passed to each converse() call
+        self.prompts: list[str] = []                     # prompts passed to each structured() call
         self.fail_next: str | None = None
         self.refuse_to_judge: set[str] = set()   # candidate names whose judging always fails
         self.skip_once: set[str] = set()         # requirement texts left out of the first answer that asks them
         self.usage = {"calls": 0, "input_tokens": 0, "cache_read_input_tokens": 0, "output_tokens": 0}
 
     def structured(self, *, system: str, prompt: str, schema):
+        self.prompts.append(prompt)
         if self.fail_next:
             message, self.fail_next = self.fail_next, None
             raise LLMError(message)
         if schema is ExtractedRequirements:
-            return ExtractedRequirements(**self.requirements.popleft())
+            return ExtractedRequirements(**{"interview_only": [], **self.requirements.popleft()})
         if schema is CandidateAssessment:
             return self._judge(prompt)
         if schema is Suggestions:

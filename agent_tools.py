@@ -24,8 +24,8 @@ from corpus import Corpus, CorpusError
 from llm import Claude, LLMError
 from claude_tasks import as_data
 from screening import (LABEL, candidate_report, comparison_table, current_verdicts, describe_change, effective_verdict,
-                       explain_pair, fit_score, recommendation, requirement_changes, requirement_key, suggestion_key,
-                       weighted_requirements)
+                       explain_pair, fit_score, interview_checks, recommendation, requirement_changes, requirement_key,
+                       suggestion_key, weighted_requirements)
 
 MAX_SEARCH_RESULTS = 20
 MAX_COMPARED = 5
@@ -48,6 +48,8 @@ to re-rank or re-screen - call update_requirements with the complete new lists (
 lists re-screen anyone who could not be judged last time). The \
 screening re-runs after your reply and the user is shown what moved and why, so in your \
 reply say briefly what you changed and do not predict the new ranking.
+- Requirements a resume cannot show (communication, attitude, working style) are kept as \
+interview checks: they are not screened and do not affect the ranking.
 - When the user brings a different job, call new_job_description.
 - For a quick look beyond the shortlist use search_resumes; to open a resume or a saved \
 report use the file tools.
@@ -86,6 +88,8 @@ TOOLS = [
     _tool("update_requirements", "Replace the screening requirements with these complete lists and re-run the "
           "screening after this reply. Use whenever the user adds, removes or re-weights a requirement.",
           must_have=_STRS, nice_to_have=_STRS,
+          interview_only={**_STRS, "description": "Requirements a resume cannot show, checked in the interview; "
+                                                  "pass the current list unless the user changes it."},
           change_summary={**_STR, "description": "One sentence on what the user asked to change."}),
     _tool("new_job_description", "Start a new screening for a different job. Accepts the job description text "
           "or a path such as job_descriptions/backend_engineer.txt.", job_description=_STR),
@@ -112,6 +116,8 @@ def state_snapshot(state: dict) -> str:
         return "<screening_state>\nNo job description has been screened yet.\n</screening_state>"
     lines = ["<screening_state>", f"Role: {reqs.get('role_title')} (screening round {state.get('screening_round', 0)})",
              "Requirements:", *[f"- {text} ({kind}-have)" for text, kind, _ in weighted_requirements(reqs)]]
+    if interview_checks(reqs):
+        lines.append("Interview checks (a resume cannot show these; not screened): " + "; ".join(interview_checks(reqs)))
     if state.get("shortlist"):
         lines.append("Shortlist (fit = weighted share of requirements met; rag = Round 1 search score):")
         lines += [f"{e['rank']}. {e['name']} `{e['candidate_id']}`: fit {e['fit_score']}, rag {e['rag_score']}, "
@@ -226,20 +232,27 @@ class Toolbox:
         self._ensure_judged([cid])
         verdicts = current_verdicts(self._requirements(), self.verdicts[cid])
         questions = claude_tasks.interview_questions(self.claude, self.corpus.name(cid), verdicts,
-                                                     self.corpus.resume_text(cid), max(1, min(count, MAX_QUESTIONS)))
+                                                     self.corpus.resume_text(cid), max(1, min(count, MAX_QUESTIONS)),
+                                                     interview_checks(self._requirements()))
         return "\n".join(f"{i}. {q['question']}\n   Probes: {q['requirement']}. Why: {q['why']}"
                          for i, q in enumerate(questions, start=1))
 
     # ---- steering the graph ------------------------------------------------- #
-    def tool_update_requirements(self, must_have: list[str], nice_to_have: list[str], change_summary: str) -> str:
+    def tool_update_requirements(self, must_have: list[str], nice_to_have: list[str], interview_only: list[str],
+                                 change_summary: str) -> str:
         screened_on = self._requirements()               # what the shortlist was ranked against
         pending = self.updates.get("requirements", screened_on)  # an earlier call this turn may have changed it
         must = _clean(must_have)
         nice = [r for r in _clean(nice_to_have) if requirement_key(r) not in {requirement_key(m) for m in must}]
-        new = {**screened_on, "must_have": must, "nice_to_have": nice}
+        screened = {requirement_key(r) for r in must + nice}
+        new = {**screened_on, "must_have": must, "nice_to_have": nice,
+               "interview_only": [r for r in _clean(interview_only) if requirement_key(r) not in screened]}
         if not must and not nice:
             raise ToolError("At least one requirement is needed.")
         diff = {k: v for k, v in requirement_changes(pending, new).items() if v}
+        if not diff and interview_checks(new) != interview_checks(pending):
+            self.updates["requirements"] = new  # interview checks never change the ranking: no re-screen
+            return "Interview checks updated; the ranking is unchanged. Tell the user in one sentence."
         if not diff and self.state.get("unjudged") and "requirements" not in self.updates:
             self.next_step = "rerank"  # same requirements, but some candidates still need judging
             names = ", ".join(u["name"] for u in self.state["unjudged"])

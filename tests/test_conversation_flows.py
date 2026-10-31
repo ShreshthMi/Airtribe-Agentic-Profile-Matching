@@ -136,7 +136,7 @@ def test_flow3_explain_why_one_candidate_ranks_higher():
 def test_flow4_refining_requirements_rescreens_and_explains_ranking_changes():
     claude = ScriptedClaude(replies=[
         reply(("update_requirements", {"must_have": ["3+ years of React", "TypeScript"], "nice_to_have": ["Next.js"],
-                                       "change_summary": "TypeScript required, Next.js preferred"})),
+                                       "interview_only": [], "change_summary": "TypeScript required, Next.js preferred"})),
         reply("Added TypeScript as a must-have and Next.js as a nice-to-have; re-screening now.")])
     s = Session(claude)
     s.start(REACT_QUERY)
@@ -291,7 +291,7 @@ def test_flow9_runaway_tool_loop_is_cut_off():
 def test_a_candidate_claude_cannot_judge_is_left_out_and_retried_at_the_next_rescreen():
     claude = ScriptedClaude(replies=[
         reply(("update_requirements", {"must_have": ["3+ years of React", "TypeScript"], "nice_to_have": [],
-                                       "change_summary": "add TypeScript"})),
+                                       "interview_only": [], "change_summary": "add TypeScript"})),
         reply("Added TypeScript.")])
     claude.refuse_to_judge = {"Ben Ito"}
     s = Session(claude)
@@ -352,10 +352,10 @@ def test_a_round_where_nobody_can_be_judged_fails_loudly_and_can_be_retried():
 def test_a_shortlisted_candidate_who_cannot_be_rejudged_is_named_in_the_changes_and_can_be_retried():
     claude = ScriptedClaude(replies=[
         reply(("update_requirements", {"must_have": ["3+ years of React", "TypeScript"], "nice_to_have": [],
-                                       "change_summary": "add TypeScript"})),
+                                       "interview_only": [], "change_summary": "add TypeScript"})),
         reply("Added TypeScript."),
         reply(("update_requirements", {"must_have": ["3+ years of React", "TypeScript"], "nice_to_have": [],
-                                       "change_summary": "re-screen"})),
+                                       "interview_only": [], "change_summary": "re-screen"})),
         reply("Re-screening to try Ana again.")])
     s = Session(claude)
     s.start(REACT_QUERY)
@@ -372,3 +372,16 @@ def test_a_shortlisted_candidate_who_cannot_be_rejudged_is_named_in_the_changes_
 
     assert state["screening_round"] == 3 and state["unjudged"] == []
     assert state["shortlist"][0]["candidate_id"] == "ana_ruiz"
+
+
+def test_a_soft_skill_in_the_posting_no_longer_blocks_a_hire():
+    claude = ScriptedClaude(requirements=[{"role_title": "React Developer", "must_have": ["3+ years of React"],
+                                           "nice_to_have": [], "notes": "",
+                                           "interview_only": ["Excellent communication skills"]}])
+    s = Session(claude)
+
+    state = s.start(REACT_QUERY)
+
+    assert state["shortlist"][0]["recommendation"] == "hire"
+    assert "**For the interview** (a resume cannot show these, so they are not screened)" in s.last_reply
+    assert all(reqs == ["3+ years of React"] for _, reqs in claude.judged)   # never judged against a resume

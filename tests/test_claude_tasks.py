@@ -77,3 +77,15 @@ def test_the_judging_prompt_keeps_a_hostile_resume_inside_its_tags():
 def test_ordinary_brackets_are_left_alone():
     assert as_data("p99 latency <10ms, and a > b") == "p99 latency <10ms, and a > b"
     assert as_data("< 5 years is fine") == "< 5 years is fine"
+
+
+def test_requirements_a_resume_cannot_show_are_kept_apart_and_never_double_listed():
+    from claude_tasks import extract_requirements
+    claude = ScriptedClaude(requirements=[{
+        "role_title": "SRE", "must_have": ["Kubernetes", "Linux"], "nice_to_have": ["linux ", "Go"],
+        "interview_only": ["Excellent communication", "Kubernetes", "excellent communication"], "notes": ""}])
+
+    reqs = extract_requirements(claude, "SRE posting")
+
+    assert reqs["must_have"] == ["Kubernetes", "Linux"] and reqs["nice_to_have"] == ["Go"]
+    assert reqs["interview_only"] == ["Excellent communication"]  # screened wins; duplicates dropped

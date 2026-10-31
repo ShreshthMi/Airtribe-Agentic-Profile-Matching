@@ -235,3 +235,17 @@ def test_render_report_has_every_section():
     assert "_Assumptions made reading the request: Read years as React years._" in report
     assert "Also re-judged this round, now below the top 10: Ben (#2, fit 60, No hire)" in report
     assert "## How to read this report" in report and "## What changed" not in report
+
+
+def test_interview_checks_change_neither_fit_nor_recommendation_but_are_reported():
+    from screening import interview_checks
+    with_checks = {**REQS, "interview_only": ["Excellent communication"]}
+    judged = verdicts("met", "met", "missing")
+
+    assert fit_score(with_checks, judged) == fit_score(REQS, judged) == 80
+    assert recommendation(with_checks, judged)[0] == "hire"
+    assert interview_checks(with_checks) == ["Excellent communication"] and interview_checks(REQS) == []
+    [entry] = rank_by_fit([candidate("ana")], with_checks, {"ana": judged})
+    report = render_report(requirements=with_checks, shortlist=[entry], verdicts_by_cid={"ana": judged},
+                           suggestions={}, changes=[], screening_round=1, corpus_size=100, today=date(2026, 10, 31))
+    assert "- Excellent communication (check in the interview; not screened)" in report

@@ -50,6 +50,11 @@ def current_verdicts(requirements: dict, verdicts: dict[str, dict]) -> dict[str,
     return {k: verdicts[k] for k in keys if k in verdicts}
 
 
+def interview_checks(requirements: dict) -> list[str]:
+    """Requirements a resume cannot show: listed for the interview, never scored."""
+    return list(requirements.get("interview_only", []))
+
+
 def suggestion_key(candidate_id: str, requirements: dict) -> str:
     """Cache key for Round 3 suggestions, which depend on the whole requirement set."""
     keys = sorted(f"{kind}:{requirement_key(text)}" for text, kind, _ in weighted_requirements(requirements))
@@ -311,7 +316,8 @@ def render_report(*, requirements: dict, shortlist: list[dict], verdicts_by_cid:
     parts = [f"# Screening report: {title}",
              f"Screening round {screening_round} · {today.isoformat()} · {corpus_size} resumes searched", "",
              "## Requirements",
-             *[f"- {text} ({kind}-have)" for text, kind, _ in weighted_requirements(requirements)]]
+             *[f"- {text} ({kind}-have)" for text, kind, _ in weighted_requirements(requirements)],
+             *[f"- {text} (check in the interview; not screened)" for text in interview_checks(requirements)]]
     if requirements.get("notes"):
         parts.append(f"\n_Assumptions made reading the request: {requirements['notes']}_")
     if changes:
@@ -335,5 +341,7 @@ def render_report(*, requirements: dict, shortlist: list[dict], verdicts_by_cid:
               f"Fit = weighted share met (must-have x{MUST_WEIGHT}, nice-to-have x{NICE_WEIGHT}; partial = half). "
               "A 'met' whose quote is not in the resume counts as partial.",
               "- **Round 3**: Hire = every must-have met; No hire = a must-have missing; Borderline = in between.",
+              "- Requirements a resume cannot show (communication, attitude, working style) are interview "
+              "checks: listed above, but they affect neither the fit score nor the recommendation.",
               "- These are screening recommendations for a human decision-maker, not hiring decisions."]
     return "\n".join(parts) + "\n"
