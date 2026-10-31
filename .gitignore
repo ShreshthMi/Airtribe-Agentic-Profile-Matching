@@ -9,3 +9,7 @@ htmlcov/
 chroma_db*/
 # Milestone 1's write log, kept beside the files it protects
 .fs_tools_written.json
+# Real job postings are other people's text: kept locally for evaluation, never committed
+job_descriptions/real_*
+# Labeller packs and real-posting screenings: derived from postings we may not redistribute
+evaluation/private/
